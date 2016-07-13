@@ -26,6 +26,17 @@
       background: #fff;
       color: #000;
       padding-bottom: 20px;
+      height: 100vh;
+    }
+    .first > div {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .first > div > p {
+      line-height: 2em;
+    }
+    .toptext {
+      max-width: 600px;
     }
     .second {
       background: #2E6B9B;
@@ -58,6 +69,7 @@
       font-weight: 700;
       font-size: 3em;
       text-align: left;
+      padding-bottom: 1em;
     }
     h4 {
       font-family: 'Ubuntu', sans-serif;
@@ -94,6 +106,14 @@
     @media only screen and (max-width: 768px) {
       .face {
         width: initial;
+        padding-top: 25px;
+      }
+      .first > div {
+        top: inherit;
+        transform: inherit;
+      }
+      .first {
+        height: inherit;
       }
     }
     @media only screen and (max-width: 500px) {
@@ -122,48 +142,19 @@
     <div class="col-sm-6">
         <img class="face" src="logo.png">
     </div>
-    <div class="col-sm-6">
+    <div class="col-sm-6 toptext">
       <h3>PyRVA: a Python Usergroup</h3>
+      <p><b>Please check our <a href="http://www.meetup.com/PyRVAUserGroup">Meetup page</a> for the location, time, and topic of our next meeting!</b></p><br />
+
       <p>The Python language is a rarity in the software industry: accessible to almost everyone, versatile across application domains and generally a joy to work with. While enjoying Python alone is beneficial, PyRVA believes that Python is best enjoyed in the company of others. We are busy organizing talks, hackathons, workshops and more to help build up the Python community here in Richmond. Ideas are welcome.</p><br />
 
       <p>Follow us on <a href="https://twitter.com/pyrva">Twitter</a>, <a href="https://github.com/PyRVA">GitHub</a>, and <a href="http://www.meetup.com/PyRVAUserGroup/">Meetup</a>.</p>
     </div>
     </div>
-    <!-- <div class="second row">
-      <div class="col-sm-12">
-        <h3>Thanks for coming out!</h3><br />
-        <p>We'll have more details about the next meetup soon.  In the meantime, check out our <a href="http://www.meetup.com/PyRVAUserGroup/">Meetup</a> page, where you can be automatically alerted to the events coming up!</p>
-        <p>If you have an idea for the next meetup or would like to present a 5–15 minute Lightning Talk, feel free to contact <a href="http://www.meetup.com/PyRVAUserGroup/members/126298962/">Andrew</a> or <a href="http://www.meetup.com/PyRVAUserGroup/members/71861332/">Chris</a>.</p>
-      </div>
-    </div> -->
-  
-  <div class="second row">
-    <div class="col-sm-12">
-      <p>Next meeting:</p>
-      <h3>Our April Meetup - PyRVA Website Workshop/Hackathon</h3>
-      <!-- <h3>Async Python and JavaScript (ES6)</h3> -->
-      <h4>Wednesday, April 13, 2015, 7:00pm&ndash;9ish</h4>
-      <p>This week, we're taking PyRVA.org to the next level by hosting a workshop/hackathon focused on improving our website! The goal is to learn more about Python through development and collaboration. RSVP on our <a href="http://www.meetup.com/PyRVAUserGroup/events/228599116/">Meetup.com page</a>.</p>
-    </div>
-  </div>
-  <div class="third row">
-    <div class="col-sm-6">
-        <iframe src="https://mapsengine.google.com/map/u/0/embed?mid=zOa3bshNlRFw.kDPwKSQFfQIg" width="100%" height="500" style="border: 0;"></iframe>
-    </div>
-    <div class="col-sm-6">
-      <h3>The Depot @ VCU</h3>
-      <p style="font-size: 1.5em;">7:00–9:30<br />
-        814 W. Broad St.<br />
-        Second Floor<br />
-        Plenty of street parking!</p>
-
-    </div>
-  </div>
-
   <div class="row meee">
       <div class="col-md-12"><p class="centerer">Powered by Bootstrap.<br />
         This work is licensed under a Creative Commons Attribution 4.0 International License.<br />
-        Site design by <a href="http://joewoodsworks.com">Joe Woods</a> and other PyRVA contributors.</p></div>
+        Site design by <a href="http://joewoodsworks.com">Joe Woods</a>.</p></div>
     </div>
   </div>
 </div>
@@ -171,14 +162,14 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script type="text/javascript">
-    if ($(window).width() > 750) {
+    /* if ($(window).width() > 750) {
       $(".face").css("padding-top", $(".first").height()/4);
     }
       $( window ).resize(function() {
         if ($(window).width() > 750) {
           $(".face").css("padding-top", $(".first").height()/4);
         }
-      })
+      }) */
     </script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/bootstrap.js"></script>

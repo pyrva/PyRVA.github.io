@@ -144,7 +144,7 @@
     </div>
     <div class="col-sm-6 toptext">
       <h3>PyRVA: a Python Usergroup</h3>
-      <p><b>Please check our <a href="http://www.meetup.com/PyRVAUserGroup">Meetup page</a> for the location, time, and topic of our next meeting!</b></p><br />
+      <p class="meetup_pull_api"><b>Please check our <a href="http://www.meetup.com/PyRVAUserGroup">Meetup page</a> for the location, time, and topic of our next meeting!</b></p><br />
 
       <p>The Python language is a rarity in the software industry: accessible to almost everyone, versatile across application domains and generally a joy to work with. While enjoying Python alone is beneficial, PyRVA believes that Python is best enjoyed in the company of others. We are busy organizing talks, hackathons, workshops and more to help build up the Python community here in Richmond. Ideas are welcome.</p><br />
 
@@ -162,14 +162,28 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script type="text/javascript">
-    /* if ($(window).width() > 750) {
-      $(".face").css("padding-top", $(".first").height()/4);
-    }
-      $( window ).resize(function() {
-        if ($(window).width() > 750) {
-          $(".face").css("padding-top", $(".first").height()/4);
+    $.ajax({
+        url: "https://api.meetup.com/2/events?group_urlname=PyRVAUserGroup",
+
+        // The name of the callback parameter, as specified by the YQL service
+        jsonp: "callback",
+
+        // Tell jQuery we're expecting JSONP
+        dataType: "jsonp",
+
+        // Tell YQL what we want and that we want JSON
+        data: {
+            format: "json"
+        },
+
+        // Work with the response
+        success: function( response ) {
+          $('.meetup_pull_api').html('<b>Our next meeting: <br /><a href="' + response.results[0].event_url + '">' + response.results[0].name + "</a></b>")
+          console.log(response.results[0].name)
+          console.log('Number of people coming so far: ' + response.results[0].yes_rsvp_count)
+          console.log(response.results[0].event_url)
         }
-      }) */
+    });
     </script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/bootstrap.js"></script>

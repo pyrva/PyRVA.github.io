@@ -174,11 +174,11 @@
     <div class="upcoming-event">
       <div class="upcoming-event__header">
         <div class="upcoming-event__date">{{startTime}}</div>
-        <div class="upcoming-event__name"><a href="{{event.event_url}}">{{event.name}}</a></div>
+        <div class="upcoming-event__name"><a :href="event.event_url">{{event.name}}</a></div>
       </div>
       <div class="upcoming-event__info">
         <div v-html="event.description"></div>
-        <span class="upcoming-event__more-info">{{rsvpText}} reserved their spot. <a href="{{event.event_url}}">Join them!</a></span>
+        <span class="upcoming-event__more-info">{{rsvpText}} reserved their spot. <a :href="event.event_url">Join them!</a></span>
       </div>
     </div>
   </template>

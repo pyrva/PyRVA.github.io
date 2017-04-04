@@ -1,0 +1,14 @@
+@import 'components/grid';
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+pre {
+  background-color: #ddd;
+  font-family: monospace;
+  font-size: 14px;
+  line-height: 1.2;
+  padding: 1em;
+}

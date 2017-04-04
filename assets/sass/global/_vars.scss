@@ -1,0 +1,58 @@
+//Colors
+// $orange: #f7971c;
+$white: #fff;
+
+//Transitions
+$global-transition-time: 200ms;
+$transition-all: all $global-transition-time ease;
+$transition-color: color $global-transition-time ease;
+$transition-opacity: opacity $global-transition-time ease;
+$transition-padding: padding $global-transition-time ease;
+$transition-position:
+  top $global-transition-time ease,
+  right $global-transition-time ease, 
+  bottom $global-transition-time ease, 
+  left $global-transition-time ease;
+$transition-size:
+  width $global-transition-time ease,
+  height $global-transition-time ease;
+
+//RADII
+$button-radius:1rem;
+
+//Grid Stuff
+$row-width: rem-calc(1120);
+$column-gutter: rem-calc(30);
+$total-columns: 12;
+
+//Breakpoints
+$breakpoints: (
+  baby-lap-break: 28em,
+  lap-break: 46em,
+  desk-break: 64em,
+  wall-break: 75em
+);
+
+$baby-lap-break: 28em;
+$lap-break: 46em;
+$desk-break: 64em;
+$wall-break: 75em;
+
+$screen: 'only screen';
+
+$landscape: '#{$screen} and (orientation: landscape)';
+$portrait: '#{$screen} and (orientation: portrait)';
+
+$hand-up: $screen;
+$hand-only: '#{$screen} and (max-width: #{$lap-break})';
+
+$baby-lap-up: '#{$screen} and (min-width:#{$baby-lap-break})';
+$baby-lap-only: '#{$screen} and (min-width:#{$baby-lap-break}) and (max-width:#{$lap-break})';
+
+$lap-up: '#{$screen} and (min-width:#{$lap-break})';
+$lap-only: '#{$screen} and (min-width:#{$lap-break}) and (max-width:#{$desk-break})';
+
+$desk-up: '#{$screen} and (min-width:#{$desk-break})';
+$desk-only: '#{$screen} and (min-width:#{$desk-break}) and (max-width:#{$wall-break})';
+
+$wall-up: '#{$screen} and (min-width:#{$wall-break})';

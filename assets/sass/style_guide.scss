@@ -1,0 +1,30 @@
+// Global Partials //
+@import 'global/rem-calc';
+@import 'global/functions';
+@import 'global/vars';
+@import 'global/mixins';
+@import 'global/gridilydidily';
+// @import 'global/flexboxgrid';
+@import 'global/normalize';
+@import 'global/zindex';
+@import 'global/typography';
+
+// Shared Partials //
+// @import 'components/display-grid';
+@import 'components/button';
+
+// Application Partials //
+@import 'website/components/placeholder';
+
+@import 'style-guide/style-guide';
+
+.svg-load {
+  display: none;
+  visibility: hidden;
+}
+
+svg {
+  display: inline-block;
+  max-width: 100%;
+}
+

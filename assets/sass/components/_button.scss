@@ -1,0 +1,81 @@
+// Styles for buttons, real and faux
+
+// Reset `button` and button-style `input` default styles
+[type='submit'],
+[type='reset'],
+[type='button'],
+button {
+  // for input
+  appearance: button;
+  background: none;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  overflow: visible;
+  padding: 0;
+  // // for button
+  user-select: none;
+}
+
+@mixin button() {
+  @extend %font-smoothing;
+
+  // background-color: $blue;
+  border: 1px solid $white;
+  color: $white;
+  display: block;
+  font-family: $accent-font-family;
+  font-weight: $accent-font-weight;
+  line-height: $body-line-height;
+  padding-bottom: $body-line-height/4;
+  padding-left: $column-gutter/4;
+  padding-right: $column-gutter/4;
+  padding-top: $body-line-height/4;
+  text-align: center;
+  text-decoration: none;
+  transition: $transition-all;
+  user-select: none;
+
+  &:hover,
+  &:focus {
+    // background-color: $green;
+  }
+
+  @media #{$desk-up} {
+    padding-bottom: $body-line-height/2;
+    padding-left: $column-gutter;
+    padding-right: $column-gutter;
+    padding-top: $body-line-height/2;    
+  }
+
+  // &.shadow {
+  //   @extend %standard-box-shadow;
+
+  //   border: 0;
+  // }
+}
+
+.button {
+  @include button();
+
+  // &--inactive {
+  //   border-color: darken($mgrey, 20%) !important;    
+  //   color: darken($mgrey, 20%) !important;
+  // }
+
+  // &--gogo {
+  //   border-color: $green !important;    
+  //   color: $green !important;
+  // }
+
+  // &--warning {
+  //   border-color: $red !important;
+  //   color: $red !important;
+
+  //   &:hover,
+  //   &:focus {
+  //     border-color: darken($red, 10%) !important;      
+  //     color: darken($red, 10%) !important;
+  //   }
+  // }
+}

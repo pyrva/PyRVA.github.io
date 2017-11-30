@@ -1996,7 +1996,7 @@ ol,
 blockquote {
   margin-bottom: 1.2rem;
   margin-top: 0; }
-
+/*
 [type='submit'],
 [type='reset'],
 [type='button'],
@@ -2014,7 +2014,7 @@ button {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none; }
-
+*/
 .button {
   border: 1px solid #fff;
   color: #fff;
@@ -2293,3 +2293,7 @@ button {
 svg {
   display: inline-block;
   max-width: 100%; }
+
+p#slack-email {
+  width: 50%;
+}

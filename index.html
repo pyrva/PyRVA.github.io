@@ -9,6 +9,7 @@
   <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
   <link href="bootstrap/bootstrap.css" rel="stylesheet">
+  <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
   <style type="text/css">
     body {
@@ -142,15 +143,54 @@
   <div class="container">
     <div class="first row">
       <div class="col-sm-6">
+
         <img class="face" src="logo.png">
+
+        <p class="text-center">Follow us on <a href="https://twitter.com/pyrva"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>, <a href="https://github.com/PyRVA"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>, and <a href="http://www.meetup.com/PyRVAUserGroup/"><i class="fa fa-meetup" aria-hidden="true"></i> Meetup</a>.</p>
+
+        <div id="slack-component">
+
+          <template v-if="state === 'unsubmitted'">
+
+            <p class="text-center">Join us on <i class="fa fa-slack"></i> Slack</p>
+
+            <p v-if="!subscribed" class="text-center" id="slack-email">
+              <input v-model="email" type="email" name="email" class="text-center form-control" placeholder="my@email.address">
+            </p>
+
+            <button v-on:click="subscribe" class="btn btn-primary" key="unsubscribed">
+              <i v-if="buttonthrobber == true" class="fa fa-spin fa-spinner" aria-hidden="true"></i>
+              <span v-else>Send me a <i class="fa fa-slack" aria-hidden="true"></i> invite!</span>
+            </button>
+
+          </template>
+
+          <div v-if="state === 'success'">
+            <small>Your invite has been sent to {{ email }}</small>
+          </div>
+
+          <div v-if="state === 'already_invited'">
+            <small>{{ email }} has already been invited</small>
+          </div>
+
+          <div v-if="state === 'already_in_team'">
+            <small>{{ email }} is already a member</small>
+          </div>
+
+          <div v-if="state === 'error'">
+            <small>There was an error communicating with Slack's API</small>
+          </div>
+
+        </div>
+
       </div>
+
       <div class="col-sm-6 toptext">
         <h3>PyRVA: a Python Usergroup</h3>
         <p class="meetup_pull_api"><b>Please check our <a href="http://www.meetup.com/PyRVAUserGroup">Meetup page</a> for the location, time, and topic of our next meeting!</b></p><br />
 
         <p>The Python language is a rarity in the software industry: accessible to almost everyone, versatile across application domains and generally a joy to work with. While enjoying Python alone is beneficial, PyRVA believes that Python is best enjoyed in the company of others. We are busy organizing talks, hackathons, workshops and more to help build up the Python community here in Richmond. Ideas are welcome.</p><br />
 
-        <p>Follow us on <a href="https://twitter.com/pyrva">Twitter</a>, <a href="https://github.com/PyRVA">GitHub</a>, and <a href="http://www.meetup.com/PyRVAUserGroup/">Meetup</a>.</p>
       </div>
     </div>
 
@@ -188,7 +228,9 @@
   <script src="bootstrap/bootstrap.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.6/vue.js"></script>
   <script src="js/upcoming-months.js"></script>
+  <script src="js/slack-inviter.js"></script>
   <script type="text/javascript">
+
     $.ajax({
       url: "https://api.meetup.com/2/events?group_urlname=PyRVAUserGroup",
 

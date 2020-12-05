@@ -152,8 +152,8 @@
 
           <template v-if="state === 'unsubmitted'">
 
-            <p class="text-center">Join us on <i class="fa fa-slack"></i> Slack</p>
-
+             <p class="text-center">Join us on <a href="https://discord.com/">Discord</a> </p>
+/*
             <p v-if="!subscribed" class="text-center" id="slack-email">
               <input v-model="email" type="email" name="email" class="text-center form-control" placeholder="my@email.address">
             </p>
@@ -180,7 +180,7 @@
           <div v-if="state === 'error'">
             <small>There was an error communicating with Slack's API</small>
           </div>
-
+*/
         </div>
 
       </div>

@@ -148,40 +148,7 @@
 
         <p class="text-center">Follow us on <a href="https://twitter.com/pyrva"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>, <a href="https://github.com/PyRVA"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>, and <a href="http://www.meetup.com/PyRVAUserGroup/"><i class="fa fa-meetup" aria-hidden="true"></i> Meetup</a>.</p>
 
-        <div id="slack-component">
-
-          <template v-if="state === 'unsubmitted'">
-
-            <p class="text-center">Join us on <i class="fa fa-slack"></i> Slack</p>
-
-            <p v-if="!subscribed" class="text-center" id="slack-email">
-              <input v-model="email" type="email" name="email" class="text-center form-control" placeholder="my@email.address">
-            </p>
-
-            <button v-on:click="subscribe" class="btn btn-primary" key="unsubscribed">
-              <i v-if="buttonthrobber == true" class="fa fa-spin fa-spinner" aria-hidden="true"></i>
-              <span v-else>Send me a <i class="fa fa-slack" aria-hidden="true"></i> invite!</span>
-            </button>
-
-          </template>
-
-          <div v-if="state === 'success'">
-            <small>Your invite has been sent to {{ email }}</small>
-          </div>
-
-          <div v-if="state === 'already_invited'">
-            <small>{{ email }} has already been invited</small>
-          </div>
-
-          <div v-if="state === 'already_in_team'">
-            <small>{{ email }} is already a member</small>
-          </div>
-
-          <div v-if="state === 'error'">
-            <small>There was an error communicating with Slack's API</small>
-          </div>
-
-        </div>
+        <p class="text-center">Join our comunity chat on <a href="https://discord.com/">Discord</a>! </p>
 
       </div>
 

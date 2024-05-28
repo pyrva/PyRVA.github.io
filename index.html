@@ -21,103 +21,60 @@
 
 </head>
 <body>
-  <div class="container">
-    <div class="first row">
-      <div class="col-sm-6">
 
-        <img class="face" src="logo.png">
+<main class="flex flex-col">
+  <section class="grid sm:grid-cols-2 bg-gray--100 min-h-[95vh] p-8 sm:p-16 gap-4 bg-cover bg-blend-screen bg-gray-200" style="background-image: url('assets/Night City Aerial View.jpg')">
+    <div class="flex flex-col justify-center">
+      <img src="assets/pyrva_logo.svg" alt="PyRVA logo" class="w-1/2 mx-auto aspect-[50/13]">
+      <h1 class="text-lg p-4">Welcome to PyRVA, Richmond Virginia’s most inclusive Python-focused user&nbsp;group.</h1>
+    </div>
+    <div class="flex flex-col gap-2 justify-center">
+      <h2 class="text-lg sm:text-xl">Come to our next event:</h2>
+      <h3 class="text-xl sm:text-2xl font-bold my-1">PyConUS Redux: Why PyCon is Amazing / Introducing PyRVA 2.0 </h3>
+      <p>
+        PyConUS is Python's largest annual conference where a lot of great minds come together to make the community a
+        better place.
+      </p>
+      <p>
+        Back from his first time at PyCon, Cohan will share what made PyCon such an amazing experience and will unveil a
+        few new initiatives that PyRVA will be looking to make!
+      </p>
+    </div>
+  </section>
+<svg id="curveUpColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
+				<path d="M0 100 C 20 0 50 0 100 100 Z"></path>
+			</svg>
+</main>
 
-        <p class="text-center">Follow us on <a href="https://twitter.com/pyrva"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>, <a href="https://github.com/PyRVA"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>, and <a href="http://www.meetup.com/PyRVAUserGroup/"><i class="fa fa-meetup" aria-hidden="true"></i> Meetup</a>.</p>
 
-        <p class="text-center">Join our community chat on <a href="https://discord.gg/fSGW7Jra4T">Discord</a>! </p>
+<div class="container">
+  <div class="first row">
+    <div class="col-sm-6">
 
-      </div>
+      <img alt="the PyRVA logo" src=logo.png>
 
-      <div class="col-sm-6 toptext">
-        <h3>PyRVA: a Python Usergroup</h3>
-        <p class="meetup_pull_api"><b>Please check our <a href="http://www.meetup.com/PyRVAUserGroup">Meetup page</a> for the location, time, and topic of our next meeting!</b></p><br />
+      <p class="text-center">Follow us on <a href="https://twitter.com/pyrva"><i class="fa fa-twitter"
+                                                                                 aria-hidden="true"></i> Twitter</a>, <a
+        href="https://github.com/PyRVA"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>, and <a
+        href="http://www.meetup.com/PyRVAUserGroup/"><i class="fa fa-meetup" aria-hidden="true"></i> Meetup</a>.</p>
 
-        <p>The Python language is a rarity in the software industry: accessible to almost everyone, versatile across application domains and generally a joy to work with. While enjoying Python alone is beneficial, PyRVA believes that Python is best enjoyed in the company of others. We are busy organizing talks, hackathons, workshops and more to help build up the Python community here in Richmond. Ideas are welcome.</p><br />
+      <p class="text-center">Join our community chat on <a href="https://discord.gg/fSGW7Jra4T">Discord</a>! </p>
 
-      </div>
     </div>
 
+    <div class="col-sm-6 toptext">
+      <h3>PyRVA: a Python user group</h3>
+      <p class="meetup_pull_api"><b>Please check our <a href="http://www.meetup.com/PyRVAUserGroup">Meetup page</a> for
+        the location, time, and topic of our next meeting!</b></p><br>
 
-    <div class="row upcoming-event__wrapper" id="upcoming">
-      <!-- <h2>Upcoming Events:</h2> -->
-      <ul class="upcoming-event__list">
-        <li is="upcoming-event" v-for="event in upcomingEvents" :event="event" v-if="event.name !== 'Our Monthly meeting'"></li>
-      </ul>
-    </div>
+      <p>The Python language is a rarity in the software industry: accessible to almost everyone, versatile across
+        application domains and generally a joy to work with. While enjoying Python alone is beneficial, PyRVA believes
+        that Python is best enjoyed in the company of others. We are busy organizing talks, hackathons, workshops and
+        more to help build up the Python community here in Richmond. Ideas are welcome.</p><br>
 
-
-    <div class="row meee">
-      <div class="col-md-12"><p class="centerer">Powered by Bootstrap.<br />
-        This work is licensed under a Creative Commons Attribution 4.0 International License.
-      </p></div>
-      </div>
     </div>
   </div>
-  <template id="upcoming-template">
-    <div class="upcoming-event">
-      <div class="upcoming-event__header">
-        <div class="upcoming-event__date">{{startTime}}</div>
-        <div class="upcoming-event__name"><a :href="event.event_url">{{event.name}}</a></div>
-      </div>
-      <div class="upcoming-event__info">
-        <div v-html="event.description"></div>
-        <span class="upcoming-event__more-info">{{rsvpText}} reserved their spot. <a :href="event.event_url">Join them!</a></span>
-      </div>
-    </div>
-  </template>
+</div>
 
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="bootstrap/bootstrap.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.6/vue.js"></script>
-  <script src="js/upcoming-months.js"></script>
-  <script src="js/slack-inviter.js"></script>
-  <script type="text/javascript">
-
-    $.ajax({
-      url: "https://api.meetup.com/2/events?group_urlname=PyRVAUserGroup",
-
-    // The name of the callback parameter, as specified by the YQL service
-    jsonp: "callback",
-
-    // Tell jQuery we're expecting JSONP
-    dataType: "jsonp",
-
-    // Tell YQL what we want and that we want JSON
-    data: {
-      format: "json"
-    },
-
-    // Work with the response
-    success: function( response ) {
-      window.meetupData = response.results;
-      upcomingApp.upcomingEvents = response.results;
-      $('.meetup_pull_api').html('<b>Our next meeting: <br /><a href="' + response.results[0].event_url + '">' + response.results[0].name + "</a></b>")
-      console.log(response.results[0].name)
-      console.log('Number of people coming so far: ' + response.results[0].yes_rsvp_count)
-      console.log(response.results[0].event_url)
-    }
-  });
-  </script>
-  <script>
-    var loc = document.location.host
-    if ( 
-        loc.slice(0,2) == "d." || 
-        loc.slice(0,3) == "10." || 
-        loc.slice(-6) == ".local" ||
-        document.location.host.slice(0,9) == "localhost"
-        ) {
-          var s = document.createElement('script');
-          loc = loc.search(':') > 0 ? loc.split(':')[0] : loc
-          s.src = "//"+loc+":35729/livereload.js";
-          document.body.appendChild(s);
-        }
-  </script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
 </body>
 </html>

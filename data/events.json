@@ -1,0 +1,282 @@
+[
+    {
+        "url": "https://www.meetup.com/pyrvausergroup/events/300125992/",
+        "title": "PyRVA 2.0 Fireside Chat",
+        "location": "Ippon Technologies, Richmond, VA",
+        "rsvps": 9,
+        "description": "<div class=\"utils_cardDescription__1Qr0x max-h-[60px] text-sm\" inert=\"true\">\n <p class=\"mb-4\">\n  <strong>\n   \"Come for the language, stay for the community.\"\n  </strong>\n </p>\n <p class=\"mb-4\">\n  Following our last meeting, we wanted to take some time to connect with our members and find out what you think would make this community better. The organizers will share some of the ideas we've had, but we want to hear from you. This will be an open forum where there are no bad ideas.\n </p>\n <p class=\"mb-4\">\n  Some questions to get you thinking:\n </p>\n <ul class=\"pl-5 list-disc mb-4\">\n  <li>\n   What do you like about PyRVA? What do you dislike?\n  </li>\n  <li>\n   What other communities do you participate in? What do you like about them?\n  </li>\n  <li>\n   What kind of social events interest you?\n  </li>\n  <li>\n   Would you like PyRVA to provide food? If so, what kinds?\n  </li>\n  <li>\n   What meeting times would work best for your schedule?\n  </li>\n </ul>\n <p class=\"mb-4\">\n  <strong>\n   Schedule\n  </strong>\n  <br/>\n  6:30 pm - Doors Open / Socializing\n  <br/>\n  7:00 pm - PyRVA 2.0 Vision\n  <br/>\n  7:15 pm - Group Discussion\n  <br/>\n  9:00 pm - Prologue (Social in Scotts Addition)\n </p>\n <p class=\"mb-4\">\n  <strong>\n   All events are open to all skill levels\n  </strong>\n  . If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n </p>\n <p class=\"mb-4\">\n  Join our Discord server!\n  <strong>\n   https://pyrva.org/discord\n  </strong>\n  <br/>\n  Want to sponsor PyRVA?\n  <strong>\n   https://pyrva.org/donate\n  </strong>\n  <br/>\n  Want to present?\n  <strong>\n   https://forms.gle/q8w3xziArWjud5f67\n  </strong>\n </p>\n</div>\n",
+        "image": "https://secure.meetupstatic.com/photos/event/2/4/7/e/event_521349342.webp",
+        "date": {
+            "str": "Jun 18, 2024",
+            "dow": {
+                "full": "Tuesday",
+                "abbr": "Tue",
+                "num": 2
+            },
+            "month": {
+                "full": "June",
+                "abbr": "Jun",
+                "num": 6
+            },
+            "day": 18,
+            "year": 2024
+        },
+        "time": {
+            "str": "07:00 PM",
+            "hour": "19",
+            "minute": "00"
+        }
+    },
+    {
+        "url": "https://www.meetup.com/pyrvausergroup/events/300125988/",
+        "title": "Data Analytics with Pandas",
+        "location": "Ippon Technologies, Richmond, VA",
+        "rsvps": 7,
+        "description": "<div class=\"utils_cardDescription__1Qr0x max-h-[60px] text-sm\" inert=\"true\">\n <p class=\"mb-4\">\n  Our own Paul Joireman will be presenting on performing Data Analyses using the Pandas library!\n </p>\n <p class=\"mb-4\">\n  ***\n </p>\n <p class=\"mb-4\">\n  PyRVA Meets twice a month. Feel free to come early and ask questions or hang out. After each meeting, we will generally hang out for a bit and can also answer any questions.\n </p>\n <p class=\"mb-4\">\n  <strong>\n   Lecture Night: first Tuesday of the month\n  </strong>\n </p>\n <p class=\"mb-4\">\n  We bring speakers in from around the country to teach us something new about Python. You'll be able to ask the speaker(s) any questions about the topic.\n </p>\n <p class=\"mb-4\">\n  Let us know if you would like to present at a future meeting! https://forms.gle/q8w3xziArWjud5f67\n </p>\n <p class=\"mb-4\">\n  <strong>\n   Coding Night: Third Tuesday of the month\n  </strong>\n </p>\n <p class=\"mb-4\">\n  Here you will find the Python challenge problems and projects that we will solve together in small groups. Please contact an organizer if you're interested in proposing a project or topic.\n </p>\n</div>\n",
+        "image": "https://secure.meetupstatic.com/photos/event/2/e/5/3/event_515531859.webp",
+        "date": {
+            "str": "Jul 02, 2024",
+            "dow": {
+                "full": "Tuesday",
+                "abbr": "Tue",
+                "num": 2
+            },
+            "month": {
+                "full": "July",
+                "abbr": "Jul",
+                "num": 7
+            },
+            "day": 2,
+            "year": 2024
+        },
+        "time": {
+            "str": "07:00 PM",
+            "hour": "19",
+            "minute": "00"
+        }
+    },
+    {
+        "url": "https://www.meetup.com/pyrvausergroup/events/301247440/",
+        "title": "PyRVA Social Night - Richmond Flying Squirrels",
+        "location": "The Diamond, Richmond, VA",
+        "rsvps": 11,
+        "description": "<div class=\"utils_cardDescription__1Qr0x max-h-[60px] text-sm\" inert=\"true\">\n <p class=\"mb-4\">\n  Join PyRVA for a night at the ballpark and cheer on the Richmond Flying Squirrels!\n </p>\n <p class=\"mb-4\">\n  We'll sit in the General Admission area so it will be easy to get seats together. $10/person ahead of time, $12/person day-of. Feel free to bring your family along for the fun!\n </p>\n <p class=\"mb-4\">\n  Grab your tickets here: https://www.milb.com/richmond/schedule/2024-07\n </p>\n</div>\n",
+        "image": "https://secure.meetupstatic.com/photos/event/3/4/a/0/event_521293472.webp",
+        "date": {
+            "str": "Jul 09, 2024",
+            "dow": {
+                "full": "Tuesday",
+                "abbr": "Tue",
+                "num": 2
+            },
+            "month": {
+                "full": "July",
+                "abbr": "Jul",
+                "num": 7
+            },
+            "day": 9,
+            "year": 2024
+        },
+        "time": {
+            "str": "06:00 PM",
+            "hour": "18",
+            "minute": "00"
+        }
+    },
+    {
+        "url": "https://www.meetup.com/pyrvausergroup/events/300125994/",
+        "title": "PyRVA Monthly Meeting",
+        "location": "Ippon Technologies, Richmond, VA",
+        "rsvps": 3,
+        "description": "<div class=\"utils_cardDescription__1Qr0x max-h-[60px] text-sm\" inert=\"true\">\n <p class=\"mb-4\">\n  This is a placeholder event so you know when to plan to be there.\n </p>\n <p class=\"mb-4\">\n  <strong>\n   Schedule\n  </strong>\n  <br/>\n  6:30 pm - Doors Open / Social\n  <br/>\n  7:00 pm - Meeting Start\n  <br/>\n  8:30 pm - Wrap-up\n  <br/>\n  9:00 pm - Prologue (Social in Scotts Addition)\n </p>\n <p class=\"mb-4\">\n  <strong>\n   All events are open to all skill levels\n  </strong>\n  . If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n </p>\n <p class=\"mb-4\">\n  Join our Discord server!\n  <strong>\n   https://pyrva.org/discord\n  </strong>\n  <br/>\n  Want to sponsor PyRVA?\n  <strong>\n   https://pyrva.org/donate\n  </strong>\n  <br/>\n  Want to present?\n  <strong>\n   https://forms.gle/q8w3xziArWjud5f67\n  </strong>\n </p>\n</div>\n",
+        "image": "https://secure.meetupstatic.com/photos/event/2/6/6/b/event_521349835.webp",
+        "date": {
+            "str": "Aug 20, 2024",
+            "dow": {
+                "full": "Tuesday",
+                "abbr": "Tue",
+                "num": 2
+            },
+            "month": {
+                "full": "August",
+                "abbr": "Aug",
+                "num": 8
+            },
+            "day": 20,
+            "year": 2024
+        },
+        "time": {
+            "str": "07:00 PM",
+            "hour": "19",
+            "minute": "00"
+        }
+    },
+    {
+        "url": "https://www.meetup.com/pyrvausergroup/events/300125995/",
+        "title": "PyRVA Monthly Meeting",
+        "location": "Ippon Technologies, Richmond, VA",
+        "rsvps": 3,
+        "description": "<div class=\"utils_cardDescription__1Qr0x max-h-[60px] text-sm\" inert=\"true\">\n <p class=\"mb-4\">\n  This is a placeholder event so you know when to plan to be there.\n </p>\n <p class=\"mb-4\">\n  <strong>\n   Schedule\n  </strong>\n  <br/>\n  6:30 pm - Doors Open / Social\n  <br/>\n  7:00 pm - Meeting Start\n  <br/>\n  8:30 pm - Wrap-up\n  <br/>\n  9:00 pm - Prologue (Social in Scotts Addition)\n </p>\n <p class=\"mb-4\">\n  <strong>\n   All events are open to all skill levels\n  </strong>\n  . If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n </p>\n <p class=\"mb-4\">\n  Join our Discord server!\n  <strong>\n   https://pyrva.org/discord\n  </strong>\n  <br/>\n  Want to sponsor PyRVA?\n  <strong>\n   https://pyrva.org/donate\n  </strong>\n  <br/>\n  Want to present?\n  <strong>\n   https://forms.gle/q8w3xziArWjud5f67\n  </strong>\n </p>\n</div>\n",
+        "image": "https://secure.meetupstatic.com/photos/event/2/6/6/b/event_521349835.webp",
+        "date": {
+            "str": "Sep 17, 2024",
+            "dow": {
+                "full": "Tuesday",
+                "abbr": "Tue",
+                "num": 2
+            },
+            "month": {
+                "full": "September",
+                "abbr": "Sep",
+                "num": 9
+            },
+            "day": 17,
+            "year": 2024
+        },
+        "time": {
+            "str": "07:00 PM",
+            "hour": "19",
+            "minute": "00"
+        }
+    },
+    {
+        "url": "https://www.meetup.com/pyrvausergroup/events/flcxltygcnbtb/",
+        "title": "PyRVA Monthly Meeting",
+        "location": "Ippon Technologies, Richmond, VA",
+        "rsvps": 2,
+        "description": "<div class=\"utils_cardDescription__1Qr0x max-h-[60px] text-sm\" inert=\"true\">\n <p class=\"mb-4\">\n  This is a placeholder event so you know when to plan to be there.\n </p>\n <p class=\"mb-4\">\n  <strong>\n   Schedule\n  </strong>\n  <br/>\n  6:30 pm - Doors Open / Social\n  <br/>\n  7:00 pm - Meeting Start\n  <br/>\n  8:30 pm - Wrap-up\n  <br/>\n  9:00 pm - Prologue (Social in Scotts Addition)\n </p>\n <p class=\"mb-4\">\n  <strong>\n   All events are open to all skill levels\n  </strong>\n  . If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n </p>\n <p class=\"mb-4\">\n  Join our Discord server!\n  <strong>\n   https://pyrva.org/discord\n  </strong>\n  <br/>\n  Want to sponsor PyRVA?\n  <strong>\n   https://pyrva.org/donate\n  </strong>\n  <br/>\n  Want to present?\n  <strong>\n   https://forms.gle/q8w3xziArWjud5f67\n  </strong>\n </p>\n</div>\n",
+        "image": "https://secure.meetupstatic.com/photos/event/2/6/6/b/event_521349835.webp",
+        "date": {
+            "str": "Oct 15, 2024",
+            "dow": {
+                "full": "Tuesday",
+                "abbr": "Tue",
+                "num": 2
+            },
+            "month": {
+                "full": "October",
+                "abbr": "Oct",
+                "num": 10
+            },
+            "day": 15,
+            "year": 2024
+        },
+        "time": {
+            "str": "07:00 PM",
+            "hour": "19",
+            "minute": "00"
+        }
+    },
+    {
+        "url": "https://www.meetup.com/pyrvausergroup/events/flcxltygcpbzb/",
+        "title": "PyRVA Monthly Meeting",
+        "location": "Ippon Technologies, Richmond, VA",
+        "rsvps": 2,
+        "description": "<div class=\"utils_cardDescription__1Qr0x max-h-[60px] text-sm\" inert=\"true\">\n <p class=\"mb-4\">\n  This is a placeholder event so you know when to plan to be there.\n </p>\n <p class=\"mb-4\">\n  <strong>\n   Schedule\n  </strong>\n  <br/>\n  6:30 pm - Doors Open / Social\n  <br/>\n  7:00 pm - Meeting Start\n  <br/>\n  8:30 pm - Wrap-up\n  <br/>\n  9:00 pm - Prologue (Social in Scotts Addition)\n </p>\n <p class=\"mb-4\">\n  <strong>\n   All events are open to all skill levels\n  </strong>\n  . If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n </p>\n <p class=\"mb-4\">\n  Join our Discord server!\n  <strong>\n   https://pyrva.org/discord\n  </strong>\n  <br/>\n  Want to sponsor PyRVA?\n  <strong>\n   https://pyrva.org/donate\n  </strong>\n  <br/>\n  Want to present?\n  <strong>\n   https://forms.gle/q8w3xziArWjud5f67\n  </strong>\n </p>\n</div>\n",
+        "image": "https://secure.meetupstatic.com/photos/event/2/6/6/b/event_521349835.webp",
+        "date": {
+            "str": "Nov 19, 2024",
+            "dow": {
+                "full": "Tuesday",
+                "abbr": "Tue",
+                "num": 2
+            },
+            "month": {
+                "full": "November",
+                "abbr": "Nov",
+                "num": 11
+            },
+            "day": 19,
+            "year": 2024
+        },
+        "time": {
+            "str": "07:00 PM",
+            "hour": "19",
+            "minute": "00"
+        }
+    },
+    {
+        "url": "https://www.meetup.com/pyrvausergroup/events/flcxltygcqbwb/",
+        "title": "PyRVA Monthly Meeting",
+        "location": "Ippon Technologies, Richmond, VA",
+        "rsvps": 2,
+        "description": "<div class=\"utils_cardDescription__1Qr0x max-h-[60px] text-sm\" inert=\"true\">\n <p class=\"mb-4\">\n  This is a placeholder event so you know when to plan to be there.\n </p>\n <p class=\"mb-4\">\n  <strong>\n   Schedule\n  </strong>\n  <br/>\n  6:30 pm - Doors Open / Social\n  <br/>\n  7:00 pm - Meeting Start\n  <br/>\n  8:30 pm - Wrap-up\n  <br/>\n  9:00 pm - Prologue (Social in Scotts Addition)\n </p>\n <p class=\"mb-4\">\n  <strong>\n   All events are open to all skill levels\n  </strong>\n  . If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n </p>\n <p class=\"mb-4\">\n  Join our Discord server!\n  <strong>\n   https://pyrva.org/discord\n  </strong>\n  <br/>\n  Want to sponsor PyRVA?\n  <strong>\n   https://pyrva.org/donate\n  </strong>\n  <br/>\n  Want to present?\n  <strong>\n   https://forms.gle/q8w3xziArWjud5f67\n  </strong>\n </p>\n</div>\n",
+        "image": "https://secure.meetupstatic.com/photos/event/2/6/6/b/event_521349835.webp",
+        "date": {
+            "str": "Dec 17, 2024",
+            "dow": {
+                "full": "Tuesday",
+                "abbr": "Tue",
+                "num": 2
+            },
+            "month": {
+                "full": "December",
+                "abbr": "Dec",
+                "num": 12
+            },
+            "day": 17,
+            "year": 2024
+        },
+        "time": {
+            "str": "07:00 PM",
+            "hour": "19",
+            "minute": "00"
+        }
+    },
+    {
+        "url": "https://www.meetup.com/pyrvausergroup/events/flcxltyhccbcc/",
+        "title": "PyRVA Monthly Meeting",
+        "location": "Ippon Technologies, Richmond, VA",
+        "rsvps": 2,
+        "description": "<div class=\"utils_cardDescription__1Qr0x max-h-[60px] text-sm\" inert=\"true\">\n <p class=\"mb-4\">\n  This is a placeholder event so you know when to plan to be there.\n </p>\n <p class=\"mb-4\">\n  <strong>\n   Schedule\n  </strong>\n  <br/>\n  6:30 pm - Doors Open / Social\n  <br/>\n  7:00 pm - Meeting Start\n  <br/>\n  8:30 pm - Wrap-up\n  <br/>\n  9:00 pm - Prologue (Social in Scotts Addition)\n </p>\n <p class=\"mb-4\">\n  <strong>\n   All events are open to all skill levels\n  </strong>\n  . If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n </p>\n <p class=\"mb-4\">\n  Join our Discord server!\n  <strong>\n   https://pyrva.org/discord\n  </strong>\n  <br/>\n  Want to sponsor PyRVA?\n  <strong>\n   https://pyrva.org/donate\n  </strong>\n  <br/>\n  Want to present?\n  <strong>\n   https://forms.gle/q8w3xziArWjud5f67\n  </strong>\n </p>\n</div>\n",
+        "image": "https://secure.meetupstatic.com/photos/event/2/6/6/b/event_521349835.webp",
+        "date": {
+            "str": "Jan 21, 2025",
+            "dow": {
+                "full": "Tuesday",
+                "abbr": "Tue",
+                "num": 2
+            },
+            "month": {
+                "full": "January",
+                "abbr": "Jan",
+                "num": 1
+            },
+            "day": 21,
+            "year": 2025
+        },
+        "time": {
+            "str": "07:00 PM",
+            "hour": "19",
+            "minute": "00"
+        }
+    },
+    {
+        "url": "https://www.meetup.com/pyrvausergroup/events/flcxltyhcdbxb/",
+        "title": "PyRVA Monthly Meeting",
+        "location": "Ippon Technologies, Richmond, VA",
+        "rsvps": 2,
+        "description": "<div class=\"utils_cardDescription__1Qr0x max-h-[60px] text-sm\" inert=\"true\">\n <p class=\"mb-4\">\n  This is a placeholder event so you know when to plan to be there.\n </p>\n <p class=\"mb-4\">\n  <strong>\n   Schedule\n  </strong>\n  <br/>\n  6:30 pm - Doors Open / Social\n  <br/>\n  7:00 pm - Meeting Start\n  <br/>\n  8:30 pm - Wrap-up\n  <br/>\n  9:00 pm - Prologue (Social in Scotts Addition)\n </p>\n <p class=\"mb-4\">\n  <strong>\n   All events are open to all skill levels\n  </strong>\n  . If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n </p>\n <p class=\"mb-4\">\n  Join our Discord server!\n  <strong>\n   https://pyrva.org/discord\n  </strong>\n  <br/>\n  Want to sponsor PyRVA?\n  <strong>\n   https://pyrva.org/donate\n  </strong>\n  <br/>\n  Want to present?\n  <strong>\n   https://forms.gle/q8w3xziArWjud5f67\n  </strong>\n </p>\n</div>\n",
+        "image": "https://secure.meetupstatic.com/photos/event/2/6/6/b/event_521349835.webp",
+        "date": {
+            "str": "Feb 18, 2025",
+            "dow": {
+                "full": "Tuesday",
+                "abbr": "Tue",
+                "num": 2
+            },
+            "month": {
+                "full": "February",
+                "abbr": "Feb",
+                "num": 2
+            },
+            "day": 18,
+            "year": 2025
+        },
+        "time": {
+            "str": "07:00 PM",
+            "hour": "19",
+            "minute": "00"
+        }
+    }
+]

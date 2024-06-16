@@ -1,0 +1,70 @@
+[tool.poetry]
+name = "pyrva-github-io"
+version = "2024.06"
+description = "PyRVA Website"
+authors = ["Brian Cohan <briancohan@gmail.com>"]
+readme = "README.md"
+packages = [{include = "pyrva"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flask = "^3.0.3"
+python-dotenv = "^1.0.1"
+requests = "^2.32.3"
+bs4 = "^0.0.2"
+lxml = "^5.2.2"
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.7.1"
+mypy = "^1.10.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.ruff]
+line-length = 100
+
+
+[tool.ruff.lint]
+select = [
+    "A", # flake8-builtins
+    "ANN", # flake8-annotations
+    "B", # flake8-bugbear
+    "C", # Pylint-Convention
+    "COM", # flake8-commas
+    "E", # pycodestyle - Error
+    "F", # Pyflakes
+    "I", # isort
+    "N", # pep8-naming
+    "S", # flake8-bandit
+    "UP", # pyupgrade
+    "W", # pycodestyle - Warning
+]
+ignore = [
+    "ANN002", # Missing type annotation for *args
+    "ANN003", # Missing type annotation for **kwargs
+    "ANN101", # Missing type annotation for self in method
+    "ANN102", # Missing type annotation for cls in classmethod
+    "COM812", # missing-trailing-comma
+    "D105", # Missing docstring in magic method
+    "D107", # Missing docstring in __init__
+    "D203", # 1 blank line required before class docstring (conflicts with D211)
+    "D213", # Multi-line docstring symmary should start at the second line (conflicts with D212)
+    "D301", # Use r if any backslashes in a docstring
+    "E203", # Whitespace before ':'
+]
+
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["S101"]
+
+
+[[tool.mypy.overrides]]
+module = [
+    "requests",
+]
+ignore_missing_imports = true

@@ -4,8 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}PyRVA{% endblock %}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    {% block content %}{% endblock %}
+    <header>
+        {% include 'components/site_nav.html' %}
+    </header>
+    <main class="max-w-7xl mx-auto">
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        {% include 'components/footer.html' %}
+    </footer>
 </body>
 </html>

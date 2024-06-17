@@ -27,6 +27,11 @@ mypy:
     @poetry run mypy .
 
 
+# Create static site in /build
+build:
+    @poetry run python src/pyrva/freezer.py
+
+
 # Push to remote
 push:
     @git push --set-upstream origin `git rev-parse --abbrev-ref HEAD`

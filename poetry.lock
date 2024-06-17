@@ -242,6 +242,25 @@ async = ["asgiref (>=3.2)"]
 dotenv = ["python-dotenv"]
 
 [[package]]
+name = "frozen-flask"
+version = "1.0.2"
+description = "Freezes a Flask application into a set of static files."
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "frozen_flask-1.0.2-py3-none-any.whl", hash = "sha256:b81b69e84babb1da37ba592c7cd48f0822a62a4ef654f29378a0b8934b2076eb"},
+    {file = "frozen_flask-1.0.2.tar.gz", hash = "sha256:53a7895b188b7d59eb8d6fcf3fce18e097d8b4a26b6bb665e176add1a1e03aaf"},
+]
+
+[package.dependencies]
+flask = ">=2.0.0"
+
+[package.extras]
+check = ["flake8", "isort"]
+doc = ["pallets-sphinx-themes", "sphinx"]
+test = ["pytest"]
+
+[[package]]
 name = "identify"
 version = "2.5.36"
 description = "File identification library for Python"
@@ -797,4 +816,4 @@ watchdog = ["watchdog (>=2.3)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "cf6a6f332022b3759bba17f5a5ae77884385de307c738a41ad85601d9d5c5fef"
+content-hash = "0af9a10d68a0379f474b2c5e6c7ff7b1ac6e09f2579404b6eea7f8d8f5878db8"

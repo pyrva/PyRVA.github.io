@@ -1,0 +1,11 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %}{{ name }}{% endblock %}
+
+{% block content %}
+<div class="flex flex-col gap-8 m-12 items-center">
+    <span class="text-4xl">Redirecting to {{ name }}</span>
+    <a href="{{ url }}">{{ url }}</a>
+</div>
+<script type="text/javascript">setTimeout(() => { window.location = "{{ url }}"; }, 0);</script>
+{% endblock %}

@@ -27,6 +27,11 @@ mypy:
     @poetry run mypy .
 
 
+# Run development server
+dev:
+    @poetry run python src/pyrva/app.py
+
+
 # Create static site in /build
 build:
     @poetry run python src/pyrva/freezer.py

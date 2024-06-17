@@ -32,9 +32,9 @@ def index() -> str:
     )
 
 
-@app.route("/faq/")
-def faq() -> str:
-    return render_template("pages/faq.html")
+@app.route("/about/")
+def about() -> str:
+    return render_template("pages/about.html")
 
 
 @app.route("/meeting/")

@@ -12,6 +12,14 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 
+@app.context_processor
+def inject_context() -> dict:
+    """Context to be added to all templates."""
+    return {
+        "socials": Config.SOCIALS,
+    }
+
+
 @app.route("/")
 def index() -> str:
     events = json.loads((Config.DATA_DIR / "events.json").read_text())
@@ -44,7 +52,7 @@ def meetup() -> str:
     return render_template(
         "pages/redirect.html",
         name="Meetup",
-        url="https://www.meetup.com/PyRVAUserGroup/",
+        url=Config.SOCIALS["meetup"],
     )
 
 
@@ -53,7 +61,7 @@ def discord() -> str:
     return render_template(
         "pages/redirect.html",
         name="Discord",
-        url="https://discord.com/invite/fSGW7Jra4T",
+        url=Config.SOCIALS["discord"],
     )
 
 
@@ -62,7 +70,7 @@ def youtube() -> str:
     return render_template(
         "pages/redirect.html",
         name="YouTube",
-        url="https://youtube.com/@pyrva",
+        url=Config.SOCIALS["youtube"],
     )
 
 

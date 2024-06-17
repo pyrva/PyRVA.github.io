@@ -6,14 +6,14 @@
     <title>{% block title %}PyRVA{% endblock %}</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="flex flex-col min-h-screen flex-start">
     <header>
         {% include 'components/site_nav.html' %}
     </header>
     <main class="max-w-7xl mx-auto">
         {% block content %}{% endblock %}
     </main>
-    <footer>
+    <footer class="mt-auto">
         {% include 'components/footer.html' %}
     </footer>
 </body>

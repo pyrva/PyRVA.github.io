@@ -1,1 +1,31 @@
-Powered by PyRVA
+{% macro footer_link(name, href) %}
+<div class="pb-6">
+    <a href="{{ href }}" class="text-sm leading-6 text-gray-600 hover:text-gray-900">{{ name }}</a>
+</div>
+{% endmacro %}
+
+{% macro social_footer_link(name, href, icon) %}
+<a href="{{ href }}" target="_blank" class="text-gray-400 hover:text-gray-500">
+    <span class="sr-only">{{ name }}</span>
+    {% include icon %}
+</a>
+{% endmacro %}
+
+<footer class="bg-white">
+    <div class="mx-auto max-w-7xl overflow-hidden px-6 py-10 sm:py-14 lg:px-8">
+        <nav class="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
+            {{ footer_link('FAQ', url_for('faq')) }}
+            {{ footer_link('Sponsors', url_for('sponsors')) }}
+            {{ footer_link('Meeting', url_for('meeting')) }}
+        </nav>
+        <div class="mt-10 flex justify-center space-x-10">
+            {{ social_footer_link('Meetup', socials.meetup, 'icons/meetup.svg') }}
+            {{ social_footer_link('Discord', socials.discord, 'icons/discord.svg') }}
+            {{ social_footer_link('YouTube', socials.youtube, 'icons/youtube.svg') }}
+            {{ social_footer_link('Github', socials.github, 'icons/github.svg') }}
+        </div>
+        <p class="mt-10 text-center text-xs leading-5 text-gray-500">
+            <a href="https://github.com/pyrva/PyRVA.github.io" target="_blank">Developed by the PyRVA community</a>
+        </p>
+    </div>
+</footer>

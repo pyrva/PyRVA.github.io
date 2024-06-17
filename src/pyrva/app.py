@@ -4,6 +4,9 @@ Main flask application for the PyRVA website.
 Ensure endpoints have trailing slashes to avoid errors when building the site.
 """
 
+import json
+
+from config import Config
 from flask import Flask, render_template
 
 app = Flask(__name__)
@@ -11,7 +14,14 @@ app = Flask(__name__)
 
 @app.route("/")
 def index() -> str:
-    return render_template("pages/index.html")
+    events = json.loads((Config.DATA_DIR / "events.json").read_text())
+    organizers = json.loads((Config.DATA_DIR / "organizers.json").read_text())
+
+    return render_template(
+        "pages/index.html",
+        events=events,
+        organizers=organizers,
+    )
 
 
 @app.route("/faq/")

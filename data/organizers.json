@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Chris May",
+        "pronouns": "he/him",
+        "role": "Founder / Content Manager",
+        "img": "images/ChrisMay.jpg",
+        "socials": {
+            "linkedin": "https://www.linkedin.com/in/1chrismay/",
+            "github": "https://github.com/Chris-May",
+            "mastadon": "https://fosstodon.org/@_chrismay"
+        }
+    },
+    {
+        "name": "Brian Cohan",
+        "pronouns": "he/they",
+        "role": "Community Manager",
+        "img": "images/BrianCohan.jpg",
+        "socials": {
+            "linkedin": "https://www.linkedin.com/in/briandcohan/",
+            "github": "https://github.com/briancohan",
+            "mastadon": "https://fosstodon.org/@briancohan"
+        }
+    },
+    {
+        "name": "Adam Emery",
+        "pronouns": "he/him",
+        "role": "Content Manager",
+        "img": "images/AdamEmery.jpg",
+        "socials": {
+            "linkedin": "https://www.linkedin.com/in/aqemery/",
+            "github": "https://github.com/aqemery"
+        }
+    }
+]

@@ -74,5 +74,14 @@ def youtube() -> str:
     )
 
 
+@app.route("/github/")
+def github() -> str:
+    return render_template(
+        "pages/redirect.html",
+        name="Github",
+        url=Config.SOCIALS["github"],
+    )
+
+
 if __name__ == "__main__":
     app.run()

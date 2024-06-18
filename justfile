@@ -29,12 +29,12 @@ mypy:
 
 # Run development server
 dev:
-    @poetry run python src/pyrva/app.py
+    @poetry run python scripts/dev.py
 
 
 # Create static site in /build
 build:
-    @poetry run python src/pyrva/freezer.py
+    @poetry run python scripts/freezer.py
 
 
 # Push to remote

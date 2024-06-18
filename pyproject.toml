@@ -4,7 +4,7 @@ version = "2024.06"
 description = "PyRVA Website"
 authors = ["Brian Cohan <briancohan@gmail.com>"]
 readme = "README.md"
-packages = [{include = "pyrva"}]
+packages = [{include = "pyrva", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"

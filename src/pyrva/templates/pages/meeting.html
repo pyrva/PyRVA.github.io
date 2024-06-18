@@ -2,6 +2,88 @@
 
 {% block title %}Meeting{% endblock %}
 
-{% block content %}
-    <h1>Meeting</h1>
+{% block body %}
+
+<body class="grid grid-cols-3 grid-rows-5 h-screen p-0 m-0 gap-8 p-8">
+
+    <section id="event"
+        class="col-start-1 col-end-3 row-start-1 row-end-3 flex flex-col items-center gap-8 justify-evenly">
+        <img class="rounded-lg w-2/5" src="{{ event.image }}" alt="{{ event.title }}" />
+        <h1 class="text-5xl font-bold">{{ event.title }}</h1>
+    </section>
+
+    <section id="schedule" class="flex col-start-1 col-end-3 row-start-3 row-end-5 flex-col items-center gap-8">
+        <div id="clock" class="text-4xl py-12 font-bold"></div>
+        <div class="flex justify-evenly w-full">
+            <div>
+                <h2 class="text-3xl font-semibold">Schedule</h2>
+                <ul class="text-xl space-y-2 my-4">
+                    <li><time class="mr-2">5:45</time>Doors / Food</li>
+                    <li><time class="mr-2">6:15</time>Welcome / Introductions</li>
+                    <li><time class="mr-2">6:30</time>Meeting</li>
+                    <li><time class="mr-2">7:30</time>Wrap-up</li>
+                    <li><time class="mr-2">8:00</time>Social Time!</li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="text-3xl font-semibold">Introductions</h2>
+                <ul class="text-xl space-y-2 my-4">
+                    <li>Name / Pronouns</li>
+                    {% for icebreaker in icebreakers %}
+                    <li>{{ icebreaker }}</li>
+                    {% endfor %}
+
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="pyrva" class="col-start-3 col-end-4 row-start-1 row-end-5 flex flex-col justify-evenly">
+        <a href="{{ url_for('index') }}" class="mx-auto"><img src="{{ url_for('static', filename='images/logo.png') }}"
+                alt="PyRVA Logo" /></a>
+        <ul class="space-y-4 w-fit mx-auto">
+            <li class="flex gap-4"><span class="text-zinc-600">{% include 'icons/meetup.svg' %}</span> PyRVA.org/meetup
+            </li>
+            <li class="flex gap-4"><span class="text-zinc-600">{% include 'icons/discord.svg' %}</span>
+                PyRVA.org/discord</li>
+            <li class="flex gap-4"><span class="text-zinc-600">{% include 'icons/github.svg' %}</span> PyRVA.org/github
+            </li>
+            <li class="flex gap-4"><span class="text-zinc-600">{% include 'icons/youtube.svg' %}</span>
+                PyRVA.org/youtube</li>
+        </ul>
+
+        <div class="w-full">
+            <h2 class="text-3xl font-semibold">Upcoming Events</h2>
+            <ul class="text-xl space-y-4 my-4">
+                {% for event in upcoming %}
+                <li class="flex flex-col">
+                    <time class="font-semibold">
+                        {{ event.date.dow.abbr }},
+                        {{ event.date.month.abbr }}
+                        {{ event.date.day }}
+                        {{ event.time.str }}
+                    </time>
+                    <span>{{ event.title }}</span>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+    </section>
+
+    <section id="sponsors" class="row-start-5 row-end-6 col-start-1 col-end-4">
+        <h2 class="text-3xl font-semibold text-center">Sponsors</h2>
+        <div class="flex justify-center gap-12 py-8">
+            {% for level, sponsor_list in sponsors.items() %}
+            {% if sponsor_list %}
+            {% for sponsor in sponsor_list %}
+            <img class="max-h-32" src="{{ url_for('static', filename=sponsor.logo) }}"
+                alt="{{ sponsor.name }}" />
+            {% endfor %}
+            {% endif %}
+            {% endfor %}
+        </div>
+    </section>
+    <script src="{{ url_for('static', filename='js/clock.js') }}"></script>
+</body>
 {% endblock %}

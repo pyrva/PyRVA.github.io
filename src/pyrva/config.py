@@ -11,3 +11,5 @@ class Config:
         "youtube": "https://www.youtube.com/@pyrva",
         "github": "https://github.com/pyrva",
     }
+
+    UPCOMING_EVENTS = 3

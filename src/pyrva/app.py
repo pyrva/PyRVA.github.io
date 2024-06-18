@@ -5,6 +5,7 @@ Ensure endpoints have trailing slashes to avoid errors when building the site.
 """
 
 import json
+from datetime import datetime, timedelta
 
 from config import Config
 from flask import Flask, render_template
@@ -20,15 +21,17 @@ def inject_context() -> dict:
     }
 
 
+EVENTS = json.loads((Config.DATA_DIR / "events.json").read_text())
+ORGANIZERS = json.loads((Config.DATA_DIR / "organizers.json").read_text())
+SPONSORS = json.loads((Config.DATA_DIR / "sponsors.json").read_text())
+
+
 @app.route("/")
 def index() -> str:
-    events = json.loads((Config.DATA_DIR / "events.json").read_text())
-    organizers = json.loads((Config.DATA_DIR / "organizers.json").read_text())
-
     return render_template(
         "pages/index.html",
-        events=events,
-        organizers=organizers,
+        events=EVENTS,
+        organizers=ORGANIZERS,
     )
 
 
@@ -39,7 +42,20 @@ def about() -> str:
 
 @app.route("/meeting/")
 def meeting() -> str:
-    return render_template("pages/meeting.html")
+    icebreakers = json.loads((Config.DATA_DIR / "icebreakers.json").read_text())
+    icebreakers = next(
+        v
+        for k, v in icebreakers.items()
+        if datetime.strptime(k, "%Y-%m-%d") >= datetime.now() - timedelta(days=1)
+    )
+
+    return render_template(
+        "pages/meeting.html",
+        event=EVENTS[0],
+        upcoming=EVENTS[1 : Config.UPCOMING_EVENTS + 1],
+        sponsors=SPONSORS,
+        icebreakers=icebreakers,
+    )
 
 
 @app.route("/sponsors/")

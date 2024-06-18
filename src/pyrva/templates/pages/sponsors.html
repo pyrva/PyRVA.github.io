@@ -13,7 +13,7 @@
     <div class="flex justify-center">
         {% for sponsor in sponsor_list %}
         <img src="{{ url_for('static', filename=sponsor.logo) }}" alt="{{ sponsor.name }}"
-            class="mt-4 w-48 h-48 object-contain"/>
+            class="mt-4 w-48 h-48 object-contain" />
         {% endfor %}
     </div>
 </div>

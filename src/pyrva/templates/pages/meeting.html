@@ -77,8 +77,7 @@
             {% for level, sponsor_list in sponsors.items() %}
             {% if sponsor_list %}
             {% for sponsor in sponsor_list %}
-            <img class="max-h-32" src="{{ url_for('static', filename=sponsor.logo) }}"
-                alt="{{ sponsor.name }}" />
+            <img class="max-h-32" src="{{ url_for('static', filename=sponsor.logo) }}" alt="{{ sponsor.name }}" />
             {% endfor %}
             {% endif %}
             {% endfor %}

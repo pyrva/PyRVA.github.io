@@ -3,5 +3,20 @@
 {% block title %}Sponsors{% endblock %}
 
 {% block content %}
-    <h1>Sponsors</h1>
+{% include 'components/sponsor_pricing.html' %}
+
+{% for tier, sponsor_list in sponsors.items() %}
+{% if sponsor_list %}
+<div class="bg-white py-8 sm:py-18">
+    <h2 class="mt-2 text-4xl font-bold tracking-tight text-gray-500 sm:text-5xl text-center">{{ tier|title }} Sponsors
+    </h2>
+    <div class="flex justify-center">
+        {% for sponsor in sponsor_list %}
+        <img src="{{ url_for('static', filename=sponsor.logo) }}" alt="{{ sponsor.name }}"
+            class="mt-4 w-48 h-48 object-contain"/>
+        {% endfor %}
+    </div>
+</div>
+{% endif %}
+{% endfor %}
 {% endblock %}

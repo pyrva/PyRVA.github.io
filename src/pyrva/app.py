@@ -4,11 +4,12 @@ Main flask application for the PyRVA website.
 Ensure endpoints have trailing slashes to avoid errors when building the site.
 """
 
-import json
 from datetime import datetime, timedelta
 
-from config import Config
 from flask import Flask, render_template
+
+from .config import Config
+from .data import get_data
 
 app = Flask(__name__)
 
@@ -21,17 +22,12 @@ def inject_context() -> dict:
     }
 
 
-EVENTS = json.loads((Config.DATA_DIR / "events.json").read_text())
-ORGANIZERS = json.loads((Config.DATA_DIR / "organizers.json").read_text())
-SPONSORS = json.loads((Config.DATA_DIR / "sponsors.json").read_text())
-
-
 @app.route("/")
 def index() -> str:
     return render_template(
         "pages/index.html",
-        events=EVENTS,
-        organizers=ORGANIZERS,
+        events=get_data("events.json"),
+        organizers=get_data("organizers.json"),
     )
 
 
@@ -42,25 +38,30 @@ def about() -> str:
 
 @app.route("/meeting/")
 def meeting() -> str:
-    icebreakers = json.loads((Config.DATA_DIR / "icebreakers.json").read_text())
+    events = get_data("events.json")
     icebreakers = next(
         v
-        for k, v in icebreakers.items()
+        for k, v in get_data("icebreakers.json").items()
         if datetime.strptime(k, "%Y-%m-%d") >= datetime.now() - timedelta(days=1)
     )
 
     return render_template(
         "pages/meeting.html",
-        event=EVENTS[0],
-        upcoming=EVENTS[1 : Config.UPCOMING_EVENTS + 1],
-        sponsors=SPONSORS,
+        event=events[0],
+        upcoming=events[1 : Config.UPCOMING_EVENTS + 1],
+        sponsors=get_data("sponsors.json"),
         icebreakers=icebreakers,
     )
 
 
 @app.route("/sponsors/")
 def sponsors() -> str:
-    return render_template("pages/sponsors.html")
+    return render_template(
+        "pages/sponsors.html",
+        sponsors=get_data("sponsors.json"),
+        perks=get_data("sponsor_perks.json"),
+        donate_link=Config.DONATE_LINK,
+    )
 
 
 @app.route("/meetup/")

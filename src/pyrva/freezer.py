@@ -5,8 +5,9 @@ This leverages `Frozen-Flask` to freeze the website into static files.
 https://frozen-flask.readthedocs.io/en/latest/
 """
 
-from app import app
 from flask_frozen import Freezer
+
+from .app import app
 
 app.config["FREEZER_DESTINATION"] = "../../build"
 freezer = Freezer(app)

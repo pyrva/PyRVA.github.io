@@ -12,4 +12,6 @@ class Config:
         "github": "https://github.com/pyrva",
     }
 
+    DONATE_LINK = "https://psfmember.org/civicrm/contribute/transact/?reset=1&id=35"
+
     UPCOMING_EVENTS = 3

@@ -15,3 +15,6 @@ class Config:
     DONATE_LINK = "https://psfmember.org/civicrm/contribute/transact/?reset=1&id=35"
 
     UPCOMING_EVENTS = 3
+
+    MEETUP_DT_FORMAT = "%a, %b %d, %Y, %I:%M %p"
+    EVENT_DT_FORMAT = "%a, %B %d, %-I:%M %p"

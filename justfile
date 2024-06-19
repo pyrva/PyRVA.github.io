@@ -37,6 +37,11 @@ build:
     @poetry run python scripts/freezer.py
 
 
+# Fetch the latest data
+fetch:
+    @poetry run python scripts/scrape_event_data.py
+
+
 # Push to remote
 push:
     @git push --set-upstream origin `git rev-parse --abbrev-ref HEAD`

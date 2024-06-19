@@ -58,10 +58,7 @@
                 {% for event in upcoming %}
                 <li class="flex flex-col">
                     <time class="font-semibold">
-                        {{ event.date.dow.abbr }},
-                        {{ event.date.month.abbr }}
-                        {{ event.date.day }}
-                        {{ event.time.str }}
+                        {{ event.datetime|format_datetime(config.MEETUP_DT_FORMAT, config.EVENT_DT_FORMAT) }},
                     </time>
                     <span>{{ event.title }}</span>
                 </li>

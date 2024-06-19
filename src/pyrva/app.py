@@ -14,11 +14,18 @@ from .data import get_data
 app = Flask(__name__)
 
 
+@app.template_filter()
+def format_datetime(value: str, from_fmt: str, to_fmt: str) -> str:
+    """Convert a datetime string from one format to another."""
+    return datetime.strptime(value, from_fmt).strftime(to_fmt)
+
+
 @app.context_processor
 def inject_context() -> dict:
     """Context to be added to all templates."""
     return {
         "socials": Config.SOCIALS,
+        "config": Config,
     }
 
 

@@ -1,4 +1,3 @@
-import datetime
 import json
 from pathlib import Path
 
@@ -6,8 +5,6 @@ import requests
 from bs4 import BeautifulSoup
 from bs4.element import Tag
 
-DATE_FORMAT: str = "%b %d, %Y"
-TIME_FORMAT: str = "%I:%M %p"
 GROUP_NAME = "pyrvausergroup"
 
 
@@ -54,13 +51,13 @@ class Event:
         return element.prettify()
 
     @property
-    def datetime(self) -> datetime.datetime:
+    def datetime(self) -> str:
         element = self.soup.select_one("time")
         if element is None:
             raise ValueError("No datetime found")
         # Remove the timezone to prevent parsing issues
         time_str = " ".join(element.text.split()[:-1])
-        return datetime.datetime.strptime(time_str, "%a, %b %d, %Y, %I:%M %p")
+        return time_str
 
     @property
     def rsvps(self) -> int:
@@ -70,8 +67,6 @@ class Event:
 
     @property
     def info(self) -> dict[str, str | int | dict]:
-        dt = self.datetime
-
         return {
             "url": self.url,
             "title": self.title,
@@ -79,26 +74,7 @@ class Event:
             "rsvps": self.rsvps,
             "description": self.description,
             "image": self.image,
-            "date": {
-                "str": dt.strftime(DATE_FORMAT),
-                "dow": {
-                    "full": dt.strftime("%A"),
-                    "abbr": dt.strftime("%a"),
-                    "num": int(dt.strftime("%w")),
-                },
-                "month": {
-                    "full": dt.strftime("%B"),
-                    "abbr": dt.strftime("%b"),
-                    "num": int(dt.strftime("%m")),
-                },
-                "day": int(dt.strftime("%d")),
-                "year": int(dt.strftime("%Y")),
-            },
-            "time": {
-                "str": dt.strftime(TIME_FORMAT),
-                "hour": dt.strftime("%H"),
-                "minute": dt.strftime("%M"),
-            },
+            "datetime": self.datetime,
         }
 
 

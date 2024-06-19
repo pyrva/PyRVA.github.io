@@ -54,16 +54,23 @@
 
         <div class="w-full">
             <h2 class="text-3xl font-semibold">Upcoming Events</h2>
-            <ul class="text-xl space-y-4 my-4">
+
+            <div class="grid grid-cols-1 gap-1">
                 {% for event in upcoming %}
-                <li class="flex flex-col">
-                    <time class="font-semibold">
-                        {{ event.datetime|format_datetime(config.MEETUP_DT_FORMAT, config.EVENT_DT_FORMAT) }},
-                    </time>
-                    <span>{{ event.title }}</span>
-                </li>
+                <div class="relative flex items-center space-x-3 rounded-lg px-6 py-5">
+                    <div class="flex-shrink-0">
+                        <img class="h-14 aspect-video rounded-lg" src="{{ event.image }}" alt="">
+                    </div>
+                    <div class="min-w-0 flex-1">
+                        <span class="absolute inset-0" aria-hidden="true"></span>
+                        <p class="text-md font-medium text-gray-900">{{ event.title }}</p>
+                        <time class="truncate text-md text-gray-500">{{
+                            event.datetime|format_datetime(config.MEETUP_DT_FORMAT,
+                            config.EVENT_DT_FORMAT) }}</time>
+                    </div>
+                </div>
                 {% endfor %}
-            </ul>
+            </div>
         </div>
 
     </section>

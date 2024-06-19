@@ -19,11 +19,11 @@
     },
     {
         "url": "https://www.meetup.com/pyrvausergroup/events/300125994/",
-        "title": "PyRVA Monthly Meeting",
+        "title": "Django Front Ends - HTMX vs React",
         "location": "Ippon Technologies, Richmond, VA",
         "rsvps": 3,
-        "description": "<div class=\"utils_cardDescription__1Qr0x max-h-[60px] text-sm\" inert=\"true\">\n <p class=\"mb-4\">\n  This is a placeholder event so you know when to plan to be there.\n </p>\n <p class=\"mb-4\">\n  <strong>\n   Schedule\n  </strong>\n  <br/>\n  6:30 pm - Doors Open / Social\n  <br/>\n  7:00 pm - Meeting Start\n  <br/>\n  8:30 pm - Wrap-up\n  <br/>\n  9:00 pm - Prologue (Social in Scotts Addition)\n </p>\n <p class=\"mb-4\">\n  <strong>\n   All events are open to all skill levels\n  </strong>\n  . If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n </p>\n <p class=\"mb-4\">\n  Join our Discord server!\n  <strong>\n   https://pyrva.org/discord\n  </strong>\n  <br/>\n  Want to sponsor PyRVA?\n  <strong>\n   https://pyrva.org/donate\n  </strong>\n  <br/>\n  Want to present?\n  <strong>\n   https://forms.gle/q8w3xziArWjud5f67\n  </strong>\n </p>\n</div>\n",
-        "image": "https://secure.meetupstatic.com/photos/event/2/6/6/b/event_521349835.webp",
+        "description": "<div class=\"utils_cardDescription__1Qr0x max-h-[60px] text-sm\" inert=\"true\">\n <p class=\"mb-4\">\n  Chris May will be doing a dress rehearsal of his DjangoCon talk comparing front end options for Python websites.\n </p>\n <p class=\"mb-4\">\n  <strong>\n   Schedule\n  </strong>\n  <br/>\n  5:45 pm - Doors Open / Social\n  <br/>\n  6:30 pm - Meeting Start\n  <br/>\n  7:30 pm - Wrap-up\n  <br/>\n  8:00 pm - Prologue (Social in Scotts Addition)\n </p>\n <p class=\"mb-4\">\n  <strong>\n   All events are open to all skill levels\n  </strong>\n  . If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n </p>\n <p class=\"mb-4\">\n  Join our Discord server!\n  <strong>\n   https://pyrva.org/discord\n  </strong>\n  <br/>\n  Want to sponsor PyRVA?\n  <strong>\n   https://pyrva.org/donate\n  </strong>\n  <br/>\n  Want to present?\n  <strong>\n   https://forms.gle/q8w3xziArWjud5f67\n  </strong>\n </p>\n</div>\n",
+        "image": "https://secure.meetupstatic.com/photos/event/1/d/c/8/event_521827624.webp",
         "datetime": "Tue, Aug 20, 2024, 7:00 PM"
     },
     {

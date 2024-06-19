@@ -14,7 +14,6 @@
         "price": 250,
         "perks": [
             "Tax Deductible",
-            "2 Job Postings",
             "Logo Shown on Website",
             "Logo Shown at Each Meeting"
         ]
@@ -25,7 +24,6 @@
         "price": 500,
         "perks": [
             "Tax Deductible",
-            "10 Job Postings",
             "Logo Shown on Website",
             "Logo Shown at Each Meeting",
             "PyRVA Will Thank you at Each Meeting"
@@ -33,16 +31,15 @@
     },
     "Package": {
         "ring_color": "gray-200",
-        "desc": "",
+        "desc": "Help PyRVA grow and thrive",
         "price": 1000,
         "perks": [
             "Tax Deductible",
-            "Unlimted Job Postings",
             "Logo Shown on Website",
             "Logo Shown on Home Page",
             "Logo Shown at Each Meeting",
             "PyRVA Will Thank you at Each Meeting",
-            "Promote your Company at a Meeting"
+            "Promote your Company (5 minutes / meeting)"
         ]
     }
 }

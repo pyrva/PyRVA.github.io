@@ -1,11 +1,14 @@
 <div class="bg-white py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-4xl text-center">
-      <h2 class="text-base font-semibold leading-7 text-indigo-600">Sponsor PyRVA</h2>
+      <h2 class="text-base font-semibold leading-7 text-blue-600">Sponsor PyRVA</h2>
       <p class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Help Support the Python Community</p>
     </div>
-    <p class="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600">Choose an affordable plan that's
-      packed with the best features for engaging your audience, creating customer loyalty, and driving sales.</p>
+    <p class="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600">
+      PyRVA has a network of approximately <span class="text-blue-600 font-semibold">2,000 members</span> across
+      multiple platforms. Help us continue to provide quality content and networking opportunities while promoting your
+      brand.
+    </p>
 
     <div
       class="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 md:max-w-2xl md:grid-cols-2 lg:max-w-4xl xl:mx-0 xl:max-w-none xl:grid-cols-4">
@@ -18,12 +21,13 @@
           <span class="text-sm font-semibold leading-6 text-gray-600">/year</span>
         </p>
         <a href="{{ donate_link }}" target="_blank" aria-describedby="tier-{{ tier }}"
-          class="mt-6 block rounded-md px-3 py-2 text-center text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy
-          plan</a>
+          class="mt-6 block rounded-md px-3 py-2 text-center text-sm font-semibold leading-6 text-blue-600 ring-1 ring-inset ring-blue-200 hover:ring-blue-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
+          Show your support
+        </a>
         <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-600">
           {% for perk in data.perks %}
           <li class="flex gap-x-3">
-            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <svg class="h-6 w-5 flex-none text-blue-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
               <path fill-rule="evenodd"
                 d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
                 clip-rule="evenodd" />
@@ -36,8 +40,14 @@
       {% endfor %}
     </div>
 
-    <p class="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600">Hosting PyRVA Meetings Automatically
-      Qualifies you for Class Level Sponsorship.</p>
+    <p class="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600">
+      PyRVA is a
+      <a class="text-blue-800" href="https://www.python.org/psf/fiscal-sponsorees/">Fiscal Sponsoree</a>
+      of the
+      <a class="text-blue-800" href="https://www.python.org/psf-landing/">Python Software Foundation</a>.
+      As such, we qualify as a 501(c)(3) non-profit organization.
+      All donations are made to the PSF in our name.
+    </p>
 
   </div>
 </div>

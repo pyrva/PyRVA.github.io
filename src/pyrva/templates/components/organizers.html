@@ -1,7 +1,7 @@
 {% macro social_link(name, href, icon) %}
 {% if href %}
 <li>
-    <a href="{{ href }}" class="text-gray-400 hover:text-gray-500">
+    <a href="{{ href }}" class="text-gray-400 hover:text-gray-500" rel="me">
         <span class="sr-only">{{ name }}</span>
         {% include icon %}
     </a>

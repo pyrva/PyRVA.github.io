@@ -44,6 +44,15 @@ class Event:
         return str(element["src"])
 
     @property
+    def large_image(self) -> str:
+        page = requests.get(self.url, timeout=10)
+        soup = BeautifulSoup(page.content, "html.parser")
+        element = soup.select_one("[data-testid=event-description-image] img")
+        if element is None:
+            raise ValueError("No image found")
+        return str(element["src"])
+
+    @property
     def description(self) -> str:
         element = self.soup.select_one("[class*=utils_cardDescription]")
         if element is None:
@@ -74,6 +83,7 @@ class Event:
             "rsvps": self.rsvps,
             "description": self.description,
             "image": self.image,
+            "large_image": self.large_image,
             "datetime": self.datetime,
         }
 

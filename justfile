@@ -34,7 +34,7 @@ dev:
 
 # Create static site in /build
 build:
-    @poetry run python scripts/freezer.py
+    @poetry run python scripts/build.py
 
 
 # Fetch the latest data

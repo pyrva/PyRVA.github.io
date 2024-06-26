@@ -22,7 +22,8 @@
 
         <section id="pyrva" class="flex flex-col justify-evenly basis-1/4">
             <a href="{{ url_for('index') }}" class="mx-auto"><img
-                    src="{{ url_for('static', filename='images/logo.png') }}" alt="PyRVA Logo" width="408" height="139" /></a>
+                    src="{{ url_for('static', filename='images/logo.png') }}" alt="PyRVA Logo" width="408"
+                    height="139" /></a>
             <ul class="space-y-4 w-fit mx-auto font-semibold text-zinc-600">
                 {{ social_link('icons/meetup.svg', 'meetup') }}
                 {{ social_link('icons/discord.svg', 'discord') }}
@@ -36,7 +37,7 @@
                     <a href="{{ event.url }}">
                         <div class="relative flex items-center space-x-3 rounded-lg px-6 py-5">
                             <div class="flex-shrink-0">
-                                <img class="h-16 aspect-video rounded-lg" src="{{ event.image }}" alt="" >
+                                <img class="h-16 aspect-video rounded-lg" src="{{ event.image }}" alt="">
                             </div>
                             <div class="min-w-0 flex-1">
                                 <span class="absolute inset-0" aria-hidden="true"></span>
@@ -54,7 +55,8 @@
 
         <section id="event"
             class="flex flex-col items-center gap-8 justify-evenly basis-1/2 border rounded-lg shadow-lg p-16 bg-white/50">
-            <img class="rounded-lg w-4/5" src="{{ event.large_image }}" alt="{{ event.title }}" width="600" height="338"/>
+            <img class="rounded-lg w-4/5" src="{{ event.large_image }}" alt="{{ event.title }}" width="600"
+                height="338" />
             <h1 class="text-5xl font-bold">{{ event.title }}</h1>
             <div class="flex justify-evenly w-full">
                 <div class="basis-5/12 p-4">
@@ -80,8 +82,17 @@
             <div id="clock" class="text-6xl font-bold font-mono"></div>
         </section>
 
-        <section id="sponsors" class="basis-1/4">
-            {% include 'components/sponsor_list.html' %}
+        <section id="sponsors" class="basis-1/4 flex flex-col justify-between">
+            <div>{% include 'components/sponsor_list.html' %}</div>
+
+            <div>
+                <a href="{{ url_for('sponsor') }}"
+                    class="bg-blue-200 font-bold border border-zinc-600 rounded-lg mx-auto flex flex-col w-fit px-8 my-4 py-6 text-center">
+                    <div class="text-3xl">Become a Sponsor!</div>
+                    <div>pyrva.org/sponsor</div>
+                </a>
+            </div>
+
         </section>
 
     </div>

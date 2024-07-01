@@ -50,8 +50,8 @@
                     <div class="flex space-x-4">
                         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                         {{ nav_link(request, url_for('index'), 'Home') }}
-                        {{ nav_link(request, url_for('about'), 'About') }}
-                        {{ nav_link(request, url_for('sponsors'), 'Sponsors') }}
+                        {{ nav_link(request, url_for('index') + '#about', 'About') }}
+                        {{ nav_link(request, url_for('index') + '#sponsor', 'Sponsor') }}
                     </div>
                 </div>
             </div>
@@ -62,8 +62,8 @@
     <div class="sm:hidden" id="mobile-menu">
         <div class="space-y-1 px-2 pb-3 pt-2">
             {{ mobile_nav_link(request, url_for('index'), 'Home') }}
-            {{ mobile_nav_link(request, url_for('about'), 'About') }}
-            {{ mobile_nav_link(request, url_for('sponsors'), 'Sponsors') }}
+            {{ mobile_nav_link(request, url_for('index') + '#about', 'About') }}
+            {{ mobile_nav_link(request, url_for('index') + '#sponsor', 'Sponsor') }}
         </div>
     </div>
 </nav>

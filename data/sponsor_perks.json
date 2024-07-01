@@ -11,7 +11,7 @@
     "Class": {
         "ring_color": "gray-200",
         "desc": "Sponsor food for a meeting",
-        "price": 250,
+        "price": 500,
         "perks": [
             "Tax Deductible",
             "Logo Shown on Website",
@@ -21,7 +21,7 @@
     "Module": {
         "ring_color": "indigo-600",
         "desc": "Become an integral part of PyRVA",
-        "price": 500,
+        "price": 1000,
         "perks": [
             "Tax Deductible",
             "Logo Shown on Website",
@@ -32,7 +32,7 @@
     "Package": {
         "ring_color": "gray-200",
         "desc": "Help PyRVA grow and thrive",
-        "price": 1000,
+        "price": 2000,
         "perks": [
             "Tax Deductible",
             "Logo Shown on Website",

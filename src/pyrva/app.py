@@ -35,12 +35,10 @@ def index() -> str:
         "pages/index.html",
         events=get_data("events.json"),
         organizers=get_data("organizers.json"),
+        sponsors=get_data("sponsors.json"),
+        perks=get_data("sponsor_perks.json"),
+        donate_link=Config.DONATE_LINK,
     )
-
-
-@app.route("/about/")
-def about() -> str:
-    return render_template("pages/about.html")
 
 
 @app.route("/meeting/")
@@ -58,16 +56,6 @@ def meeting() -> str:
         upcoming=events[1 : Config.UPCOMING_EVENTS + 1],
         sponsors=get_data("sponsors.json"),
         icebreakers=icebreakers,
-    )
-
-
-@app.route("/sponsors/")
-def sponsors() -> str:
-    return render_template(
-        "pages/sponsors.html",
-        sponsors=get_data("sponsors.json"),
-        perks=get_data("sponsor_perks.json"),
-        donate_link=Config.DONATE_LINK,
     )
 
 

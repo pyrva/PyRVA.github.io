@@ -21,7 +21,11 @@
         {
             "label": "dev",
             "type": "shell",
-            "command": "poetry run python scripts/dev.py"
+            "command": "poetry run python scripts/dev.py",
+            "presentation": {
+                "reveal": "never",
+            },
+            "problemMatcher": [],
         },
         {
             "label": "build",

@@ -1,0 +1,30 @@
+{#
+The base layout for the site.
+#}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}PyRVA{% endblock %}</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script src="{{ url_for('static', filename='js/site.js') }}" defer></script>
+    {% block head %}{% endblock %}
+</head>
+{% block body %}
+
+<body class="flex flex-col min-h-screen flex-start">
+    <header>
+        {% include 'components/site_nav.html' %}
+    </header>
+    <main class="max-w-7xl mx-auto">
+        {% block content %}{% endblock %}
+    </main>
+    <footer class="mt-auto">
+        {% include 'components/footer.html' %}
+    </footer>
+</body>
+{% endblock %}
+
+</html>

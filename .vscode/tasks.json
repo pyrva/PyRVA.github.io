@@ -1,0 +1,41 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "install",
+            "type": "shell",
+            "command": "poetry install && poetry run pre-commit install",
+        },
+        {
+            "label": "format",
+            "type": "shell",
+            "command": "ruff check --fix && ruff format"
+        },
+        {
+            "label": "mypy",
+            "type": "shell",
+            "command": "poetry run mypy ."
+        },
+        {
+            "label": "dev",
+            "type": "shell",
+            "command": "poetry run python scripts/dev.py",
+            "presentation": {
+                "reveal": "never",
+            },
+            "problemMatcher": [],
+        },
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "poetry run python scripts/build.py"
+        },
+        {
+            "label": "fetch",
+            "type": "shell",
+            "command": "poetry run python scripts/scrape_event_data.py"
+        }
+    ]
+}

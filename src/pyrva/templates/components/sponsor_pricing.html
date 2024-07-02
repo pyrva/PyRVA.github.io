@@ -1,0 +1,65 @@
+{#
+Description of sponsor tiers and their perks.
+
+The perks are defined in /data/sponsor_perks.json.
+#}
+<div class="py-24 bg-white sm:py-32" id="sponsor">
+  <div class="px-6 mx-auto max-w-7xl lg:px-8">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-base font-semibold leading-7 text-blue-600">Sponsor PyRVA</h2>
+      <p class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Support the Python Community</p>
+    </div>
+    <p class="max-w-2xl mx-auto mt-6 text-lg leading-8 text-center text-gray-600">
+      PyRVA has a network of approximately <span class="font-semibold text-blue-600">2,000 members</span> across
+      multiple platforms. Help us continue to provide quality content and networking opportunities while promoting your
+      brand.
+    </p>
+
+    <div
+      class="grid max-w-md grid-cols-1 gap-8 mx-auto mt-10 isolate md:max-w-2xl md:grid-cols-2 lg:max-w-4xl xl:mx-0 xl:max-w-none xl:grid-cols-4">
+      {% for tier, data in perks.items() %}
+      <div class="rounded-3xl p-8 ring-1 {% if data.feature %}ring-indigo-600{% else %}ring-gray-200{% endif %}">
+        <h3 id="tier-hobby" class="text-lg font-semibold leading-8 text-gray-900">{{ tier }}</h3>
+        <p class="mt-4 text-sm leading-6 text-gray-600">{{ data.desc }}</p>
+        <p class="flex items-baseline mt-6 gap-x-1">
+          <span class="text-4xl font-bold tracking-tight text-gray-900">${{ data.price }}</span>
+          <span class="text-sm font-semibold leading-6 text-gray-600">/year</span>
+        </p>
+        <a href="{{ donate_link }}" target="_blank" aria-describedby="tier-{{ tier }}"
+          class="block px-3 py-2 mt-6 text-sm font-semibold leading-6 text-center text-blue-600 rounded-md ring-1 ring-inset ring-blue-200 hover:ring-blue-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
+          Show your support
+        </a>
+        <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-600">
+          {% for perk in data.perks %}
+          <li class="flex gap-x-3">
+            <svg class="flex-none w-5 h-6 text-blue-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                clip-rule="evenodd" />
+            </svg>
+            {{ perk }}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="max-w-2xl mx-auto mt-6 text-lg leading-8 text-center text-gray-600 space-y-4">
+      <p>
+        PyRVA is a
+        <a class="text-blue-600 font-semibold" href="https://www.python.org/psf/fiscal-sponsorees/">Fiscal Sponsoree</a>
+        of the
+        <a class="text-blue-600 font-semibold" href="https://www.python.org/psf-landing/">Python Software
+          Foundation</a>.
+        As such, we qualify as a 501(c)(3) non-profit organization.
+        All donations are made to the PSF in our name.
+      </p>
+      <p>
+        Intereseted in a different method of sponsoring PyRVA? Reach out to one of our
+        <a href="#organizers" class="text-blue-600 font-semibold">organizers</a>.
+      </p>
+    </div>
+
+  </div>
+</div>

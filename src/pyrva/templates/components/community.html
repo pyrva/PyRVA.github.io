@@ -1,0 +1,26 @@
+{#
+Call to action to join our community on Meetup, Discord, and GitHub
+#}
+{% macro social_card(name, svg, url, text) %}
+<a href="{{ url }}" target="_blank" class="flex-1 p-4 bg-gray-100 rounded-lg hover:bg-gray-200">
+    <div class=" flex flex-col items-center text-center mx-8">
+        {% include svg %}
+        <h3 class="text-lg font-bold text-gray-800 mt-4">{{ name }}</h3>
+        <p>{{ text }}</p>
+    </div>
+</a>
+{% endmacro %}
+
+<div class="px-6 py-12" id="community">
+    <h2 class="text-2xl font-bold text-gray-800 mb-4 text-center">Get Involved with PyRVA!</h2>
+    <p class="text-gray-600 mb-6 text-center">Become a part of our vibrant Python community. Connect, collaborate, and
+        grow with us!
+    </p>
+    <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+        {{ social_card('Meetup', 'icons/meetup.svg', url_for('meetup'), 'Find our upcoming events and RSVP!') }}
+        {{ social_card('Discord', 'icons/discord.svg', url_for('discord'), 'Chat with us, ask questions, and collaborate
+        in real-time!') }}
+        {{ social_card('GitHub', 'icons/github.svg', url_for('github'), 'Explore our projects, contribute, and
+        collaborate on code!') }}
+    </div>
+</div>

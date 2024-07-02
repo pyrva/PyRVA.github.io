@@ -1,0 +1,16 @@
+{#
+The home page.
+
+To keep this page tidy, all sections are included from separate files in the components directory.
+#}
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+{% include 'components/hero.html' %}
+{% include 'components/about_pyrva.html' %}
+{% include 'components/organizers.html' %}
+{% include 'components/community.html' %}
+{% include 'components/sponsor_pricing.html' %}
+{% include 'components/sponsor_list.html' %}
+{% include 'components/faq.html' %}
+{% endblock %}

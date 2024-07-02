@@ -1,0 +1,22 @@
+{#
+This page is used to redirect the user to the URL provided in the query string.
+
+The only reason this needs to exist is so that the endpoints work in a static site. The pages will be generated and
+redirect the user to the correct URL. If we host a full flask site, this page will not be needed.
+#}
+{% extends 'layouts/base.html' %}
+
+{% block title %}{{ name }}{% endblock %}
+
+{% block meta %}
+<meta http-equiv="refresh" content="0;url={{ url }}">
+<meta name="description" content="Redirect to {{ name }} at {{ url }}">
+{% endblock %}
+
+{% block content %}
+<div class="flex flex-col gap-8 m-12 items-center">
+    <span class="text-4xl">Redirecting to {{ name }}</span>
+    <a href="{{ url }}">{{ url }}</a>
+</div>
+<script type="text/javascript">setTimeout(() => { window.location = "{{ url }}"; }, 0);</script>
+{% endblock %}

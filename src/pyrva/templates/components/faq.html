@@ -1,0 +1,107 @@
+{#
+Frequency Asked Questions component
+
+This uses some more advanced Jinja features to create a reusable FAQ component. This component is used to display a list
+of questions and answers. Each question is a details element that can be toggled open and closed. The answers are hidden
+until the question is clicked.
+
+You have to "call" the macro with the parameters. By creating a call context, the content in side the call block will be
+rendered inside the macro. This allows you to pass in the content for each question and answer.
+
+https://jinja.palletsprojects.com/en/3.0.x/templates/#call
+#}
+
+{% macro faq(question, id = '') %}
+<details class="group border px-4 py-2 rounded-xl shadow hover:bg-blue-100 open:bg-blue-100" name="faq" {% if id
+    %}id="{{ id }}" {% endif %}>
+    <summary class="cursor-pointer text-lg font-semibold text-gray-900 py-2">
+        {{ question }}
+    </summary>
+    <div class="pl-4 pb-4 mt-2 text-gray-700">
+        {# All content in the call/endcall block will render here #}
+        {{ caller() }}
+    </div>
+</details>
+{% endmacro %}
+
+
+<section class="py-12" id="faq">
+    <h2 class="my-8 text-4xl font-bold tracking-tight text-gray-500 sm:text-5xl text-center">Frequently Asked Questions
+    </h2>
+    <div class="max-w-2xl mx-auto p-5">
+        <div class="space-y-4">
+
+            {% call faq('When does PyRVA meet?') %}
+            <p>
+                PyRVA currently meets on the <span class="font-bold">third tuesday of each month at 5:45 pm</span>.
+                Our meetings may occasionally be rescheduled. Follow us on
+                <a class="text-blue-600 font-semibold" href="{{ url_for('meetup') }}">Meetup</a>
+                to make sure you don't miss any meetings.
+            </p>
+            {% endcall %}
+
+            {% call faq("I'd like to present at an upcoming meeting, who should I talk to?", id="present") %}
+            <p>
+                PyRVA would love to have you present at one of our meetings! Please reach out to us on
+                <a class="text-blue-600 font-semibold" href="{{ url_for('discord') }}">Discord</a>
+                or contact one of the
+                <a href="#organizers" class="text-blue-600 font-semibold">organizers</a> directly.
+            </p>
+            {% endcall %}
+
+            {% call faq('I see you have a YouTube channel, are meetings recorded?') %}
+            <p>
+                In the past, PyRVA has recorded meetings and posted them to our
+                <a class="text-blue-600 font-semibold" href="{{ url_for('youtube') }}">YouTube channel</a>.
+                However, we do not record our meetings by default as we found it detracted from the in-person
+                experience.
+            </p>
+            {% endcall %}
+
+            {% call faq('I am presenting at an upcoming meeting, can my talk be recorded?') %}
+            <p>
+                While we do not record meetings by default, we are happy to record your talk if you would like.
+                Please reach out to us on
+                <a class="text-blue-600 font-semibold" href="{{ url_for('discord') }}">Discord</a>.
+                You may also contact one of the
+                <a href="#organizers" class="text-blue-600 font-semibold">organizers</a> directly.
+            </p>
+            {% endcall %}
+
+            {% call faq('How do I get involved with PyRVA?') %}
+            <p>
+                We are always looking for new members to help us grow. You can join our
+                <a class="text-blue-600 font-semibold" href="{{ url_for('meetup') }}">meetings</a>,
+                join our <a class="text-blue-600 font-semibold" href="{{ url_for('discord') }}">Discord Server</a>,
+                or help us organize events. If you are interested in helping us organize events, please reach out to us
+                on
+                <a class="text-blue-600 font-semibold" href="{{ url_for('discord') }}">Discord</a>.
+            </p>
+            {% endcall %}
+
+            {% call faq('How do I report a Code of Conduct violation?') %}
+            <p>
+                All members are expected to adhere to the Python Software Foundation's
+                <a class="text-blue-600 font-semibold" href="https://www.python.org/psf/conduct/">Code of Conduct</a>.
+                If you see a violation, please report it to any
+                <a href="#organizers" class="text-blue-600 font-semibold">organizers</a>. You may also report it to the
+                <a class="text-blue-600 font-semibold"
+                    href="https://policies.python.org/python.org/code-of-conduct/Procedures-for-Reporting-Incidents/">Python
+                    Software Foundation</a>.
+            </p>
+            {% endcall %}
+
+            {% call faq('Can I get help with setting up Python on my machine?') %}
+            <p>
+                Absolutely! Feel free to come early to any of our
+                <a class="text-blue-600 font-semibold" href="{{ url_for('meetup') }}">meetings</a>.
+                Any <a href="#organizers" class="text-blue-600 font-semibold">organizers</a>
+                or senior memeber will be happy to help you. You may also join our
+                <a class="text-blue-600 font-semibold" href="{{ url_for('discord') }}">Discord Server</a>
+                and ask for help there.
+            </p>
+            {% endcall %}
+
+        </div>
+    </div>
+</section>

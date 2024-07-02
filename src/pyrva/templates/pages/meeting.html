@@ -1,0 +1,107 @@
+{% extends 'layouts/base.html' %}
+
+{% macro social_link(icon, endpoint) %}
+<li>
+    <a class="flex items-center gap-4 text-xl" target="_blank" href="{{ url_for(endpoint) }}">
+        <span>{% include icon %}</span>PyRVA.org{{ url_for(endpoint) }}
+    </a>
+</li>
+{% endmacro %}
+
+{% block title %}Meeting{% endblock %}
+
+{% block head %}
+<script src="{{ url_for('static', filename='js/clock.js') }}" async></script>
+<meta name="description" content="PyRVA Meeting welcome screen">
+{% endblock %}
+
+{% block body %}
+
+<body>
+    <div class="flex h-screen gap-8 px-12 py-8" style="background: linear-gradient(135deg, #bfdbfe, #fef08a)">
+
+        <section id="pyrva" class="flex flex-col justify-evenly basis-1/4">
+            <a href="{{ url_for('index') }}" class="mx-auto"><img
+                    src="{{ url_for('static', filename='images/logo.png') }}" alt="PyRVA Logo" width="408"
+                    height="139" /></a>
+            <ul class="space-y-4 w-fit mx-auto font-semibold text-zinc-600">
+                {{ social_link('icons/meetup.svg', 'meetup') }}
+                {{ social_link('icons/discord.svg', 'discord') }}
+                {{ social_link('icons/github.svg', 'github') }}
+                {{ social_link('icons/youtube.svg', 'youtube') }}
+            </ul>
+            <div class="w-full">
+                <h2 class="text-3xl font-semibold text-center pb-4">Upcoming Events</h2>
+                <div class="grid grid-cols-1 gap-1">
+                    {% for event in upcoming %}
+                    <a href="{{ event.url }}">
+                        <div class="relative flex items-center space-x-3 rounded-lg px-6 py-5">
+                            <div class="flex-shrink-0">
+                                <img class="h-16 aspect-video rounded-lg" src="{{ event.image }}" alt="">
+                            </div>
+                            <div class="min-w-0 flex-1">
+                                <span class="absolute inset-0" aria-hidden="true"></span>
+                                <p class="text-lg font-medium text-gray-900">{{ event.title }}</p>
+                                <time class="truncate text-lg text-gray-500">{{
+                                    event.datetime|format_datetime(config.MEETUP_DT_FORMAT,
+                                    config.EVENT_DT_FORMAT) }}</time>
+                            </div>
+                        </div>
+                    </a>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+
+        <section id="event"
+            class="flex flex-col items-center gap-4 justify-between basis-1/2 border rounded-lg shadow-lg p-16 bg-white/50">
+            <img class="rounded-lg w-3/5" src="{{ event.large_image }}" alt="{{ event.title }}" width="600"
+                height="338" />
+            <h1 class="text-5xl font-bold">{{ event.title }}</h1>
+            <div class="flex justify-evenly w-full">
+                <div class="basis-5/12 p-4">
+                    <h2 class="text-3xl font-semibold">Schedule</h2>
+                    <ul class="text-xl space-y-2 my-4">
+                        <li><time class="mr-2 w-12 inline-block font-semibold">5:45</time>Doors / Food / Networking</li>
+                        <li><time class="mr-2 w-12 inline-block font-semibold">6:15</time>Welcome / Introductions</li>
+                        <li><time class="mr-2 w-12 inline-block font-semibold">6:30</time>Meeting</li>
+                        <li><time class="mr-2 w-12 inline-block font-semibold">7:30</time>Wrap-up</li>
+                        <li><time class="mr-2 w-12 inline-block font-semibold">8:00</time>Social Time!</li>
+                    </ul>
+                </div>
+                <div class="basis-5/12 p-4">
+                    <h2 class="text-3xl font-semibold">Introductions</h2>
+                    <ul class="text-xl space-y-2 my-4 list-disc ml-4">
+                        <li>Name / Pronouns</li>
+                        {% for icebreaker in icebreakers %}
+                        <li>{{ icebreaker }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div id="clock" class="text-6xl font-bold font-mono"></div>
+            <div class="text-center text-xl font-semibold">
+                Tonight's Food Provided By:
+                <div class="flex justify-center gap-8">
+                    {% for sponsor in food_sponsors %}
+                    {% include 'components/sponsor_card.html' %}
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+
+        <section id="sponsors" class="basis-1/4 flex flex-col justify-between">
+            <div>{% include 'components/sponsor_list.html' %}</div>
+
+            <div>
+                <a href="{{ url_for('index') + '#sponsor' }}"
+                    class="bg-blue-200 font-bold border border-zinc-400 rounded-lg mx-auto flex flex-col w-fit px-8 my-4 py-6 text-center space-y-2">
+                    <div class="text-3xl">Advertise Your Company!</div>
+                    <div>pyrva.org/sponsor</div>
+                </a>
+            </div>
+        </section>
+
+    </div>
+</body>
+{% endblock %}

@@ -1,0 +1,50 @@
+{#
+Basic info about PyRVA
+#}
+<div class="bg-gray-50" id="about">
+    <div class="mx-auto max-w-7xl py-24 sm:px-2 sm:py-32 lg:px-4">
+      <div class="mx-auto max-w-2xl px-4 lg:max-w-none">
+        <div class="grid grid-cols-1 items-center gap-x-16 gap-y-10 lg:grid-cols-2">
+          <div>
+            <h2 class="text-4xl font-bold tracking-tight text-gray-900">We're here to help you level up with Python!</h2>
+            <p class="mt-4 text-gray-500">
+              Founded in 2015, PyRVA is a community of Python developers in Richmond, VA. We host monthly meetups, workshops, and social events to help you learn, grow, and connect with other Pythonistas.
+            </p>
+          </div>
+          <div class="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg bg-gray-100">
+            <img src="{{ url_for('static', filename='images/stock/pexels-olia-danilevich-4974920.jpg') }}" alt="" class="object-cover object-center">
+          </div>
+        </div>
+        <div class="mt-16 grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-3">
+          <div class="sm:flex lg:block">
+            <div class="sm:flex-shrink-0">
+              {% include 'icons/skill.svg' %}
+            </div>
+            <div class="mt-4 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
+              <h3 class="text-sm font-medium text-gray-900">All skill levels welcome</h3>
+              <p class="mt-2 text-sm text-gray-500">Conversation is the best way to learn. Weather you're just starting out or a seasoned veteran, there's something to learn.</p>
+            </div>
+          </div>
+          <div class="sm:flex lg:block">
+            <div class="sm:flex-shrink-0">
+              {% include 'icons/community.svg' %}
+            </div>
+            <div class="mt-4 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
+              <h3 class="text-sm font-medium text-gray-900">All identities welcome</h3>
+              <p class="mt-2 text-sm text-gray-500">PyRVA firmly believes that diversity is a strength. We welcome members of all races, genders, and backgrounds.</p>
+            </div>
+          </div>
+          <div class="sm:flex lg:block">
+            <div class="sm:flex-shrink-0">
+               {% include 'icons/barbell.svg' %}
+            </div>
+            <div class="mt-4 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
+              <h3 class="text-sm font-medium text-gray-900">>2,000 Members Strong</h3>
+              <p class="mt-2 text-sm text-gray-500">As one of the more active tech meetups in RVA, we've got a lot of friends in our community.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>

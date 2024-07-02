@@ -5,13 +5,24 @@ Ensure endpoints have trailing slashes to avoid errors when building the site.
 """
 
 from datetime import datetime, timedelta
+from typing import TypeVar
 
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 
 from .config import Config
 from .data import get_data
 
 app = Flask(__name__)
+
+T = TypeVar("T")
+
+
+def get_next(data: dict[str, list[T]]) -> list[T]:
+    return next(
+        v
+        for k, v in data.items()
+        if datetime.strptime(k, "%Y-%m-%d") >= datetime.now() - timedelta(days=1)
+    )
 
 
 @app.template_filter()
@@ -44,11 +55,8 @@ def index() -> str:
 @app.route("/meeting/")
 def meeting() -> str:
     events = get_data("events.json")
-    icebreakers = next(
-        v
-        for k, v in get_data("icebreakers.json").items()
-        if datetime.strptime(k, "%Y-%m-%d") >= datetime.now() - timedelta(days=1)
-    )
+    icebreakers = get_next(get_data("icebreakers.json"))
+    food_sponsors = get_next(get_data("food_sponsors.json"))
 
     return render_template(
         "pages/meeting.html",
@@ -56,6 +64,16 @@ def meeting() -> str:
         upcoming=events[1 : Config.UPCOMING_EVENTS + 1],
         sponsors=get_data("sponsors.json"),
         icebreakers=icebreakers,
+        food_sponsors=food_sponsors,
+    )
+
+
+@app.route("/sponsor/")
+def sponsor() -> str:
+    return render_template(
+        "pages/redirect.html",
+        name="Sponsor",
+        url=url_for("index") + "#sponsor",
     )
 
 

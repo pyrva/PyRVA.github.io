@@ -1,6 +1,6 @@
 {
     "Function": {
-        "ring_color": "gray-200",
+        "feature": false,
         "desc": "For individual contributors",
         "price": 25,
         "perks": [
@@ -9,7 +9,7 @@
         ]
     },
     "Class": {
-        "ring_color": "gray-200",
+        "feature": false,
         "desc": "Sponsor food for a meeting",
         "price": 500,
         "perks": [
@@ -19,7 +19,7 @@
         ]
     },
     "Module": {
-        "ring_color": "indigo-600",
+        "feature": true,
         "desc": "Become an integral part of PyRVA",
         "price": 1000,
         "perks": [
@@ -30,7 +30,7 @@
         ]
     },
     "Package": {
-        "ring_color": "gray-200",
+        "feature": false,
         "desc": "Help PyRVA grow and thrive",
         "price": 2000,
         "perks": [

@@ -1,3 +1,8 @@
+{#
+Description of sponsor tiers and their perks.
+
+The perks are defined in /data/sponsor_perks.json.
+#}
 <div class="py-24 bg-white sm:py-32" id="sponsor">
   <div class="px-6 mx-auto max-w-7xl lg:px-8">
     <div class="max-w-4xl mx-auto text-center">
@@ -13,7 +18,7 @@
     <div
       class="grid max-w-md grid-cols-1 gap-8 mx-auto mt-10 isolate md:max-w-2xl md:grid-cols-2 lg:max-w-4xl xl:mx-0 xl:max-w-none xl:grid-cols-4">
       {% for tier, data in perks.items() %}
-      <div class="rounded-3xl p-8 ring-1 ring-{{ data.ring_color }}">
+      <div class="rounded-3xl p-8 ring-1 {% if data.feature %}ring-indigo-600{% else %}ring-gray-200{% endif %}">
         <h3 id="tier-hobby" class="text-lg font-semibold leading-8 text-gray-900">{{ tier }}</h3>
         <p class="mt-4 text-sm leading-6 text-gray-600">{{ data.desc }}</p>
         <p class="flex items-baseline mt-6 gap-x-1">
@@ -40,14 +45,21 @@
       {% endfor %}
     </div>
 
-    <p class="max-w-2xl mx-auto mt-6 text-lg leading-8 text-center text-gray-600">
-      PyRVA is a
-      <a class="text-blue-600 font-semibold" href="https://www.python.org/psf/fiscal-sponsorees/">Fiscal Sponsoree</a>
-      of the
-      <a class="text-blue-600 font-semibold" href="https://www.python.org/psf-landing/">Python Software Foundation</a>.
-      As such, we qualify as a 501(c)(3) non-profit organization.
-      All donations are made to the PSF in our name.
-    </p>
+    <div class="max-w-2xl mx-auto mt-6 text-lg leading-8 text-center text-gray-600 space-y-4">
+      <p>
+        PyRVA is a
+        <a class="text-blue-600 font-semibold" href="https://www.python.org/psf/fiscal-sponsorees/">Fiscal Sponsoree</a>
+        of the
+        <a class="text-blue-600 font-semibold" href="https://www.python.org/psf-landing/">Python Software
+          Foundation</a>.
+        As such, we qualify as a 501(c)(3) non-profit organization.
+        All donations are made to the PSF in our name.
+      </p>
+      <p>
+        Intereseted in a different method of sponsoring PyRVA? Reach out to one of our
+        <a href="#organizers" class="text-blue-600 font-semibold">organizers</a>.
+      </p>
+    </div>
 
   </div>
 </div>

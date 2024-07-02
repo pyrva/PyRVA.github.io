@@ -54,8 +54,8 @@
         </section>
 
         <section id="event"
-            class="flex flex-col items-center gap-8 justify-evenly basis-1/2 border rounded-lg shadow-lg p-16 bg-white/50">
-            <img class="rounded-lg w-4/5" src="{{ event.large_image }}" alt="{{ event.title }}" width="600"
+            class="flex flex-col items-center gap-4 justify-between basis-1/2 border rounded-lg shadow-lg p-16 bg-white/50">
+            <img class="rounded-lg w-3/5" src="{{ event.large_image }}" alt="{{ event.title }}" width="600"
                 height="338" />
             <h1 class="text-5xl font-bold">{{ event.title }}</h1>
             <div class="flex justify-evenly w-full">
@@ -71,7 +71,7 @@
                 </div>
                 <div class="basis-5/12 p-4">
                     <h2 class="text-3xl font-semibold">Introductions</h2>
-                    <ul class="text-xl space-y-2 my-4">
+                    <ul class="text-xl space-y-2 my-4 list-disc ml-4">
                         <li>Name / Pronouns</li>
                         {% for icebreaker in icebreakers %}
                         <li>{{ icebreaker }}</li>
@@ -80,6 +80,14 @@
                 </div>
             </div>
             <div id="clock" class="text-6xl font-bold font-mono"></div>
+            <div class="text-center text-xl font-semibold">
+                Tonight's Food Provided By:
+                <div class="flex justify-center gap-8">
+                    {% for sponsor in food_sponsors %}
+                    {% include 'components/sponsor_card.html' %}
+                    {% endfor %}
+                </div>
+            </div>
         </section>
 
         <section id="sponsors" class="basis-1/4 flex flex-col justify-between">
@@ -87,12 +95,11 @@
 
             <div>
                 <a href="{{ url_for('index') + '#sponsor' }}"
-                    class="bg-blue-200 font-bold border border-zinc-600 rounded-lg mx-auto flex flex-col w-fit px-8 my-4 py-6 text-center">
-                    <div class="text-3xl">Become a Sponsor!</div>
+                    class="bg-blue-200 font-bold border border-zinc-400 rounded-lg mx-auto flex flex-col w-fit px-8 my-4 py-6 text-center space-y-2">
+                    <div class="text-3xl">Advertise Your Company!</div>
                     <div>pyrva.org/sponsor</div>
                 </a>
             </div>
-
         </section>
 
     </div>

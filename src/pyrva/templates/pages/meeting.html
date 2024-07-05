@@ -22,7 +22,7 @@
 
         <section id="pyrva" class="flex flex-col justify-evenly basis-1/4">
             <a href="{{ url_for('index') }}" class="mx-auto"><img
-                    src="{{ url_for('static', filename='images/logo.png') }}" alt="PyRVA Logo" width="408"
+                    src="{{ url_for('static', filename='images/logo.webp') }}" alt="PyRVA Logo" width="408"
                     height="139" /></a>
             <ul class="mx-auto space-y-4 font-semibold w-fit text-zinc-600">
                 {{ social_link('icons/meetup.svg', 'meetup') }}
@@ -57,7 +57,7 @@
             class="flex flex-col items-center justify-between gap-4 p-16 border rounded-lg shadow-lg basis-1/2 bg-white/50">
             <img class="w-3/5 rounded-lg" src="{{ event.large_image }}" alt="{{ event.title }}" width="600"
                 height="338" />
-            <h1 class="text-5xl font-bold">{{ event.title }}</h1>
+            <h1 class="text-5xl font-bold text-center">{{ event.title }}</h1>
             <div class="flex w-full justify-evenly">
                 <div class="p-4 basis-5/12">
                     <h2 class="text-3xl font-semibold">Schedule</h2>
@@ -80,6 +80,7 @@
                 </div>
             </div>
             <div id="clock" class="font-mono text-6xl font-bold"></div>
+            {% if food_sponsors %}
             <div class="text-xl font-semibold text-center">
                 Tonight's Food Provided By:
                 <div class="flex justify-center gap-8">
@@ -88,6 +89,7 @@
                     {% endfor %}
                 </div>
             </div>
+            {% endif %}
         </section>
 
         <section id="sponsors" class="flex flex-col justify-between basis-1/4">

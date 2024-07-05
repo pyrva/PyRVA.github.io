@@ -17,12 +17,15 @@ app = Flask(__name__)
 T = TypeVar("T")
 
 
-def get_next(data: dict[str, list[T]]) -> list[T]:
-    return next(
-        v
-        for k, v in data.items()
-        if datetime.strptime(k, "%Y-%m-%d") >= datetime.now() - timedelta(days=1)
-    )
+def get_next(data: dict[str, list[T]]) -> list[T] | None:
+    try:
+        return next(
+            v
+            for k, v in data.items()
+            if datetime.strptime(k, "%Y-%m-%d") >= datetime.now() - timedelta(days=1)
+        )
+    except StopIteration:
+        return None
 
 
 @app.template_filter()

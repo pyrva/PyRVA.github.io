@@ -13,14 +13,14 @@
     "function": [
         {
             "name": "JetBrains",
-            "logo": "images/sponsor_logos/jetbrains.png",
+            "logo": "images/sponsor_logos/jetbrains.webp",
             "url": "https://www.jetbrains.com/",
             "start": "2024-01-01",
             "end": "2024-12-31"
         },
         {
             "name": "Python Software Foundation",
-            "logo": "images/sponsor_logos/psf.png",
+            "logo": "images/sponsor_logos/psf.webp",
             "url": "https://www.python.org/psf-landing/",
             "start": "2024-01-01",
             "end": "2024-12-31"

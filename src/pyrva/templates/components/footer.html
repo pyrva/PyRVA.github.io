@@ -18,7 +18,7 @@ This has the extra link to the "Meeting" page that is not in the site nav.
 {% endmacro %}
 
 <footer class="bg-white">
-    <div class="mx-auto max-w-7xl overflow-hidden px-6 py-10 sm:py-14 lg:px-8">
+    <div class="px-6 py-10 mx-auto overflow-hidden max-w-7xl sm:py-14 lg:px-8">
         <nav class="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
             {{ footer_link('Home', url_for('index')) }}
             {{ footer_link('About', url_for('index') + '#about') }}
@@ -27,13 +27,13 @@ This has the extra link to the "Meeting" page that is not in the site nav.
             {{ footer_link('FAQ', url_for('index') + 'faq') }}
             {{ footer_link('Meeting', url_for('meeting')) }}
         </nav>
-        <div class="mt-10 flex justify-center space-x-10">
+        <div class="flex justify-center mt-10 space-x-10">
             {{ social_footer_link('Meetup', socials.meetup, 'icons/meetup.svg') }}
             {{ social_footer_link('Discord', socials.discord, 'icons/discord.svg') }}
             {{ social_footer_link('YouTube', socials.youtube, 'icons/youtube.svg') }}
             {{ social_footer_link('Github', socials.github, 'icons/github.svg') }}
         </div>
-        <p class="mt-10 text-center text-xs leading-5 text-gray-500">
+        <p class="mt-10 text-xs leading-5 text-center text-gray-500">
             <a href="https://github.com/pyrva/PyRVA.github.io" target="_blank">Developed by the PyRVA community</a>
         </p>
     </div>

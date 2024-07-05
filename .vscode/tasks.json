@@ -28,6 +28,20 @@
             "problemMatcher": [],
         },
         {
+            "label": "tailwindcss - watch",
+            "type": "shell",
+            "command": "npx tailwindcss -i ./src/pyrva/static/css/style.css -o ./src/pyrva/static/css/site.css --minify --watch",
+            "presentation": {
+                "reveal": "never",
+            },
+            "problemMatcher": [],
+        },
+        {
+            "label": "tailwindcss",
+            "type": "shell",
+            "command": "npx tailwindcss -i ./src/pyrva/static/css/style.css -o ./src/pyrva/static/css/site.css --minify"
+        },
+        {
             "label": "build",
             "type": "shell",
             "command": "poetry run python scripts/build.py"

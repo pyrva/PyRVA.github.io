@@ -5,6 +5,11 @@ To keep this page tidy, all sections are included from separate files in the com
 #}
 {% extends 'layouts/base.html' %}
 
+{% block head %}
+<meta name="description"
+    content="Richmond's Python Community. PyRVA is a friendly and diverse community of Python enthusiasts, from beginners to seasoned professionals. Join us for engaging talks, hands-on workshops, and networking opportunities that help you grow your skills and connect with fellow coders.">
+{% endblock %}
+
 {% block content %}
 {% include 'components/hero.html' %}
 {% include 'components/about_pyrva.html' %}

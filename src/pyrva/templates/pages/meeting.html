@@ -22,27 +22,27 @@
 
         <section id="pyrva" class="flex flex-col justify-evenly basis-1/4">
             <a href="{{ url_for('index') }}" class="mx-auto"><img
-                    src="{{ url_for('static', filename='images/logo.png') }}" alt="PyRVA Logo" width="408"
+                    src="{{ url_for('static', filename='images/logo.webp') }}" alt="PyRVA Logo" width="408"
                     height="139" /></a>
-            <ul class="space-y-4 w-fit mx-auto font-semibold text-zinc-600">
+            <ul class="mx-auto space-y-4 font-semibold w-fit text-zinc-600">
                 {{ social_link('icons/meetup.svg', 'meetup') }}
                 {{ social_link('icons/discord.svg', 'discord') }}
                 {{ social_link('icons/github.svg', 'github') }}
                 {{ social_link('icons/youtube.svg', 'youtube') }}
             </ul>
             <div class="w-full">
-                <h2 class="text-3xl font-semibold text-center pb-4">Upcoming Events</h2>
+                <h2 class="pb-4 text-3xl font-semibold text-center">Upcoming Events</h2>
                 <div class="grid grid-cols-1 gap-1">
                     {% for event in upcoming %}
                     <a href="{{ event.url }}">
-                        <div class="relative flex items-center space-x-3 rounded-lg px-6 py-5">
+                        <div class="relative flex items-center px-6 py-5 space-x-3 rounded-lg">
                             <div class="flex-shrink-0">
-                                <img class="h-16 aspect-video rounded-lg" src="{{ event.image }}" alt="">
+                                <img class="h-16 rounded-lg aspect-video" src="{{ event.image }}" alt="">
                             </div>
-                            <div class="min-w-0 flex-1">
+                            <div class="flex-1 min-w-0">
                                 <span class="absolute inset-0" aria-hidden="true"></span>
                                 <p class="text-lg font-medium text-gray-900">{{ event.title }}</p>
-                                <time class="truncate text-lg text-gray-500">{{
+                                <time class="text-lg text-gray-500 truncate">{{
                                     event.datetime|format_datetime(config.MEETUP_DT_FORMAT,
                                     config.EVENT_DT_FORMAT) }}</time>
                             </div>
@@ -54,24 +54,24 @@
         </section>
 
         <section id="event"
-            class="flex flex-col items-center gap-4 justify-between basis-1/2 border rounded-lg shadow-lg p-16 bg-white/50">
-            <img class="rounded-lg w-3/5" src="{{ event.large_image }}" alt="{{ event.title }}" width="600"
+            class="flex flex-col items-center justify-between gap-4 p-16 border rounded-lg shadow-lg basis-1/2 bg-white/50">
+            <img class="w-3/5 rounded-lg" src="{{ event.large_image }}" alt="{{ event.title }}" width="600"
                 height="338" />
-            <h1 class="text-5xl font-bold">{{ event.title }}</h1>
-            <div class="flex justify-evenly w-full">
-                <div class="basis-5/12 p-4">
+            <h1 class="text-5xl font-bold text-center">{{ event.title }}</h1>
+            <div class="flex w-full justify-evenly">
+                <div class="p-4 basis-5/12">
                     <h2 class="text-3xl font-semibold">Schedule</h2>
-                    <ul class="text-xl space-y-2 my-4">
-                        <li><time class="mr-2 w-12 inline-block font-semibold">5:45</time>Doors / Food / Networking</li>
-                        <li><time class="mr-2 w-12 inline-block font-semibold">6:15</time>Welcome / Introductions</li>
-                        <li><time class="mr-2 w-12 inline-block font-semibold">6:30</time>Meeting</li>
-                        <li><time class="mr-2 w-12 inline-block font-semibold">7:30</time>Wrap-up</li>
-                        <li><time class="mr-2 w-12 inline-block font-semibold">8:00</time>Social Time!</li>
+                    <ul class="my-4 space-y-2 text-xl">
+                        <li><time class="inline-block w-12 mr-2 font-semibold">5:45</time>Doors / Food / Networking</li>
+                        <li><time class="inline-block w-12 mr-2 font-semibold">6:15</time>Welcome / Introductions</li>
+                        <li><time class="inline-block w-12 mr-2 font-semibold">6:30</time>Meeting</li>
+                        <li><time class="inline-block w-12 mr-2 font-semibold">7:30</time>Wrap-up</li>
+                        <li><time class="inline-block w-12 mr-2 font-semibold">8:00</time>Social Time!</li>
                     </ul>
                 </div>
-                <div class="basis-5/12 p-4">
+                <div class="p-4 basis-5/12">
                     <h2 class="text-3xl font-semibold">Introductions</h2>
-                    <ul class="text-xl space-y-2 my-4 list-disc ml-4">
+                    <ul class="my-4 ml-4 space-y-2 text-xl list-disc">
                         <li>Name / Pronouns</li>
                         {% for icebreaker in icebreakers %}
                         <li>{{ icebreaker }}</li>
@@ -79,8 +79,9 @@
                     </ul>
                 </div>
             </div>
-            <div id="clock" class="text-6xl font-bold font-mono"></div>
-            <div class="text-center text-xl font-semibold">
+            <div id="clock" class="font-mono text-6xl font-bold"></div>
+            {% if food_sponsors %}
+            <div class="text-xl font-semibold text-center">
                 Tonight's Food Provided By:
                 <div class="flex justify-center gap-8">
                     {% for sponsor in food_sponsors %}
@@ -88,14 +89,15 @@
                     {% endfor %}
                 </div>
             </div>
+            {% endif %}
         </section>
 
-        <section id="sponsors" class="basis-1/4 flex flex-col justify-between">
+        <section id="sponsors" class="flex flex-col justify-between basis-1/4">
             <div>{% include 'components/sponsor_list.html' %}</div>
 
             <div>
                 <a href="{{ url_for('index') + '#sponsor' }}"
-                    class="bg-blue-200 font-bold border border-zinc-400 rounded-lg mx-auto flex flex-col w-fit px-8 my-4 py-6 text-center space-y-2">
+                    class="flex flex-col px-8 py-6 mx-auto my-4 space-y-2 font-bold text-center bg-blue-200 border rounded-lg border-zinc-400 w-fit">
                     <div class="text-3xl">Advertise Your Company!</div>
                     <div>pyrva.org/sponsor</div>
                 </a>

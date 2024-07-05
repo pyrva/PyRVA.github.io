@@ -14,7 +14,7 @@ redirect the user to the correct URL. If we host a full flask site, this page wi
 {% endblock %}
 
 {% block content %}
-<div class="flex flex-col gap-8 m-12 items-center">
+<div class="flex flex-col items-center gap-8 m-12">
     <span class="text-4xl">Redirecting to {{ name }}</span>
     <a href="{{ url }}">{{ url }}</a>
 </div>

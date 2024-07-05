@@ -3,7 +3,7 @@
         "name": "Chris May",
         "pronouns": "he/him",
         "role": "Founder / Content Manager",
-        "img": "images/ChrisMay.jpg",
+        "img": "images/ChrisMay.webp",
         "socials": {
             "linkedin": "https://www.linkedin.com/in/1chrismay/",
             "github": "https://github.com/Chris-May",
@@ -14,7 +14,7 @@
         "name": "Brian Cohan",
         "pronouns": "he/they",
         "role": "Community Manager",
-        "img": "images/BrianCohan.jpg",
+        "img": "images/BrianCohan.webp",
         "socials": {
             "linkedin": "https://www.linkedin.com/in/briandcohan/",
             "github": "https://github.com/briancohan",
@@ -25,7 +25,7 @@
         "name": "Adam Emery",
         "pronouns": "he/him",
         "role": "Content Manager",
-        "img": "images/AdamEmery.jpg",
+        "img": "images/AdamEmery.webp",
         "socials": {
             "linkedin": "https://www.linkedin.com/in/aqemery/",
             "github": "https://github.com/aqemery"

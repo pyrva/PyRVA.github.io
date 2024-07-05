@@ -8,7 +8,7 @@ The base layout for the site.
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}PyRVA{% endblock %}</title>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/site.css') }}">
     <script src="{{ url_for('static', filename='js/site.js') }}" defer></script>
     {% block head %}{% endblock %}
 </head>
@@ -18,7 +18,7 @@ The base layout for the site.
     <header>
         {% include 'components/site_nav.html' %}
     </header>
-    <main class="max-w-7xl mx-auto">
+    <main class="mx-auto max-w-7xl">
         {% block content %}{% endblock %}
     </main>
     <footer class="mt-auto">

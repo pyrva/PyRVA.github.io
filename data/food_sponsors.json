@@ -10,5 +10,17 @@
             "logo": "images/BrianCohan.webp",
             "url": "https://pyrva.org"
         }
+    ],
+    "2024-08-20": [
+        {
+            "name": "Chris May",
+            "logo": "images/ChrisMay.webp",
+            "url": "https://pyrva.org"
+        },
+        {
+            "name": "Brian Cohan",
+            "logo": "images/BrianCohan.webp",
+            "url": "https://pyrva.org"
+        }
     ]
 }

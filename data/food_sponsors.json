@@ -23,5 +23,12 @@
             "url": "https://pyrva.org"
         }
     ],
-    "2024-09-17": []
+    "2024-09-17": [],
+    "2024-10-15": [
+        {
+            "name": "Docker",
+            "logo": "https://www.docker.com/wp-content/uploads/2023/08/logo-guide-logos-1.svg",
+            "url": "https://docker.com"
+        }
+    ]
 }

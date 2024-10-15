@@ -96,4 +96,6 @@ if __name__ == "__main__":
 
     project_root = Path(__file__).resolve().parents[1]
     json_file = project_root / "data" / "events.json"
+    html_file = project_root / "data" / "events.html"
     json_file.write_text(json.dumps([e.info for e in events], indent=4))
+    html_file.write_text(soup.prettify())

@@ -16,5 +16,6 @@ class Config:
 
     UPCOMING_EVENTS = 3
 
-    MEETUP_DT_FORMAT = "%a, %b %d, %Y, %I:%M %p"
+    # MEETUP_DT_FORMAT = "%a, %b %d, %Y, %I:%M %p"
+    MEETUP_DT_FORMAT = "%Y-%m-%dT%H:%M:%S"
     EVENT_DT_FORMAT = "%a, %B %d, %-I:%M %p"

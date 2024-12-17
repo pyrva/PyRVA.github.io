@@ -20,15 +20,5 @@
             "github": "https://github.com/briancohan",
             "mastodon": "https://fosstodon.org/@briancohan"
         }
-    },
-    {
-        "name": "Adam Emery",
-        "pronouns": "he/him",
-        "role": "Content Manager",
-        "img": "images/AdamEmery.webp",
-        "socials": {
-            "linkedin": "https://www.linkedin.com/in/aqemery/",
-            "github": "https://github.com/aqemery"
-        }
     }
 ]

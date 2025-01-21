@@ -7,39 +7,40 @@ list:
 
 # Setup
 install:
-    poetry install
-    poetry run pre-commit install
+    @uv sync
+    @uv pip install -e .
+    @uv run pre-commit install
 
 
 # Check formatting and syntax
 check:
-    @poetry run pre-commit run --all-files
+    @uv run pre-commit run --all-files
 
 
 # Format code with Ruff
 format:
-    @ruff check --fix
-    @ruff format
+    @uv run ruff check --fix
+    @uv run ruff format
 
 
 # Run mypy
 mypy:
-    @poetry run mypy .
+    @uv run mypy .
 
 
 # Run development server
 dev:
-    @poetry run python scripts/dev.py
+    @uv run python scripts/dev.py
 
 
 # Create static site in /build
 build:
-    @poetry run python scripts/build.py
+    @uv run python scripts/build.py
 
 
 # Fetch the latest data
 fetch:
-    @poetry run python scripts/scrape_event_data.py
+    @uv run python scripts/scrape_event_data.py
 
 
 # Push to remote

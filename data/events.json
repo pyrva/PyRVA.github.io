@@ -1,17 +1,9 @@
 [
     {
-        "url": "https://www.meetup.com/pyrvausergroup/events/303255153/",
-        "title": "Event Sourcing and Event Modeling: Unleash the Power of Your Applications",
-        "rsvps": 28,
-        "description": "Join us for an exciting Meetup where we dive into the transformative world of event sourcing and event modeling! Whether you're a seasoned developer or just curious about modern software design, this event is for you.\n\nFor over a decade, PyRVA co-founder Chris May has researched and explored the profound impact these techniques can have on creating more efficient, robust, and flexible applications.\n\nIn this session, you\u2019ll discover:\n\n- **The Fundamentals:** What is event sourcing? How does it differ from traditional data management approaches?\n- **Real-World Applications:** Hear inspiring success stories and case studies from developers who have embraced these patterns.\n- **Hands-On Insights:** Engage in interactive discussions and activities that will demystify the concepts and show you how to apply them in your projects.\n- **Future Trends:** Gain insights into where the industry is heading and how event sourcing can keep you at the forefront of technology.\n\nDon\u2019t miss this opportunity to elevate your development skills and connect with like-minded professionals! Bring your questions, enthusiasm, and let's explore how event sourcing can revolutionize the way you build applications.\n\n**Schedule**\n5:45 pm - Doors Open / Social\n6:30 pm - Meeting Start\n7:30 pm - Wrap-up\n8:00 pm - Prologue (Social in Scotts Addition)\n\n**All events are open to all skill levels**. If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n\nJoin our Discord server! **https://pyrva.org/discord**\nWant to sponsor PyRVA? **https://pyrva.org/donate**\nWant to present? **https://forms.gle/q8w3xziArWjud5f67**",
-        "image": "https://secure.meetupstatic.com/photos/event/2/6/6/b/highres_521349835.jpeg",
-        "datetime": "2025-01-21T17:45:00"
-    },
-    {
         "url": "https://www.meetup.com/pyrvausergroup/events/303255154/",
-        "title": "PyRVA Monthly Meeting",
-        "rsvps": 5,
-        "description": "This is a placeholder event so you know when to plan to be there.\n\n**Schedule**\n5:45 pm - Doors Open / Social\n6:30 pm - Meeting Start\n7:30 pm - Wrap-up\n8:00 pm - Prologue (Social in Scotts Addition)\n\n**All events are open to all skill levels**. If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n\nJoin our Discord server! **https://pyrva.org/discord**\nWant to sponsor PyRVA? **https://pyrva.org/donate**\nWant to present? **https://forms.gle/q8w3xziArWjud5f67**",
+        "title": "UV: What is it and should you use it?",
+        "rsvps": 27,
+        "description": "UV is a new way of managing your python projects and it's lightning fast (thanks rust!) with a nice interface. UV is from Astral, the same folks who gave us Ruff and their goal is to meet the python community where they're at making adoption super easy.\n\nThis month Cohan will be guiding us through their journey of adopting UV and we'll explore some of the features that make it pleasant to work with!\n\nhttps://docs.astral.sh/uv/\n\n**Schedule**\n5:45 pm - Doors Open / Social\n6:30 pm - Meeting Start\n7:30 pm - Wrap-up\n8:00 pm - Prologue (Social in Scotts Addition)\n\n**All events are open to all skill levels**. If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n\nJoin our Discord server! **https://pyrva.org/discord**\nWant to sponsor PyRVA? **https://pyrva.org/donate**\nWant to present? **https://forms.gle/q8w3xziArWjud5f67**",
         "image": "https://secure.meetupstatic.com/photos/event/2/6/6/b/highres_521349835.jpeg",
         "datetime": "2025-02-18T17:45:00"
     },
@@ -30,6 +22,14 @@
         "description": "This is a placeholder event so you know when to plan to be there.\n\n**Schedule**\n5:45 pm - Doors Open / Social\n6:30 pm - Meeting Start\n7:30 pm - Wrap-up\n8:00 pm - Prologue (Social in Scotts Addition)\n\n**All events are open to all skill levels**. If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n\nJoin our Discord server! **https://pyrva.org/discord**\nWant to sponsor PyRVA? **https://pyrva.org/donate**\nWant to present? **https://forms.gle/q8w3xziArWjud5f67**",
         "image": "https://secure.meetupstatic.com/photos/event/2/6/6/b/highres_521349835.jpeg",
         "datetime": "2025-04-15T17:45:00"
+    },
+    {
+        "url": "https://www.meetup.com/pyrvausergroup/events/305847393/",
+        "title": "PyData Virginia",
+        "rsvps": 2,
+        "description": "PyData Virginia 2025, a new data science, machine learning, and AI conference, is coming up on April 18-19 in Charlottesville, VA. We'd love to have lots of folks from the Python community in Richmond come and join us!\nSee the conference website for more information: [https://pydata.org/virginia2025](https://pydata.org/virginia2025)",
+        "image": "https://secure.meetupstatic.com/photos/event/b/f/2/7/highres_525948935.jpeg",
+        "datetime": "2025-04-18T12:00:00"
     },
     {
         "url": "https://www.meetup.com/pyrvausergroup/events/305378031/",

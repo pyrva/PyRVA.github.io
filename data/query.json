@@ -6,145 +6,88 @@
             "__ref": "Group:18889633"
         }
     },
-    "Topic:917262": {
-        "__typename": "Topic",
-        "id": "917262",
-        "name": "Open Source Python",
-        "urlkey": "open-source-python"
-    },
-    "Topic:1064": {
-        "__typename": "Topic",
-        "id": "1064",
-        "name": "Python",
-        "urlkey": "python"
-    },
-    "Topic:917242": {
-        "__typename": "Topic",
-        "id": "917242",
-        "name": "Python Web Development",
-        "urlkey": "python-web-development"
-    },
-    "Topic:120095": {
-        "__typename": "Topic",
-        "id": "120095",
-        "name": "Software Development",
-        "urlkey": "software-development"
-    },
-    "Topic:32528": {
-        "__typename": "Topic",
-        "id": "32528",
-        "name": "Computer Programming",
-        "urlkey": "computer-programming"
-    },
-    "Topic:8192": {
-        "__typename": "Topic",
-        "id": "8192",
-        "name": "Open Source",
-        "urlkey": "open-source"
-    },
-    "Topic:46831": {
-        "__typename": "Topic",
-        "id": "46831",
-        "name": "Data Center and Operations Automation",
-        "urlkey": "data-center-and-operations-automation"
-    },
-    "Topic:15582": {
-        "__typename": "Topic",
-        "id": "15582",
-        "name": "Web Development",
-        "urlkey": "web-development"
-    },
-    "Topic:17628": {
-        "__typename": "Topic",
-        "id": "17628",
-        "name": "Programming Languages",
-        "urlkey": "programming-languages"
-    },
-    "Topic:87614": {
-        "__typename": "Topic",
-        "id": "87614",
-        "name": "DevOps",
-        "urlkey": "devops"
-    },
-    "Topic:46810": {
-        "__typename": "Topic",
-        "id": "46810",
-        "name": "Configuration Management",
-        "urlkey": "configuration-management"
-    },
-    "Topic:10553": {
-        "__typename": "Topic",
-        "id": "10553",
-        "name": "Django",
-        "urlkey": "django"
-    },
-    "TopicCategory:546": {
-        "__typename": "TopicCategory",
-        "id": "546",
-        "name": "Technology",
-        "urlkey": "technology"
-    },
-    "PhotoInfo:207323872": {
-        "__typename": "PhotoInfo",
-        "id": "207323872",
-        "highResUrl": "https://secure.meetupstatic.com/photos/member/5/d/4/0/highres_207323872.jpeg"
-    },
-    "Member:71861332": {
-        "__typename": "Member",
-        "id": "71861332",
-        "name": "Chris May",
-        "email": "",
-        "memberPhoto": {
-            "__ref": "PhotoInfo:207323872"
-        },
-        "isStarterOrganizer": false
-    },
-    "PhotoInfo:472858647": {
-        "__typename": "PhotoInfo",
-        "id": "472858647",
-        "highResUrl": "https://secure.meetupstatic.com/photos/event/e/5/1/7/highres_472858647.jpeg"
-    },
-    "PhotoInfo:280019501": {
-        "__typename": "PhotoInfo",
-        "id": "280019501",
-        "highResUrl": "https://secure.meetupstatic.com/photos/member/e/8/6/d/highres_280019501.jpeg"
-    },
-    "ProNetwork:610554310475497472": {
-        "__typename": "ProNetwork",
-        "id": "610554310475497472",
-        "urlname": "python-software-foundation-meetups",
-        "name": "Python Software Foundation Meetup Pro Network",
-        "logo": {
-            "__ref": "PhotoInfo:280019501"
-        },
-        "groups": {
-            "__typename": "ProNetworkGroupsConnection",
-            "totalCount": 117
-        }
-    },
-    "GroupQuestion:8939666": {
-        "__typename": "GroupQuestion",
-        "id": "8939666",
-        "question": "What do you want to learn?",
-        "sort": 1
-    },
-    "GroupQuestion:8939665": {
-        "__typename": "GroupQuestion",
-        "id": "8939665",
-        "question": "What are you excited about",
-        "sort": 2
-    },
-    "GroupQuestion:9273714": {
-        "__typename": "GroupQuestion",
-        "id": "9273714",
-        "question": "What is your biggest struggle right now with python?",
-        "sort": 3
-    },
     "Group:18889633": {
         "__typename": "Group",
+        "id": "18889633",
+        "name": "PyRVA",
+        "timezone": "America/New_York",
+        "organizer": {
+            "__ref": "Member:71861332"
+        },
+        "events({\"filter\":{\"afterDateTime\":\"2025-02-18T19:58:44.359Z\",\"status\":[\"ACTIVE\",\"CANCELLED\"]},\"first\":10,\"sort\":\"ASC\"})": {
+            "__typename": "GroupEventConnection",
+            "totalCount": 14,
+            "pageInfo": {
+                "__typename": "PageInfo",
+                "endCursor": "aHBtZm10eWhjbmJjYzoxNzYxMDgzMTAwMDAw",
+                "hasNextPage": true
+            },
+            "edges": [
+                {
+                    "__typename": "EventEdge",
+                    "node": {
+                        "__ref": "Event:303255154"
+                    }
+                },
+                {
+                    "__typename": "EventEdge",
+                    "node": {
+                        "__ref": "Event:305378025"
+                    }
+                },
+                {
+                    "__typename": "EventEdge",
+                    "node": {
+                        "__ref": "Event:305378026"
+                    }
+                },
+                {
+                    "__typename": "EventEdge",
+                    "node": {
+                        "__ref": "Event:305847393"
+                    }
+                },
+                {
+                    "__typename": "EventEdge",
+                    "node": {
+                        "__ref": "Event:305378031"
+                    }
+                },
+                {
+                    "__typename": "EventEdge",
+                    "node": {
+                        "__ref": "Event:305378032"
+                    }
+                },
+                {
+                    "__typename": "EventEdge",
+                    "node": {
+                        "__ref": "Event:hpmfmtyhckbtb"
+                    }
+                },
+                {
+                    "__typename": "EventEdge",
+                    "node": {
+                        "__ref": "Event:hpmfmtyhclbzb"
+                    }
+                },
+                {
+                    "__typename": "EventEdge",
+                    "node": {
+                        "__ref": "Event:hpmfmtyhcmbvb"
+                    }
+                },
+                {
+                    "__typename": "EventEdge",
+                    "node": {
+                        "__ref": "Event:hpmfmtyhcnbcc"
+                    }
+                }
+            ]
+        },
         "events({\"filter\":{\"status\":[\"PAST\"]},\"first\":1})": {
             "__typename": "GroupEventConnection",
-            "totalCount": 170
+            "totalCount": 171
         },
         "featuredEvent": null,
         "activeTopics": [
@@ -188,27 +131,20 @@
         "topicCategory": {
             "__ref": "TopicCategory:546"
         },
-        "id": "18889633",
-        "name": "PyRVA",
         "urlname": "PyRVAUserGroup",
-        "timezone": "America/New_York",
         "isPrivate": false,
-        "organizer": {
-            "__typename": "Member",
-            "isStarterOrganizer": false
-        },
         "stats": {
             "__typename": "GroupStats",
             "memberCounts": {
                 "__typename": "GroupMemberCounts",
-                "all": 1995,
+                "all": 1998,
                 "leadership": 2,
                 "pending": 0
             },
             "eventRatings": {
                 "__typename": "GroupStatsEventRatings",
                 "average": 4.69,
-                "total": 432
+                "total": 436
             }
         },
         "lat": 37.54,
@@ -249,77 +185,7 @@
         "duesSettings": null,
         "canAddPhotos": false,
         "calendarFeeds": null,
-        "events({\"filter\":{\"afterDateTime\":\"2025-01-21T17:13:24.489Z\",\"status\":[\"ACTIVE\",\"CANCELLED\"]},\"first\":10,\"sort\":\"ASC\"})": {
-            "__typename": "GroupEventConnection",
-            "totalCount": 13,
-            "pageInfo": {
-                "__typename": "PageInfo",
-                "endCursor": "aHBtZm10eWhjbmJjYzoxNzYxMDgzMTAwMDAw",
-                "hasNextPage": true
-            },
-            "edges": [
-                {
-                    "__typename": "EventEdge",
-                    "node": {
-                        "__ref": "Event:303255153"
-                    }
-                },
-                {
-                    "__typename": "EventEdge",
-                    "node": {
-                        "__ref": "Event:303255154"
-                    }
-                },
-                {
-                    "__typename": "EventEdge",
-                    "node": {
-                        "__ref": "Event:305378025"
-                    }
-                },
-                {
-                    "__typename": "EventEdge",
-                    "node": {
-                        "__ref": "Event:305378026"
-                    }
-                },
-                {
-                    "__typename": "EventEdge",
-                    "node": {
-                        "__ref": "Event:305378031"
-                    }
-                },
-                {
-                    "__typename": "EventEdge",
-                    "node": {
-                        "__ref": "Event:305378032"
-                    }
-                },
-                {
-                    "__typename": "EventEdge",
-                    "node": {
-                        "__ref": "Event:hpmfmtyhckbtb"
-                    }
-                },
-                {
-                    "__typename": "EventEdge",
-                    "node": {
-                        "__ref": "Event:hpmfmtyhclbzb"
-                    }
-                },
-                {
-                    "__typename": "EventEdge",
-                    "node": {
-                        "__ref": "Event:hpmfmtyhcmbvb"
-                    }
-                },
-                {
-                    "__typename": "EventEdge",
-                    "node": {
-                        "__ref": "Event:hpmfmtyhcnbcc"
-                    }
-                }
-            ]
-        }
+        "welcomeBlurb": "Welcome to PyRVA! \n\nWe can't wait to __init__() you to the group.  We currently meet at the University of Richmond campus every second Wednesday of the month.  Topics vary monthly for a broad range of users and/or skills.  We would greatly appreciate any feedback or requests for topics.  We're also open to requests/recommendations for speakers. \n\nPlease feel free to share the group information with anyone that might be interested in Python.\n\nWe look forward to meeting you.\n\nPyRVA.org \n(http://www.pyrva.org) - Visit site to join the Slack channel."
     },
     "Member:22372041": {
         "__typename": "Member",
@@ -348,16 +214,31 @@
         "id": "319564840",
         "highResUrl": "https://secure.meetupstatic.com/photos/member/1/2/e/8/highres_319564840.jpeg"
     },
-    "Rsvp:2008698258": {
+    "Rsvp:2008698263": {
         "__typename": "Rsvp",
-        "id": "2008698258",
+        "id": "2008698263",
         "member": {
             "__ref": "Member:22372041"
         }
     },
-    "Rsvp:2008698259": {
+    "PhotoInfo:207323872": {
+        "__typename": "PhotoInfo",
+        "id": "207323872",
+        "highResUrl": "https://secure.meetupstatic.com/photos/member/5/d/4/0/highres_207323872.jpeg"
+    },
+    "Member:71861332": {
+        "__typename": "Member",
+        "id": "71861332",
+        "name": "Chris May",
+        "memberPhoto": {
+            "__ref": "PhotoInfo:207323872"
+        },
+        "email": "",
+        "isStarterOrganizer": false
+    },
+    "Rsvp:2008698265": {
         "__typename": "Rsvp",
-        "id": "2008698259",
+        "id": "2008698265",
         "member": {
             "__ref": "Member:71861332"
         }
@@ -373,147 +254,6 @@
         "name": "Ben Lutz",
         "memberPhoto": {
             "__ref": "PhotoInfo:292379590"
-        }
-    },
-    "Rsvp:2008698261": {
-        "__typename": "Rsvp",
-        "id": "2008698261",
-        "member": {
-            "__ref": "Member:279322605"
-        }
-    },
-    "PhotoInfo:319429052": {
-        "__typename": "PhotoInfo",
-        "id": "319429052",
-        "highResUrl": "https://secure.meetupstatic.com/photos/member/b/f/9/c/highres_319429052.jpeg"
-    },
-    "Member:409809160": {
-        "__typename": "Member",
-        "id": "409809160",
-        "name": "Gabriel",
-        "memberPhoto": {
-            "__ref": "PhotoInfo:319429052"
-        }
-    },
-    "Rsvp:2018682440": {
-        "__typename": "Rsvp",
-        "id": "2018682440",
-        "member": {
-            "__ref": "Member:409809160"
-        }
-    },
-    "Member:400192299": {
-        "__typename": "Member",
-        "id": "400192299",
-        "name": "Ben Clark",
-        "memberPhoto": null
-    },
-    "Rsvp:2018788918": {
-        "__typename": "Rsvp",
-        "id": "2018788918",
-        "member": {
-            "__ref": "Member:400192299"
-        }
-    },
-    "Event:303255153": {
-        "__typename": "Event",
-        "id": "303255153",
-        "title": "Event Sourcing and Event Modeling: Unleash the Power of Your Applications",
-        "eventUrl": "https://www.meetup.com/pyrvausergroup/events/303255153/",
-        "description": "Join us for an exciting Meetup where we dive into the transformative world of event sourcing and event modeling! Whether you're a seasoned developer or just curious about modern software design, this event is for you.\n\nFor over a decade, PyRVA co-founder Chris May has researched and explored the profound impact these techniques can have on creating more efficient, robust, and flexible applications.\n\nIn this session, you\u2019ll discover:\n\n- **The Fundamentals:** What is event sourcing? How does it differ from traditional data management approaches?\n- **Real-World Applications:** Hear inspiring success stories and case studies from developers who have embraced these patterns.\n- **Hands-On Insights:** Engage in interactive discussions and activities that will demystify the concepts and show you how to apply them in your projects.\n- **Future Trends:** Gain insights into where the industry is heading and how event sourcing can keep you at the forefront of technology.\n\nDon\u2019t miss this opportunity to elevate your development skills and connect with like-minded professionals! Bring your questions, enthusiasm, and let's explore how event sourcing can revolutionize the way you build applications.\n\n**Schedule**\n5:45 pm - Doors Open / Social\n6:30 pm - Meeting Start\n7:30 pm - Wrap-up\n8:00 pm - Prologue (Social in Scotts Addition)\n\n**All events are open to all skill levels**. If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n\nJoin our Discord server! **https://pyrva.org/discord**\nWant to sponsor PyRVA? **https://pyrva.org/donate**\nWant to present? **https://forms.gle/q8w3xziArWjud5f67**",
-        "group": {
-            "__ref": "Group:18889633"
-        },
-        "creatorMember": {
-            "__ref": "Member:22372041"
-        },
-        "eventHosts": [
-            {
-                "__typename": "EventHost",
-                "memberId": "22372041"
-            },
-            {
-                "__typename": "EventHost",
-                "memberId": "71861332"
-            }
-        ],
-        "feeSettings": null,
-        "venue": {
-            "__ref": "Venue:26042046"
-        },
-        "dateTime": "2025-01-21T17:45:00-05:00",
-        "createdTime": "2024-09-05T09:36:43-04:00",
-        "endTime": "2025-01-21T19:45:00-05:00",
-        "going": {
-            "__typename": "GoingRsvpConnection",
-            "totalCount": 28
-        },
-        "isAttending": false,
-        "isOnline": false,
-        "eventType": "PHYSICAL",
-        "status": "ACTIVE",
-        "series": {
-            "__typename": "Series"
-        },
-        "featuredEventPhoto": {
-            "__ref": "PhotoInfo:521349835"
-        },
-        "rsvps({\"first\":5})": {
-            "__typename": "RsvpConnection",
-            "edges": [
-                {
-                    "__typename": "RsvpEdge",
-                    "node": {
-                        "__ref": "Rsvp:2008698258"
-                    }
-                },
-                {
-                    "__typename": "RsvpEdge",
-                    "node": {
-                        "__ref": "Rsvp:2008698259"
-                    }
-                },
-                {
-                    "__typename": "RsvpEdge",
-                    "node": {
-                        "__ref": "Rsvp:2008698261"
-                    }
-                },
-                {
-                    "__typename": "RsvpEdge",
-                    "node": {
-                        "__ref": "Rsvp:2018682440"
-                    }
-                },
-                {
-                    "__typename": "RsvpEdge",
-                    "node": {
-                        "__ref": "Rsvp:2018788918"
-                    }
-                }
-            ]
-        },
-        "actions": [],
-        "rsvpSettings": {
-            "__typename": "RsvpOpenSettings",
-            "rsvpsClosed": false
-        },
-        "isNetworkEvent": false,
-        "networkEvent": null,
-        "socialLabels": []
-    },
-    "Rsvp:2008698263": {
-        "__typename": "Rsvp",
-        "id": "2008698263",
-        "member": {
-            "__ref": "Member:22372041"
-        }
-    },
-    "Rsvp:2008698265": {
-        "__typename": "Rsvp",
-        "id": "2008698265",
-        "member": {
-            "__ref": "Member:71861332"
         }
     },
     "Rsvp:2008698266": {
@@ -559,9 +299,9 @@
     "Event:303255154": {
         "__typename": "Event",
         "id": "303255154",
-        "title": "PyRVA Monthly Meeting",
+        "title": "UV: What is it and should you use it?",
         "eventUrl": "https://www.meetup.com/pyrvausergroup/events/303255154/",
-        "description": "This is a placeholder event so you know when to plan to be there.\n\n**Schedule**\n5:45 pm - Doors Open / Social\n6:30 pm - Meeting Start\n7:30 pm - Wrap-up\n8:00 pm - Prologue (Social in Scotts Addition)\n\n**All events are open to all skill levels**. If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n\nJoin our Discord server! **https://pyrva.org/discord**\nWant to sponsor PyRVA? **https://pyrva.org/donate**\nWant to present? **https://forms.gle/q8w3xziArWjud5f67**",
+        "description": "UV is a new way of managing your python projects and it's lightning fast (thanks rust!) with a nice interface. UV is from Astral, the same folks who gave us Ruff and their goal is to meet the python community where they're at making adoption super easy.\n\nThis month Cohan will be guiding us through their journey of adopting UV and we'll explore some of the features that make it pleasant to work with!\n\nhttps://docs.astral.sh/uv/\n\n**Schedule**\n5:45 pm - Doors Open / Social\n6:30 pm - Meeting Start\n7:30 pm - Wrap-up\n8:00 pm - Prologue (Social in Scotts Addition)\n\n**All events are open to all skill levels**. If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n\nJoin our Discord server! **https://pyrva.org/discord**\nWant to sponsor PyRVA? **https://pyrva.org/donate**\nWant to present? **https://forms.gle/q8w3xziArWjud5f67**",
         "group": {
             "__ref": "Group:18889633"
         },
@@ -587,7 +327,7 @@
         "endTime": "2025-02-18T19:45:00-05:00",
         "going": {
             "__typename": "GoingRsvpConnection",
-            "totalCount": 5
+            "totalCount": 27
         },
         "isAttending": false,
         "isOnline": false,
@@ -848,6 +588,110 @@
                     "__typename": "RsvpEdge",
                     "node": {
                         "__ref": "Rsvp:2021393598"
+                    }
+                }
+            ]
+        },
+        "actions": [],
+        "rsvpSettings": {
+            "__typename": "RsvpOpenSettings",
+            "rsvpsClosed": false
+        },
+        "isNetworkEvent": false,
+        "networkEvent": null,
+        "socialLabels": []
+    },
+    "Venue:24211544": {
+        "__typename": "Venue",
+        "id": "24211544",
+        "name": "Violet Crown Cinema",
+        "address": "200 W. Main St.",
+        "city": "Charlottesville",
+        "state": "VA",
+        "country": "us"
+    },
+    "PhotoInfo:525948935": {
+        "__typename": "PhotoInfo",
+        "id": "525948935",
+        "highResUrl": "https://secure.meetupstatic.com/photos/event/b/f/2/7/highres_525948935.jpeg"
+    },
+    "Rsvp:2022791264": {
+        "__typename": "Rsvp",
+        "id": "2022791264",
+        "member": {
+            "__ref": "Member:71861332"
+        }
+    },
+    "PhotoInfo:98272152": {
+        "__typename": "PhotoInfo",
+        "id": "98272152",
+        "highResUrl": "https://secure.meetupstatic.com/photos/member/c/b/b/8/highres_98272152.jpeg"
+    },
+    "Member:80438272": {
+        "__typename": "Member",
+        "id": "80438272",
+        "name": "Francisco Estrada",
+        "memberPhoto": {
+            "__ref": "PhotoInfo:98272152"
+        }
+    },
+    "Rsvp:2024086346": {
+        "__typename": "Rsvp",
+        "id": "2024086346",
+        "member": {
+            "__ref": "Member:80438272"
+        }
+    },
+    "Event:305847393": {
+        "__typename": "Event",
+        "id": "305847393",
+        "title": "PyData Virginia",
+        "eventUrl": "https://www.meetup.com/pyrvausergroup/events/305847393/",
+        "description": "PyData Virginia 2025, a new data science, machine learning, and AI conference, is coming up on April 18-19 in Charlottesville, VA. We'd love to have lots of folks from the Python community in Richmond come and join us!\nSee the conference website for more information: [https://pydata.org/virginia2025](https://pydata.org/virginia2025)",
+        "group": {
+            "__ref": "Group:18889633"
+        },
+        "creatorMember": {
+            "__ref": "Member:71861332"
+        },
+        "eventHosts": [
+            {
+                "__typename": "EventHost",
+                "memberId": "71861332"
+            }
+        ],
+        "feeSettings": null,
+        "venue": {
+            "__ref": "Venue:24211544"
+        },
+        "dateTime": "2025-04-18T12:00:00-04:00",
+        "createdTime": "2025-01-27T13:07:46-05:00",
+        "endTime": "2025-04-19T17:00:00-04:00",
+        "going": {
+            "__typename": "GoingRsvpConnection",
+            "totalCount": 2
+        },
+        "isAttending": false,
+        "isOnline": false,
+        "eventType": "PHYSICAL",
+        "status": "ACTIVE",
+        "series": null,
+        "featuredEventPhoto": {
+            "__ref": "PhotoInfo:525948935"
+        },
+        "rsvps({\"first\":5})": {
+            "__typename": "RsvpConnection",
+            "edges": [
+                {
+                    "__typename": "RsvpEdge",
+                    "node": {
+                        "__ref": "Rsvp:2022791264"
+                    }
+                },
+                {
+                    "__typename": "RsvpEdge",
+                    "node": {
+                        "__ref": "Rsvp:2024086346"
                     }
                 }
             ]
@@ -1342,5 +1186,124 @@
         "isNetworkEvent": false,
         "networkEvent": null,
         "socialLabels": []
+    },
+    "Topic:917262": {
+        "__typename": "Topic",
+        "id": "917262",
+        "name": "Open Source Python",
+        "urlkey": "open-source-python"
+    },
+    "Topic:1064": {
+        "__typename": "Topic",
+        "id": "1064",
+        "name": "Python",
+        "urlkey": "python"
+    },
+    "Topic:917242": {
+        "__typename": "Topic",
+        "id": "917242",
+        "name": "Python Web Development",
+        "urlkey": "python-web-development"
+    },
+    "Topic:120095": {
+        "__typename": "Topic",
+        "id": "120095",
+        "name": "Software Development",
+        "urlkey": "software-development"
+    },
+    "Topic:32528": {
+        "__typename": "Topic",
+        "id": "32528",
+        "name": "Computer Programming",
+        "urlkey": "computer-programming"
+    },
+    "Topic:8192": {
+        "__typename": "Topic",
+        "id": "8192",
+        "name": "Open Source",
+        "urlkey": "open-source"
+    },
+    "Topic:46831": {
+        "__typename": "Topic",
+        "id": "46831",
+        "name": "Data Center and Operations Automation",
+        "urlkey": "data-center-and-operations-automation"
+    },
+    "Topic:15582": {
+        "__typename": "Topic",
+        "id": "15582",
+        "name": "Web Development",
+        "urlkey": "web-development"
+    },
+    "Topic:17628": {
+        "__typename": "Topic",
+        "id": "17628",
+        "name": "Programming Languages",
+        "urlkey": "programming-languages"
+    },
+    "Topic:87614": {
+        "__typename": "Topic",
+        "id": "87614",
+        "name": "DevOps",
+        "urlkey": "devops"
+    },
+    "Topic:46810": {
+        "__typename": "Topic",
+        "id": "46810",
+        "name": "Configuration Management",
+        "urlkey": "configuration-management"
+    },
+    "Topic:10553": {
+        "__typename": "Topic",
+        "id": "10553",
+        "name": "Django",
+        "urlkey": "django"
+    },
+    "TopicCategory:546": {
+        "__typename": "TopicCategory",
+        "id": "546",
+        "name": "Technology",
+        "urlkey": "technology"
+    },
+    "PhotoInfo:472858647": {
+        "__typename": "PhotoInfo",
+        "id": "472858647",
+        "highResUrl": "https://secure.meetupstatic.com/photos/event/e/5/1/7/highres_472858647.jpeg"
+    },
+    "PhotoInfo:280019501": {
+        "__typename": "PhotoInfo",
+        "id": "280019501",
+        "highResUrl": "https://secure.meetupstatic.com/photos/member/e/8/6/d/highres_280019501.jpeg"
+    },
+    "ProNetwork:610554310475497472": {
+        "__typename": "ProNetwork",
+        "id": "610554310475497472",
+        "urlname": "python-software-foundation-meetups",
+        "name": "Python Software Foundation Meetup Pro Network",
+        "logo": {
+            "__ref": "PhotoInfo:280019501"
+        },
+        "groups": {
+            "__typename": "ProNetworkGroupsConnection",
+            "totalCount": 119
+        }
+    },
+    "GroupQuestion:8939666": {
+        "__typename": "GroupQuestion",
+        "id": "8939666",
+        "question": "What do you want to learn?",
+        "sort": 1
+    },
+    "GroupQuestion:8939665": {
+        "__typename": "GroupQuestion",
+        "id": "8939665",
+        "question": "What are you excited about",
+        "sort": 2
+    },
+    "GroupQuestion:9273714": {
+        "__typename": "GroupQuestion",
+        "id": "9273714",
+        "question": "What is your biggest struggle right now with python?",
+        "sort": 3
     }
 }

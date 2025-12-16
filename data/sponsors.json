@@ -8,6 +8,12 @@
             "url": "https://ipponusa.com/",
             "start": "2024-01-01",
             "end": "2024-12-31"
+        },{
+            "name": "Food",
+            "logo": "images/fundraiser.png",
+            "url": "",
+            "start": "2025-12-01",
+            "end": "2026-01-31"
         }
     ],
     "function": [

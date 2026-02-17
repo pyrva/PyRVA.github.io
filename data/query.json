@@ -14,14 +14,14 @@
             "__typename": "GroupStats",
             "memberCounts": {
                 "__typename": "GroupMemberCounts",
-                "all": 2056,
+                "all": 2069,
                 "leadership": 2,
                 "pending": 0
             },
             "eventRatings": {
                 "__typename": "GroupStatsEventRatings",
-                "average": 4.71,
-                "total": 441
+                "average": 4.72,
+                "total": 453
             }
         },
         "lat": 37.54,
@@ -63,9 +63,26 @@
         "calendarFeeds": null,
         "welcomeBlurb": "Welcome to PyRVA! \n\nWe can't wait to __init__() you to the group.  We currently meet at the University of Richmond campus every second Wednesday of the month.  Topics vary monthly for a broad range of users and/or skills.  We would greatly appreciate any feedback or requests for topics.  We're also open to requests/recommendations for speakers. \n\nPlease feel free to share the group information with anyone that might be interested in Python.\n\nWe look forward to meeting you.\n\nPyRVA.org \n(http://www.pyrva.org) - Visit site to join the Slack channel.",
         "organizerStartTime": null,
+        "memberships:{\"filter\":{\"status\":\"LEADER\"}}": {
+            "__typename": "GroupMemberConnection",
+            "edges": [
+                {
+                    "__typename": "GroupMemberEdge",
+                    "node": {
+                        "__ref": "Member:71861332"
+                    }
+                },
+                {
+                    "__typename": "GroupMemberEdge",
+                    "node": {
+                        "__ref": "Member:22372041"
+                    }
+                }
+            ]
+        },
         "events({\"filter\":{\"status\":[\"PAST\"]},\"first\":1})": {
             "__typename": "GroupEventConnection",
-            "totalCount": 181
+            "totalCount": 183
         },
         "featuredEvent": null,
         "activeTopics": [
@@ -109,27 +126,15 @@
         "topicCategory": {
             "__ref": "TopicCategory:546"
         },
-        "events({\"filter\":{\"afterDateTime\":\"2025-12-16T22:45:34.476Z\",\"status\":[\"ACTIVE\",\"PAST\",\"CANCELLED\"]},\"first\":30,\"sort\":\"ASC\"})": {
+        "events({\"filter\":{\"afterDateTime\":\"2026-02-17T21:12:12.375Z\",\"status\":[\"ACTIVE\",\"PAST\",\"CANCELLED\"]},\"first\":30,\"sort\":\"ASC\"})": {
             "__typename": "GroupEventConnection",
-            "totalCount": 13,
+            "totalCount": 5,
             "pageInfo": {
                 "__typename": "PageInfo",
-                "endCursor": "aHBtZm10eWpjcWJ0YjoxNzk3Mzc0NzAwMDAw",
+                "endCursor": "dHZyZ3Z0eWpjamJ2YjoxNzgxNjQ2MzAwMDAw",
                 "hasNextPage": false
             },
             "edges": [
-                {
-                    "__typename": "EventEdge",
-                    "node": {
-                        "__ref": "Event:309617696"
-                    }
-                },
-                {
-                    "__typename": "EventEdge",
-                    "node": {
-                        "__ref": "Event:311199623"
-                    }
-                },
                 {
                     "__typename": "EventEdge",
                     "node": {
@@ -145,55 +150,19 @@
                 {
                     "__typename": "EventEdge",
                     "node": {
-                        "__ref": "Event:hpmfmtyjcgbcc"
+                        "__ref": "Event:313151264"
                     }
                 },
                 {
                     "__typename": "EventEdge",
                     "node": {
-                        "__ref": "Event:hpmfmtyjchbzb"
+                        "__ref": "Event:tvrgvtyjchbzb"
                     }
                 },
                 {
                     "__typename": "EventEdge",
                     "node": {
-                        "__ref": "Event:hpmfmtyjcjbvb"
-                    }
-                },
-                {
-                    "__typename": "EventEdge",
-                    "node": {
-                        "__ref": "Event:hpmfmtyjckbcc"
-                    }
-                },
-                {
-                    "__typename": "EventEdge",
-                    "node": {
-                        "__ref": "Event:hpmfmtyjclbxb"
-                    }
-                },
-                {
-                    "__typename": "EventEdge",
-                    "node": {
-                        "__ref": "Event:hpmfmtyjcmbtb"
-                    }
-                },
-                {
-                    "__typename": "EventEdge",
-                    "node": {
-                        "__ref": "Event:hpmfmtyjcnbbc"
-                    }
-                },
-                {
-                    "__typename": "EventEdge",
-                    "node": {
-                        "__ref": "Event:hpmfmtyjcpbwb"
-                    }
-                },
-                {
-                    "__typename": "EventEdge",
-                    "node": {
-                        "__ref": "Event:hpmfmtyjcqbtb"
+                        "__ref": "Event:tvrgvtyjcjbvb"
                     }
                 }
             ]
@@ -219,7 +188,8 @@
         "memberPhoto": {
             "__ref": "PhotoInfo:207323872"
         },
-        "isStarterOrganizer": false
+        "isStarterOrganizer": false,
+        "isSuperOrganizer": false
     },
     "PhotoInfo:472858647": {
         "__typename": "PhotoInfo",
@@ -242,7 +212,7 @@
         },
         "groups": {
             "__typename": "ProNetworkGroupsConnection",
-            "totalCount": 110
+            "totalCount": 109
         }
     },
     "GroupQuestion:8939666": {
@@ -262,6 +232,15 @@
         "id": "9273714",
         "question": "What is your biggest struggle right now with python?",
         "sort": 3
+    },
+    "Member:22372041": {
+        "__typename": "Member",
+        "id": "22372041",
+        "name": " Root",
+        "isSuperOrganizer": false,
+        "memberPhoto": {
+            "__ref": "PhotoInfo:319564840"
+        }
     },
     "Topic:917262": {
         "__typename": "Topic",
@@ -341,14 +320,6 @@
         "name": "Technology",
         "urlkey": "technology"
     },
-    "Member:22372041": {
-        "__typename": "Member",
-        "id": "22372041",
-        "name": " Root",
-        "memberPhoto": {
-            "__ref": "PhotoInfo:319564840"
-        }
-    },
     "Venue:26042046": {
         "__typename": "Venue",
         "id": "26042046",
@@ -358,15 +329,15 @@
         "state": "VA",
         "country": "us"
     },
-    "PhotoInfo:521349835": {
+    "PhotoInfo:531834559": {
         "__typename": "PhotoInfo",
-        "id": "521349835",
+        "id": "531834559",
         "baseUrl": "https://secure-content.meetupstatic.com/images/classic-events/",
-        "highResUrl": "https://secure.meetupstatic.com/photos/event/2/6/6/b/highres_521349835.jpeg"
+        "highResUrl": "https://secure.meetupstatic.com/photos/event/d/5/1/f/highres_531834559.jpeg"
     },
-    "Rsvp:2042602955": {
+    "Rsvp:2050234821": {
         "__typename": "Rsvp",
-        "id": "2042602955",
+        "id": "2050234821",
         "member": {
             "__ref": "Member:71861332"
         }
@@ -376,31 +347,31 @@
         "id": "319564840",
         "highResUrl": "https://secure.meetupstatic.com/photos/member/1/2/e/8/highres_319564840.jpeg"
     },
-    "Rsvp:2042602958": {
+    "Rsvp:2050234822": {
         "__typename": "Rsvp",
-        "id": "2042602958",
+        "id": "2050234822",
         "member": {
             "__ref": "Member:22372041"
         }
     },
-    "PhotoInfo:292379590": {
+    "PhotoInfo:9293300": {
         "__typename": "PhotoInfo",
-        "id": "292379590",
-        "highResUrl": "https://secure.meetupstatic.com/photos/member/e/8/c/6/highres_292379590.jpeg"
+        "id": "9293300",
+        "highResUrl": "https://secure.meetupstatic.com/photos/member/d/0/3/4/highres_9293300.jpeg"
     },
-    "Member:279322605": {
+    "Member:4508081": {
         "__typename": "Member",
-        "id": "279322605",
-        "name": "Ben Lutz",
+        "id": "4508081",
+        "name": "Priyesh Jain",
         "memberPhoto": {
-            "__ref": "PhotoInfo:292379590"
+            "__ref": "PhotoInfo:9293300"
         }
     },
-    "Rsvp:2042602959": {
+    "Rsvp:2060923340": {
         "__typename": "Rsvp",
-        "id": "2042602959",
+        "id": "2060923340",
         "member": {
-            "__ref": "Member:279322605"
+            "__ref": "Member:4508081"
         }
     },
     "PhotoInfo:322105929": {
@@ -416,328 +387,40 @@
             "__ref": "PhotoInfo:322105929"
         }
     },
-    "Rsvp:2054076503": {
+    "Rsvp:2060963542": {
         "__typename": "Rsvp",
-        "id": "2054076503",
+        "id": "2060963542",
         "member": {
             "__ref": "Member:231794988"
         }
     },
-    "PhotoInfo:282492553": {
+    "PhotoInfo:323904011": {
         "__typename": "PhotoInfo",
-        "id": "282492553",
-        "highResUrl": "https://secure.meetupstatic.com/photos/member/3/1/0/9/highres_282492553.jpeg"
+        "id": "323904011",
+        "highResUrl": "https://secure.meetupstatic.com/photos/member/5/d/c/b/highres_323904011.jpeg"
     },
-    "Member:187101771": {
+    "Member:286506538": {
         "__typename": "Member",
-        "id": "187101771",
-        "name": "Max",
+        "id": "286506538",
+        "name": "Joseph",
         "memberPhoto": {
-            "__ref": "PhotoInfo:282492553"
+            "__ref": "PhotoInfo:323904011"
         }
     },
-    "Rsvp:2055413791": {
+    "Rsvp:2061248268": {
         "__typename": "Rsvp",
-        "id": "2055413791",
+        "id": "2061248268",
         "member": {
-            "__ref": "Member:187101771"
-        }
-    },
-    "Event:309617696": {
-        "__typename": "Event",
-        "id": "309617696",
-        "title": "Down the rabbit hole: Using Python for text searches and indexing",
-        "eventUrl": "https://www.meetup.com/pyrvausergroup/events/309617696/",
-        "description": "In this hands-on session, Rob Harrison and Monty Shepardson will walk you through a Python program that \"indexes\" a narrative by matching a passage from Alice in Wonderland against a curated keyword list.\n\nWatch how the script scans the text, adapts to changes in length or composition, and tallies keyword occurrences with practical flair.\n\nBring your curiosity! After the demo we'll open the floor for a discussion about alternative approaches and enhancements. What opportunities will the audience bring up to make their script better?\n\nWhether you're a coding novice or a seasoned developer, you'll pick up ideas and inspiration.\n\n**Schedule**\n5:45 pm - Doors Open / Social\n6:30 pm - Meeting Start\n7:30 pm - Wrap-up\n8:00 pm - Prologue (Social in Scotts Addition)\n\n**All events are open to all skill levels**. If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n\nJoin our Discord server! **https://pyrva.org/discord**\nWant to sponsor PyRVA? **https://pyrva.org/donate**\nWant to present? **https://forms.gle/q8w3xziArWjud5f67**",
-        "aeoDescription": null,
-        "isSaved": false,
-        "group": {
-            "__ref": "Group:18889633"
-        },
-        "creatorMember": {
-            "__ref": "Member:22372041"
-        },
-        "eventHosts": [
-            {
-                "__typename": "EventHost",
-                "memberId": "22372041"
-            },
-            {
-                "__typename": "EventHost",
-                "memberId": "71861332"
-            }
-        ],
-        "feeSettings": null,
-        "venue": {
-            "__ref": "Venue:26042046"
-        },
-        "dateTime": "2025-12-16T17:45:00-05:00",
-        "createdTime": "2025-07-14T13:52:32-04:00",
-        "endTime": "2025-12-16T19:45:00-05:00",
-        "going": {
-            "__typename": "GoingRsvpConnection",
-            "totalCount": 27
-        },
-        "isAttending": false,
-        "isOnline": false,
-        "eventType": "PHYSICAL",
-        "status": "ACTIVE",
-        "series": {
-            "__typename": "Series",
-            "description": "Every 3rd Tuesday of the month",
-            "weeklyRecurrence": null,
-            "monthlyRecurrence": {
-                "__typename": "MonthlyRecurrenceInfo",
-                "monthlyDayOfWeek": "TUESDAY",
-                "monthlyWeekOfMonth": 3
-            }
-        },
-        "featuredEventPhoto": {
-            "__ref": "PhotoInfo:521349835"
-        },
-        "rsvpState": "JOIN_OPEN",
-        "rsvps({\"first\":5})": {
-            "__typename": "RsvpConnection",
-            "totalCount": 27,
-            "edges": [
-                {
-                    "__typename": "RsvpEdge",
-                    "node": {
-                        "__ref": "Rsvp:2042602955"
-                    }
-                },
-                {
-                    "__typename": "RsvpEdge",
-                    "node": {
-                        "__ref": "Rsvp:2042602958"
-                    }
-                },
-                {
-                    "__typename": "RsvpEdge",
-                    "node": {
-                        "__ref": "Rsvp:2042602959"
-                    }
-                },
-                {
-                    "__typename": "RsvpEdge",
-                    "node": {
-                        "__ref": "Rsvp:2054076503"
-                    }
-                },
-                {
-                    "__typename": "RsvpEdge",
-                    "node": {
-                        "__ref": "Rsvp:2055413791"
-                    }
-                }
-            ]
-        },
-        "maxTickets": 0,
-        "actions": [],
-        "rsvpSettings": {
-            "__typename": "RsvpOpenSettings",
-            "rsvpsClosed": false
-        },
-        "isNetworkEvent": false,
-        "networkEvent": null,
-        "socialLabels": [],
-        "socialProofInsights": null
-    },
-    "Rsvp:2050234814": {
-        "__typename": "Rsvp",
-        "id": "2050234814",
-        "member": {
-            "__ref": "Member:71861332"
-        }
-    },
-    "Rsvp:2050234815": {
-        "__typename": "Rsvp",
-        "id": "2050234815",
-        "member": {
-            "__ref": "Member:22372041"
-        }
-    },
-    "PhotoInfo:260003254": {
-        "__typename": "PhotoInfo",
-        "id": "260003254",
-        "highResUrl": "https://secure.meetupstatic.com/photos/member/5/a/d/6/highres_260003254.jpeg"
-    },
-    "Member:212674261": {
-        "__typename": "Member",
-        "id": "212674261",
-        "name": "Aleksandr Podyachev",
-        "memberPhoto": {
-            "__ref": "PhotoInfo:260003254"
-        }
-    },
-    "Rsvp:2050255748": {
-        "__typename": "Rsvp",
-        "id": "2050255748",
-        "member": {
-            "__ref": "Member:212674261"
-        }
-    },
-    "PhotoInfo:308046272": {
-        "__typename": "PhotoInfo",
-        "id": "308046272",
-        "highResUrl": "https://secure.meetupstatic.com/photos/member/1/8/8/0/highres_308046272.jpeg"
-    },
-    "Member:345603229": {
-        "__typename": "Member",
-        "id": "345603229",
-        "name": "mark weisser",
-        "memberPhoto": {
-            "__ref": "PhotoInfo:308046272"
-        }
-    },
-    "Rsvp:2055410413": {
-        "__typename": "Rsvp",
-        "id": "2055410413",
-        "member": {
-            "__ref": "Member:345603229"
-        }
-    },
-    "PhotoInfo:322783534": {
-        "__typename": "PhotoInfo",
-        "id": "322783534",
-        "highResUrl": "https://secure.meetupstatic.com/photos/member/a/a/0/e/highres_322783534.jpeg"
-    },
-    "Member:210331791": {
-        "__typename": "Member",
-        "id": "210331791",
-        "name": "Christopher Hines ",
-        "memberPhoto": {
-            "__ref": "PhotoInfo:322783534"
-        }
-    },
-    "Rsvp:2055410563": {
-        "__typename": "Rsvp",
-        "id": "2055410563",
-        "member": {
-            "__ref": "Member:210331791"
-        }
-    },
-    "Event:311199623": {
-        "__typename": "Event",
-        "id": "311199623",
-        "title": "Quantum computing with Python",
-        "eventUrl": "https://www.meetup.com/pyrvausergroup/events/311199623/",
-        "description": "Quantum computing has become a popular topic recently.\n\nQiskit, a Python library for quantum computing, allows you to both simulate quantum computer operations or send it to be run on a real quantum computer.\n\nQuantum computing is used to solve some calculations that would take a regular computer a very long time to calculate or would otherwise be uncomputable. Applications include scientific computations, simulations, and the most infamous, breaking encryptions.\n\nCome join us as we explore the quantum future!\n\n**Schedule**\n5:45 pm - Doors Open / Social\n6:30 pm - Meeting Start\n7:30 pm - Wrap-up\n8:00 pm - Prologue (Social in Scotts Addition)\n\n**All events are open to all skill levels**. If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n\nJoin our Discord server! **https://pyrva.org/discord**\nWant to sponsor PyRVA? **https://pyrva.org/donate**\nWant to present? **https://forms.gle/q8w3xziArWjud5f67**",
-        "aeoDescription": null,
-        "isSaved": false,
-        "group": {
-            "__ref": "Group:18889633"
-        },
-        "creatorMember": {
-            "__ref": "Member:22372041"
-        },
-        "eventHosts": [
-            {
-                "__typename": "EventHost",
-                "memberId": "22372041"
-            },
-            {
-                "__typename": "EventHost",
-                "memberId": "71861332"
-            }
-        ],
-        "feeSettings": null,
-        "venue": {
-            "__ref": "Venue:26042046"
-        },
-        "dateTime": "2026-01-20T17:45:00-05:00",
-        "createdTime": "2025-09-24T08:57:02-04:00",
-        "endTime": "2026-01-20T19:45:00-05:00",
-        "going": {
-            "__typename": "GoingRsvpConnection",
-            "totalCount": 15
-        },
-        "isAttending": false,
-        "isOnline": false,
-        "eventType": "PHYSICAL",
-        "status": "ACTIVE",
-        "series": {
-            "__typename": "Series",
-            "description": "Every 3rd Tuesday of the month",
-            "weeklyRecurrence": null,
-            "monthlyRecurrence": {
-                "__typename": "MonthlyRecurrenceInfo",
-                "monthlyDayOfWeek": "TUESDAY",
-                "monthlyWeekOfMonth": 3
-            }
-        },
-        "featuredEventPhoto": {
-            "__ref": "PhotoInfo:521349835"
-        },
-        "rsvpState": "JOIN_OPEN",
-        "rsvps({\"first\":5})": {
-            "__typename": "RsvpConnection",
-            "totalCount": 15,
-            "edges": [
-                {
-                    "__typename": "RsvpEdge",
-                    "node": {
-                        "__ref": "Rsvp:2050234814"
-                    }
-                },
-                {
-                    "__typename": "RsvpEdge",
-                    "node": {
-                        "__ref": "Rsvp:2050234815"
-                    }
-                },
-                {
-                    "__typename": "RsvpEdge",
-                    "node": {
-                        "__ref": "Rsvp:2050255748"
-                    }
-                },
-                {
-                    "__typename": "RsvpEdge",
-                    "node": {
-                        "__ref": "Rsvp:2055410413"
-                    }
-                },
-                {
-                    "__typename": "RsvpEdge",
-                    "node": {
-                        "__ref": "Rsvp:2055410563"
-                    }
-                }
-            ]
-        },
-        "maxTickets": 0,
-        "actions": [],
-        "rsvpSettings": {
-            "__typename": "RsvpOpenSettings",
-            "rsvpsClosed": false
-        },
-        "isNetworkEvent": false,
-        "networkEvent": null,
-        "socialLabels": [],
-        "socialProofInsights": null
-    },
-    "Rsvp:2050234821": {
-        "__typename": "Rsvp",
-        "id": "2050234821",
-        "member": {
-            "__ref": "Member:71861332"
-        }
-    },
-    "Rsvp:2050234822": {
-        "__typename": "Rsvp",
-        "id": "2050234822",
-        "member": {
-            "__ref": "Member:22372041"
+            "__ref": "Member:286506538"
         }
     },
     "Event:311199624": {
         "__typename": "Event",
         "id": "311199624",
-        "title": "PyRVA Monthly Meeting",
+        "title": "Discussion: The AI Effect - Does AI Really Make You Productive?",
         "eventUrl": "https://www.meetup.com/pyrvausergroup/events/311199624/",
-        "description": "This is a placeholder event so you know when to plan to be there.\n\n**Schedule**\n5:45 pm - Doors Open / Social\n6:30 pm - Meeting Start\n7:30 pm - Wrap-up\n8:00 pm - Prologue (Social in Scotts Addition)\n\n**All events are open to all skill levels**. If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n\nJoin our Discord server! **https://pyrva.org/discord**\nWant to sponsor PyRVA? **https://pyrva.org/donate**\nWant to present? **https://forms.gle/q8w3xziArWjud5f67**",
-        "aeoDescription": null,
+        "description": "There's no doubt that AI has taken off at an incredible rate. Everywhere you go, AI is there to help. It's on our devices, it's answering our calls, it's even searching the web for us. But is it actually making us more productive?\n\nJoin us for an open discussion on the merits of AI. Where it excels and where it might fall short.\n\n**Schedule**\n5:45 pm - Doors Open / Social\n6:30 pm - Meeting Start\n7:30 pm - Wrap-up\n8:00 pm - Prologue (Social in Scotts Addition)\n\n**All events are open to all skill levels**. If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n\n**Free parking** is available in the surface level parking lots on either side of the Ippon building.\n\nJoin our Discord server! **https://pyrva.org/discord**\nWant to sponsor PyRVA? **https://pyrva.org/donate**\nWant to present? **https://forms.gle/q8w3xziArWjud5f67**",
+        "aeoDescription": "In-person Python community meetup for PyRVA; open to all skill levels; outcome: attendees learn Python concepts through Q&A and knowledge sharing.",
         "isSaved": false,
         "group": {
             "__ref": "Group:18889633"
@@ -764,7 +447,7 @@
         "endTime": "2026-02-17T19:45:00-05:00",
         "going": {
             "__typename": "GoingRsvpConnection",
-            "totalCount": 2
+            "totalCount": 27
         },
         "isAttending": false,
         "isOnline": false,
@@ -772,7 +455,7 @@
         "status": "ACTIVE",
         "series": {
             "__typename": "Series",
-            "description": "Every 3rd Tuesday of the month",
+            "description": "Every 3rd Tuesday of the month until June 16, 2026",
             "weeklyRecurrence": null,
             "monthlyRecurrence": {
                 "__typename": "MonthlyRecurrenceInfo",
@@ -781,12 +464,12 @@
             }
         },
         "featuredEventPhoto": {
-            "__ref": "PhotoInfo:521349835"
+            "__ref": "PhotoInfo:531834559"
         },
         "rsvpState": "JOIN_OPEN",
         "rsvps({\"first\":5})": {
             "__typename": "RsvpConnection",
-            "totalCount": 2,
+            "totalCount": 27,
             "edges": [
                 {
                     "__typename": "RsvpEdge",
@@ -798,6 +481,24 @@
                     "__typename": "RsvpEdge",
                     "node": {
                         "__ref": "Rsvp:2050234822"
+                    }
+                },
+                {
+                    "__typename": "RsvpEdge",
+                    "node": {
+                        "__ref": "Rsvp:2060923340"
+                    }
+                },
+                {
+                    "__typename": "RsvpEdge",
+                    "node": {
+                        "__ref": "Rsvp:2060963542"
+                    }
+                },
+                {
+                    "__typename": "RsvpEdge",
+                    "node": {
+                        "__ref": "Rsvp:2061248268"
                     }
                 }
             ]
@@ -827,13 +528,53 @@
             "__ref": "Member:22372041"
         }
     },
+    "PhotoInfo:323124235": {
+        "__typename": "PhotoInfo",
+        "id": "323124235",
+        "highResUrl": "https://secure.meetupstatic.com/photos/member/5/e/a/b/highres_323124235.jpeg"
+    },
+    "Member:299106626": {
+        "__typename": "Member",
+        "id": "299106626",
+        "name": "Thomas Wilson",
+        "memberPhoto": {
+            "__ref": "PhotoInfo:323124235"
+        }
+    },
+    "Rsvp:2061399263": {
+        "__typename": "Rsvp",
+        "id": "2061399263",
+        "member": {
+            "__ref": "Member:299106626"
+        }
+    },
+    "Rsvp:2063112830": {
+        "__typename": "Rsvp",
+        "id": "2063112830",
+        "member": {
+            "__ref": "Member:4508081"
+        }
+    },
+    "Member:478828421": {
+        "__typename": "Member",
+        "id": "478828421",
+        "name": "jj23064",
+        "memberPhoto": null
+    },
+    "Rsvp:2063170908": {
+        "__typename": "Rsvp",
+        "id": "2063170908",
+        "member": {
+            "__ref": "Member:478828421"
+        }
+    },
     "Event:311199626": {
         "__typename": "Event",
         "id": "311199626",
         "title": "PyRVA Monthly Meeting",
         "eventUrl": "https://www.meetup.com/pyrvausergroup/events/311199626/",
-        "description": "This is a placeholder event so you know when to plan to be there.\n\n**Schedule**\n5:45 pm - Doors Open / Social\n6:30 pm - Meeting Start\n7:30 pm - Wrap-up\n8:00 pm - Prologue (Social in Scotts Addition)\n\n**All events are open to all skill levels**. If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n\nJoin our Discord server! **https://pyrva.org/discord**\nWant to sponsor PyRVA? **https://pyrva.org/donate**\nWant to present? **https://forms.gle/q8w3xziArWjud5f67**",
-        "aeoDescription": null,
+        "description": "This is a placeholder event so you know when to plan to be there.\n\n**Schedule**\n5:45 pm - Doors Open / Social\n6:30 pm - Meeting Start\n7:30 pm - Wrap-up\n8:00 pm - Prologue (Social in Scotts Addition)\n\n**All events are open to all skill levels**. If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n\n**Free parking** is available in the surface level parking lots on either side of the Ippon building.\n\nJoin our Discord server! **https://pyrva.org/discord**\nWant to sponsor PyRVA? **https://pyrva.org/donate**\nWant to present? **https://forms.gle/q8w3xziArWjud5f67**",
+        "aeoDescription": "PyRVA monthly meeting for Python developers of all levels to learn Python concepts through Q&A and peer sharing.",
         "isSaved": false,
         "group": {
             "__ref": "Group:18889633"
@@ -860,7 +601,7 @@
         "endTime": "2026-03-17T19:45:00-04:00",
         "going": {
             "__typename": "GoingRsvpConnection",
-            "totalCount": 2
+            "totalCount": 5
         },
         "isAttending": false,
         "isOnline": false,
@@ -868,7 +609,7 @@
         "status": "ACTIVE",
         "series": {
             "__typename": "Series",
-            "description": "Every 3rd Tuesday of the month",
+            "description": "Every 3rd Tuesday of the month until June 16, 2026",
             "weeklyRecurrence": null,
             "monthlyRecurrence": {
                 "__typename": "MonthlyRecurrenceInfo",
@@ -877,12 +618,12 @@
             }
         },
         "featuredEventPhoto": {
-            "__ref": "PhotoInfo:521349835"
+            "__ref": "PhotoInfo:531834559"
         },
         "rsvpState": "JOIN_OPEN",
         "rsvps({\"first\":5})": {
             "__typename": "RsvpConnection",
-            "totalCount": 2,
+            "totalCount": 5,
             "edges": [
                 {
                     "__typename": "RsvpEdge",
@@ -894,6 +635,24 @@
                     "__typename": "RsvpEdge",
                     "node": {
                         "__ref": "Rsvp:2050234826"
+                    }
+                },
+                {
+                    "__typename": "RsvpEdge",
+                    "node": {
+                        "__ref": "Rsvp:2061399263"
+                    }
+                },
+                {
+                    "__typename": "RsvpEdge",
+                    "node": {
+                        "__ref": "Rsvp:2063112830"
+                    }
+                },
+                {
+                    "__typename": "RsvpEdge",
+                    "node": {
+                        "__ref": "Rsvp:2063170908"
                     }
                 }
             ]
@@ -909,33 +668,75 @@
         "socialLabels": [],
         "socialProofInsights": null
     },
-    "Rsvp:2000778495": {
+    "Rsvp:2061722084": {
         "__typename": "Rsvp",
-        "id": "2000778495",
+        "id": "2061722084",
         "member": {
             "__ref": "Member:22372041"
         }
     },
-    "Rsvp:2000778496": {
+    "Rsvp:2061722085": {
         "__typename": "Rsvp",
-        "id": "2000778496",
+        "id": "2061722085",
         "member": {
             "__ref": "Member:71861332"
         }
     },
-    "Event:hpmfmtyjcgbcc": {
+    "PhotoInfo:263436032": {
+        "__typename": "PhotoInfo",
+        "id": "263436032",
+        "baseUrl": "https://secure-content.meetupstatic.com/images/classic-member/",
+        "highResUrl": "https://secure.meetupstatic.com/photos/member/8/c/c/0/highres_263436032.jpeg"
+    },
+    "PhotoInfo:251317932": {
+        "__typename": "PhotoInfo",
+        "id": "251317932",
+        "baseUrl": "https://secure-content.meetupstatic.com/images/classic-member/",
+        "highResUrl": "https://secure.meetupstatic.com/photos/member/9/4/2/c/highres_251317932.jpeg"
+    },
+    "PhotoInfo:249549081": {
+        "__typename": "PhotoInfo",
+        "id": "249549081",
+        "baseUrl": "https://secure-content.meetupstatic.com/images/classic-member/",
+        "highResUrl": "https://secure.meetupstatic.com/photos/member/2/3/7/9/highres_249549081.jpeg"
+    },
+    "PhotoInfo:130604272": {
+        "__typename": "PhotoInfo",
+        "id": "130604272",
+        "baseUrl": "https://secure-content.meetupstatic.com/images/classic-member/",
+        "highResUrl": "https://secure.meetupstatic.com/photos/member/a/c/f/0/highres_130604272.jpeg"
+    },
+    "PhotoInfo:171881452": {
+        "__typename": "PhotoInfo",
+        "id": "171881452",
+        "baseUrl": "https://secure-content.meetupstatic.com/images/classic-member/",
+        "highResUrl": "https://secure.meetupstatic.com/photos/member/a/1/e/c/highres_171881452.jpeg"
+    },
+    "PhotoInfo:171671462": {
+        "__typename": "PhotoInfo",
+        "id": "171671462",
+        "baseUrl": "https://secure-content.meetupstatic.com/images/classic-member/",
+        "highResUrl": "https://secure.meetupstatic.com/photos/member/2/c/c/6/highres_171671462.jpeg"
+    },
+    "PhotoInfo:241504555": {
+        "__typename": "PhotoInfo",
+        "id": "241504555",
+        "baseUrl": "https://secure-content.meetupstatic.com/images/classic-member/",
+        "highResUrl": "https://secure.meetupstatic.com/photos/member/1/1/c/b/highres_241504555.jpeg"
+    },
+    "Event:313151264": {
         "__typename": "Event",
-        "id": "hpmfmtyjcgbcc",
+        "id": "313151264",
         "title": "PyRVA Monthly Meeting",
-        "eventUrl": "https://www.meetup.com/pyrvausergroup/events/hpmfmtyjcgbcc/",
-        "description": "This is a placeholder event so you know when to plan to be there.\n\n**Schedule**\n5:45 pm - Doors Open / Social\n6:30 pm - Meeting Start\n7:30 pm - Wrap-up\n8:00 pm - Prologue (Social in Scotts Addition)\n\n**All events are open to all skill levels**. If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n\nJoin our Discord server! **https://pyrva.org/discord**\nWant to sponsor PyRVA? **https://pyrva.org/donate**\nWant to present? **https://forms.gle/q8w3xziArWjud5f67**",
-        "aeoDescription": null,
+        "eventUrl": "https://www.meetup.com/pyrvausergroup/events/313151264/",
+        "description": "This is a placeholder event so you know when to plan to be there.\n\n**Schedule**\n5:45 pm - Doors Open / Social\n6:30 pm - Meeting Start\n7:30 pm - Wrap-up\n8:00 pm - Prologue (Social in Scotts Addition)\n\n**All events are open to all skill levels**. If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n\n**Free parking** is available in the surface level parking lots on either side of the Ippon building.\n\nJoin our Discord server! **https://pyrva.org/discord**\nWant to sponsor PyRVA? **https://pyrva.org/donate**\nWant to present? **https://forms.gle/q8w3xziArWjud5f67**",
+        "aeoDescription": "Python community meetup open to all skill levels; attendees learn Python concepts through Q&A and peer sharing at an in-person monthly meeting.",
         "isSaved": false,
         "group": {
             "__ref": "Group:18889633"
         },
         "creatorMember": {
-            "__ref": "Member:22372041"
+            "__ref": "Member:71861332"
         },
         "eventHosts": [
             {
@@ -952,7 +753,7 @@
             "__ref": "Venue:26042046"
         },
         "dateTime": "2026-04-21T17:45:00-04:00",
-        "createdTime": "2024-06-19T12:31:55-04:00",
+        "createdTime": "2026-01-31T21:07:57-05:00",
         "endTime": "2026-04-21T19:45:00-04:00",
         "going": {
             "__typename": "GoingRsvpConnection",
@@ -964,7 +765,7 @@
         "status": "ACTIVE",
         "series": {
             "__typename": "Series",
-            "description": "Every 3rd Tuesday of the month",
+            "description": "Every 3rd Tuesday of the month until June 16, 2026",
             "weeklyRecurrence": null,
             "monthlyRecurrence": {
                 "__typename": "MonthlyRecurrenceInfo",
@@ -973,7 +774,7 @@
             }
         },
         "featuredEventPhoto": {
-            "__ref": "PhotoInfo:521349835"
+            "__ref": "PhotoInfo:531834559"
         },
         "rsvpState": "JOIN_OPEN",
         "rsvps({\"first\":5})": {
@@ -983,13 +784,13 @@
                 {
                     "__typename": "RsvpEdge",
                     "node": {
-                        "__ref": "Rsvp:2000778495"
+                        "__ref": "Rsvp:2061722084"
                     }
                 },
                 {
                     "__typename": "RsvpEdge",
                     "node": {
-                        "__ref": "Rsvp:2000778496"
+                        "__ref": "Rsvp:2061722085"
                     }
                 }
             ]
@@ -1003,21 +804,83 @@
         "isNetworkEvent": false,
         "networkEvent": null,
         "socialLabels": [],
-        "socialProofInsights": null
+        "socialProofInsights": {
+            "__typename": "SocialProofInsights",
+            "isTrendingEvent": false,
+            "totalInterestedUsers": 41,
+            "interestedUsersSample": [
+                {
+                    "__typename": "Member",
+                    "memberPhoto": {
+                        "__ref": "PhotoInfo:263436032"
+                    }
+                },
+                {
+                    "__typename": "Member",
+                    "memberPhoto": {
+                        "__ref": "PhotoInfo:251317932"
+                    }
+                },
+                {
+                    "__typename": "Member",
+                    "memberPhoto": {
+                        "__ref": "PhotoInfo:249549081"
+                    }
+                },
+                {
+                    "__typename": "Member",
+                    "memberPhoto": {
+                        "__ref": "PhotoInfo:130604272"
+                    }
+                },
+                {
+                    "__typename": "Member",
+                    "memberPhoto": {
+                        "__ref": "PhotoInfo:171881452"
+                    }
+                },
+                {
+                    "__typename": "Member",
+                    "memberPhoto": {
+                        "__ref": "PhotoInfo:171671462"
+                    }
+                },
+                {
+                    "__typename": "Member",
+                    "memberPhoto": {
+                        "__ref": "PhotoInfo:241504555"
+                    }
+                }
+            ]
+        }
     },
-    "Event:hpmfmtyjchbzb": {
+    "Rsvp:2057675745": {
+        "__typename": "Rsvp",
+        "id": "2057675745",
+        "member": {
+            "__ref": "Member:22372041"
+        }
+    },
+    "Rsvp:2057675746": {
+        "__typename": "Rsvp",
+        "id": "2057675746",
+        "member": {
+            "__ref": "Member:71861332"
+        }
+    },
+    "Event:tvrgvtyjchbzb": {
         "__typename": "Event",
-        "id": "hpmfmtyjchbzb",
+        "id": "tvrgvtyjchbzb",
         "title": "PyRVA Monthly Meeting",
-        "eventUrl": "https://www.meetup.com/pyrvausergroup/events/hpmfmtyjchbzb/",
-        "description": "This is a placeholder event so you know when to plan to be there.\n\n**Schedule**\n5:45 pm - Doors Open / Social\n6:30 pm - Meeting Start\n7:30 pm - Wrap-up\n8:00 pm - Prologue (Social in Scotts Addition)\n\n**All events are open to all skill levels**. If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n\nJoin our Discord server! **https://pyrva.org/discord**\nWant to sponsor PyRVA? **https://pyrva.org/donate**\nWant to present? **https://forms.gle/q8w3xziArWjud5f67**",
-        "aeoDescription": null,
+        "eventUrl": "https://www.meetup.com/pyrvausergroup/events/tvrgvtyjchbzb/",
+        "description": "This is a placeholder event so you know when to plan to be there.\n\n**Schedule**\n5:45 pm - Doors Open / Social\n6:30 pm - Meeting Start\n7:30 pm - Wrap-up\n8:00 pm - Prologue (Social in Scotts Addition)\n\n**All events are open to all skill levels**. If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n\n**Free parking** is available in the surface level parking lots on either side of the Ippon building.\n\nJoin our Discord server! **https://pyrva.org/discord**\nWant to sponsor PyRVA? **https://pyrva.org/donate**\nWant to present? **https://forms.gle/q8w3xziArWjud5f67**",
+        "aeoDescription": "Monthly PyRVA meeting for Python enthusiasts of all levels to learn through Q&A and knowledge sharing.",
         "isSaved": false,
         "group": {
             "__ref": "Group:18889633"
         },
         "creatorMember": {
-            "__ref": "Member:22372041"
+            "__ref": "Member:71861332"
         },
         "eventHosts": [
             {
@@ -1034,7 +897,7 @@
             "__ref": "Venue:26042046"
         },
         "dateTime": "2026-05-19T17:45:00-04:00",
-        "createdTime": "2024-06-19T12:31:55-04:00",
+        "createdTime": "2025-12-16T18:49:23-05:00",
         "endTime": "2026-05-19T19:45:00-04:00",
         "going": {
             "__typename": "GoingRsvpConnection",
@@ -1046,7 +909,7 @@
         "status": "ACTIVE",
         "series": {
             "__typename": "Series",
-            "description": "Every 3rd Tuesday of the month",
+            "description": "Every 3rd Tuesday of the month until June 16, 2026",
             "weeklyRecurrence": null,
             "monthlyRecurrence": {
                 "__typename": "MonthlyRecurrenceInfo",
@@ -1055,7 +918,7 @@
             }
         },
         "featuredEventPhoto": {
-            "__ref": "PhotoInfo:521349835"
+            "__ref": "PhotoInfo:531834559"
         },
         "rsvpState": "JOIN_OPEN",
         "rsvps({\"first\":5})": {
@@ -1065,13 +928,13 @@
                 {
                     "__typename": "RsvpEdge",
                     "node": {
-                        "__ref": "Rsvp:2000778495"
+                        "__ref": "Rsvp:2057675745"
                     }
                 },
                 {
                     "__typename": "RsvpEdge",
                     "node": {
-                        "__ref": "Rsvp:2000778496"
+                        "__ref": "Rsvp:2057675746"
                     }
                 }
             ]
@@ -1085,21 +948,69 @@
         "isNetworkEvent": false,
         "networkEvent": null,
         "socialLabels": [],
-        "socialProofInsights": null
+        "socialProofInsights": {
+            "__typename": "SocialProofInsights",
+            "isTrendingEvent": false,
+            "totalInterestedUsers": 39,
+            "interestedUsersSample": [
+                {
+                    "__typename": "Member",
+                    "memberPhoto": {
+                        "__ref": "PhotoInfo:263436032"
+                    }
+                },
+                {
+                    "__typename": "Member",
+                    "memberPhoto": {
+                        "__ref": "PhotoInfo:251317932"
+                    }
+                },
+                {
+                    "__typename": "Member",
+                    "memberPhoto": {
+                        "__ref": "PhotoInfo:249549081"
+                    }
+                },
+                {
+                    "__typename": "Member",
+                    "memberPhoto": {
+                        "__ref": "PhotoInfo:130604272"
+                    }
+                },
+                {
+                    "__typename": "Member",
+                    "memberPhoto": {
+                        "__ref": "PhotoInfo:171881452"
+                    }
+                },
+                {
+                    "__typename": "Member",
+                    "memberPhoto": {
+                        "__ref": "PhotoInfo:171671462"
+                    }
+                },
+                {
+                    "__typename": "Member",
+                    "memberPhoto": {
+                        "__ref": "PhotoInfo:241504555"
+                    }
+                }
+            ]
+        }
     },
-    "Event:hpmfmtyjcjbvb": {
+    "Event:tvrgvtyjcjbvb": {
         "__typename": "Event",
-        "id": "hpmfmtyjcjbvb",
+        "id": "tvrgvtyjcjbvb",
         "title": "PyRVA Monthly Meeting",
-        "eventUrl": "https://www.meetup.com/pyrvausergroup/events/hpmfmtyjcjbvb/",
-        "description": "This is a placeholder event so you know when to plan to be there.\n\n**Schedule**\n5:45 pm - Doors Open / Social\n6:30 pm - Meeting Start\n7:30 pm - Wrap-up\n8:00 pm - Prologue (Social in Scotts Addition)\n\n**All events are open to all skill levels**. If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n\nJoin our Discord server! **https://pyrva.org/discord**\nWant to sponsor PyRVA? **https://pyrva.org/donate**\nWant to present? **https://forms.gle/q8w3xziArWjud5f67**",
-        "aeoDescription": null,
+        "eventUrl": "https://www.meetup.com/pyrvausergroup/events/tvrgvtyjcjbvb/",
+        "description": "This is a placeholder event so you know when to plan to be there.\n\n**Schedule**\n5:45 pm - Doors Open / Social\n6:30 pm - Meeting Start\n7:30 pm - Wrap-up\n8:00 pm - Prologue (Social in Scotts Addition)\n\n**All events are open to all skill levels**. If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n\n**Free parking** is available in the surface level parking lots on either side of the Ippon building.\n\nJoin our Discord server! **https://pyrva.org/discord**\nWant to sponsor PyRVA? **https://pyrva.org/donate**\nWant to present? **https://forms.gle/q8w3xziArWjud5f67**",
+        "aeoDescription": "Monthly PyRVA meeting for Python enthusiasts of all levels to learn through Q&A and knowledge sharing.",
         "isSaved": false,
         "group": {
             "__ref": "Group:18889633"
         },
         "creatorMember": {
-            "__ref": "Member:22372041"
+            "__ref": "Member:71861332"
         },
         "eventHosts": [
             {
@@ -1116,7 +1027,7 @@
             "__ref": "Venue:26042046"
         },
         "dateTime": "2026-06-16T17:45:00-04:00",
-        "createdTime": "2024-06-19T12:31:55-04:00",
+        "createdTime": "2025-12-16T18:49:23-05:00",
         "endTime": "2026-06-16T19:45:00-04:00",
         "going": {
             "__typename": "GoingRsvpConnection",
@@ -1128,7 +1039,7 @@
         "status": "ACTIVE",
         "series": {
             "__typename": "Series",
-            "description": "Every 3rd Tuesday of the month",
+            "description": "Every 3rd Tuesday of the month until June 16, 2026",
             "weeklyRecurrence": null,
             "monthlyRecurrence": {
                 "__typename": "MonthlyRecurrenceInfo",
@@ -1137,7 +1048,7 @@
             }
         },
         "featuredEventPhoto": {
-            "__ref": "PhotoInfo:521349835"
+            "__ref": "PhotoInfo:531834559"
         },
         "rsvpState": "JOIN_OPEN",
         "rsvps({\"first\":5})": {
@@ -1147,13 +1058,13 @@
                 {
                     "__typename": "RsvpEdge",
                     "node": {
-                        "__ref": "Rsvp:2000778495"
+                        "__ref": "Rsvp:2057675745"
                     }
                 },
                 {
                     "__typename": "RsvpEdge",
                     "node": {
-                        "__ref": "Rsvp:2000778496"
+                        "__ref": "Rsvp:2057675746"
                     }
                 }
             ]
@@ -1167,498 +1078,54 @@
         "isNetworkEvent": false,
         "networkEvent": null,
         "socialLabels": [],
-        "socialProofInsights": null
-    },
-    "Event:hpmfmtyjckbcc": {
-        "__typename": "Event",
-        "id": "hpmfmtyjckbcc",
-        "title": "PyRVA Monthly Meeting",
-        "eventUrl": "https://www.meetup.com/pyrvausergroup/events/hpmfmtyjckbcc/",
-        "description": "This is a placeholder event so you know when to plan to be there.\n\n**Schedule**\n5:45 pm - Doors Open / Social\n6:30 pm - Meeting Start\n7:30 pm - Wrap-up\n8:00 pm - Prologue (Social in Scotts Addition)\n\n**All events are open to all skill levels**. If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n\nJoin our Discord server! **https://pyrva.org/discord**\nWant to sponsor PyRVA? **https://pyrva.org/donate**\nWant to present? **https://forms.gle/q8w3xziArWjud5f67**",
-        "aeoDescription": null,
-        "isSaved": false,
-        "group": {
-            "__ref": "Group:18889633"
-        },
-        "creatorMember": {
-            "__ref": "Member:22372041"
-        },
-        "eventHosts": [
-            {
-                "__typename": "EventHost",
-                "memberId": "22372041"
-            },
-            {
-                "__typename": "EventHost",
-                "memberId": "71861332"
-            }
-        ],
-        "feeSettings": null,
-        "venue": {
-            "__ref": "Venue:26042046"
-        },
-        "dateTime": "2026-07-21T17:45:00-04:00",
-        "createdTime": "2024-06-19T12:31:55-04:00",
-        "endTime": "2026-07-21T19:45:00-04:00",
-        "going": {
-            "__typename": "GoingRsvpConnection",
-            "totalCount": 2
-        },
-        "isAttending": false,
-        "isOnline": false,
-        "eventType": "PHYSICAL",
-        "status": "ACTIVE",
-        "series": {
-            "__typename": "Series",
-            "description": "Every 3rd Tuesday of the month",
-            "weeklyRecurrence": null,
-            "monthlyRecurrence": {
-                "__typename": "MonthlyRecurrenceInfo",
-                "monthlyDayOfWeek": "TUESDAY",
-                "monthlyWeekOfMonth": 3
-            }
-        },
-        "featuredEventPhoto": {
-            "__ref": "PhotoInfo:521349835"
-        },
-        "rsvpState": "JOIN_OPEN",
-        "rsvps({\"first\":5})": {
-            "__typename": "RsvpConnection",
-            "totalCount": 2,
-            "edges": [
+        "socialProofInsights": {
+            "__typename": "SocialProofInsights",
+            "isTrendingEvent": false,
+            "totalInterestedUsers": 39,
+            "interestedUsersSample": [
                 {
-                    "__typename": "RsvpEdge",
-                    "node": {
-                        "__ref": "Rsvp:2000778495"
+                    "__typename": "Member",
+                    "memberPhoto": {
+                        "__ref": "PhotoInfo:263436032"
                     }
                 },
                 {
-                    "__typename": "RsvpEdge",
-                    "node": {
-                        "__ref": "Rsvp:2000778496"
-                    }
-                }
-            ]
-        },
-        "maxTickets": 0,
-        "actions": [],
-        "rsvpSettings": {
-            "__typename": "RsvpOpenSettings",
-            "rsvpsClosed": false
-        },
-        "isNetworkEvent": false,
-        "networkEvent": null,
-        "socialLabels": [],
-        "socialProofInsights": null
-    },
-    "Event:hpmfmtyjclbxb": {
-        "__typename": "Event",
-        "id": "hpmfmtyjclbxb",
-        "title": "PyRVA Monthly Meeting",
-        "eventUrl": "https://www.meetup.com/pyrvausergroup/events/hpmfmtyjclbxb/",
-        "description": "This is a placeholder event so you know when to plan to be there.\n\n**Schedule**\n5:45 pm - Doors Open / Social\n6:30 pm - Meeting Start\n7:30 pm - Wrap-up\n8:00 pm - Prologue (Social in Scotts Addition)\n\n**All events are open to all skill levels**. If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n\nJoin our Discord server! **https://pyrva.org/discord**\nWant to sponsor PyRVA? **https://pyrva.org/donate**\nWant to present? **https://forms.gle/q8w3xziArWjud5f67**",
-        "aeoDescription": null,
-        "isSaved": false,
-        "group": {
-            "__ref": "Group:18889633"
-        },
-        "creatorMember": {
-            "__ref": "Member:22372041"
-        },
-        "eventHosts": [
-            {
-                "__typename": "EventHost",
-                "memberId": "22372041"
-            },
-            {
-                "__typename": "EventHost",
-                "memberId": "71861332"
-            }
-        ],
-        "feeSettings": null,
-        "venue": {
-            "__ref": "Venue:26042046"
-        },
-        "dateTime": "2026-08-18T17:45:00-04:00",
-        "createdTime": "2024-06-19T12:31:55-04:00",
-        "endTime": "2026-08-18T19:45:00-04:00",
-        "going": {
-            "__typename": "GoingRsvpConnection",
-            "totalCount": 2
-        },
-        "isAttending": false,
-        "isOnline": false,
-        "eventType": "PHYSICAL",
-        "status": "ACTIVE",
-        "series": {
-            "__typename": "Series",
-            "description": "Every 3rd Tuesday of the month",
-            "weeklyRecurrence": null,
-            "monthlyRecurrence": {
-                "__typename": "MonthlyRecurrenceInfo",
-                "monthlyDayOfWeek": "TUESDAY",
-                "monthlyWeekOfMonth": 3
-            }
-        },
-        "featuredEventPhoto": {
-            "__ref": "PhotoInfo:521349835"
-        },
-        "rsvpState": "JOIN_OPEN",
-        "rsvps({\"first\":5})": {
-            "__typename": "RsvpConnection",
-            "totalCount": 2,
-            "edges": [
-                {
-                    "__typename": "RsvpEdge",
-                    "node": {
-                        "__ref": "Rsvp:2000778495"
+                    "__typename": "Member",
+                    "memberPhoto": {
+                        "__ref": "PhotoInfo:251317932"
                     }
                 },
                 {
-                    "__typename": "RsvpEdge",
-                    "node": {
-                        "__ref": "Rsvp:2000778496"
-                    }
-                }
-            ]
-        },
-        "maxTickets": 0,
-        "actions": [],
-        "rsvpSettings": {
-            "__typename": "RsvpOpenSettings",
-            "rsvpsClosed": false
-        },
-        "isNetworkEvent": false,
-        "networkEvent": null,
-        "socialLabels": [],
-        "socialProofInsights": null
-    },
-    "Event:hpmfmtyjcmbtb": {
-        "__typename": "Event",
-        "id": "hpmfmtyjcmbtb",
-        "title": "PyRVA Monthly Meeting",
-        "eventUrl": "https://www.meetup.com/pyrvausergroup/events/hpmfmtyjcmbtb/",
-        "description": "This is a placeholder event so you know when to plan to be there.\n\n**Schedule**\n5:45 pm - Doors Open / Social\n6:30 pm - Meeting Start\n7:30 pm - Wrap-up\n8:00 pm - Prologue (Social in Scotts Addition)\n\n**All events are open to all skill levels**. If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n\nJoin our Discord server! **https://pyrva.org/discord**\nWant to sponsor PyRVA? **https://pyrva.org/donate**\nWant to present? **https://forms.gle/q8w3xziArWjud5f67**",
-        "aeoDescription": null,
-        "isSaved": false,
-        "group": {
-            "__ref": "Group:18889633"
-        },
-        "creatorMember": {
-            "__ref": "Member:22372041"
-        },
-        "eventHosts": [
-            {
-                "__typename": "EventHost",
-                "memberId": "22372041"
-            },
-            {
-                "__typename": "EventHost",
-                "memberId": "71861332"
-            }
-        ],
-        "feeSettings": null,
-        "venue": {
-            "__ref": "Venue:26042046"
-        },
-        "dateTime": "2026-09-15T17:45:00-04:00",
-        "createdTime": "2024-06-19T12:31:55-04:00",
-        "endTime": "2026-09-15T19:45:00-04:00",
-        "going": {
-            "__typename": "GoingRsvpConnection",
-            "totalCount": 2
-        },
-        "isAttending": false,
-        "isOnline": false,
-        "eventType": "PHYSICAL",
-        "status": "ACTIVE",
-        "series": {
-            "__typename": "Series",
-            "description": "Every 3rd Tuesday of the month",
-            "weeklyRecurrence": null,
-            "monthlyRecurrence": {
-                "__typename": "MonthlyRecurrenceInfo",
-                "monthlyDayOfWeek": "TUESDAY",
-                "monthlyWeekOfMonth": 3
-            }
-        },
-        "featuredEventPhoto": {
-            "__ref": "PhotoInfo:521349835"
-        },
-        "rsvpState": "JOIN_OPEN",
-        "rsvps({\"first\":5})": {
-            "__typename": "RsvpConnection",
-            "totalCount": 2,
-            "edges": [
-                {
-                    "__typename": "RsvpEdge",
-                    "node": {
-                        "__ref": "Rsvp:2000778495"
+                    "__typename": "Member",
+                    "memberPhoto": {
+                        "__ref": "PhotoInfo:249549081"
                     }
                 },
                 {
-                    "__typename": "RsvpEdge",
-                    "node": {
-                        "__ref": "Rsvp:2000778496"
-                    }
-                }
-            ]
-        },
-        "maxTickets": 0,
-        "actions": [],
-        "rsvpSettings": {
-            "__typename": "RsvpOpenSettings",
-            "rsvpsClosed": false
-        },
-        "isNetworkEvent": false,
-        "networkEvent": null,
-        "socialLabels": [],
-        "socialProofInsights": null
-    },
-    "Event:hpmfmtyjcnbbc": {
-        "__typename": "Event",
-        "id": "hpmfmtyjcnbbc",
-        "title": "PyRVA Monthly Meeting",
-        "eventUrl": "https://www.meetup.com/pyrvausergroup/events/hpmfmtyjcnbbc/",
-        "description": "This is a placeholder event so you know when to plan to be there.\n\n**Schedule**\n5:45 pm - Doors Open / Social\n6:30 pm - Meeting Start\n7:30 pm - Wrap-up\n8:00 pm - Prologue (Social in Scotts Addition)\n\n**All events are open to all skill levels**. If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n\nJoin our Discord server! **https://pyrva.org/discord**\nWant to sponsor PyRVA? **https://pyrva.org/donate**\nWant to present? **https://forms.gle/q8w3xziArWjud5f67**",
-        "aeoDescription": null,
-        "isSaved": false,
-        "group": {
-            "__ref": "Group:18889633"
-        },
-        "creatorMember": {
-            "__ref": "Member:22372041"
-        },
-        "eventHosts": [
-            {
-                "__typename": "EventHost",
-                "memberId": "22372041"
-            },
-            {
-                "__typename": "EventHost",
-                "memberId": "71861332"
-            }
-        ],
-        "feeSettings": null,
-        "venue": {
-            "__ref": "Venue:26042046"
-        },
-        "dateTime": "2026-10-20T17:45:00-04:00",
-        "createdTime": "2024-06-19T12:31:55-04:00",
-        "endTime": "2026-10-20T19:45:00-04:00",
-        "going": {
-            "__typename": "GoingRsvpConnection",
-            "totalCount": 2
-        },
-        "isAttending": false,
-        "isOnline": false,
-        "eventType": "PHYSICAL",
-        "status": "ACTIVE",
-        "series": {
-            "__typename": "Series",
-            "description": "Every 3rd Tuesday of the month",
-            "weeklyRecurrence": null,
-            "monthlyRecurrence": {
-                "__typename": "MonthlyRecurrenceInfo",
-                "monthlyDayOfWeek": "TUESDAY",
-                "monthlyWeekOfMonth": 3
-            }
-        },
-        "featuredEventPhoto": {
-            "__ref": "PhotoInfo:521349835"
-        },
-        "rsvpState": "JOIN_OPEN",
-        "rsvps({\"first\":5})": {
-            "__typename": "RsvpConnection",
-            "totalCount": 2,
-            "edges": [
-                {
-                    "__typename": "RsvpEdge",
-                    "node": {
-                        "__ref": "Rsvp:2000778495"
+                    "__typename": "Member",
+                    "memberPhoto": {
+                        "__ref": "PhotoInfo:130604272"
                     }
                 },
                 {
-                    "__typename": "RsvpEdge",
-                    "node": {
-                        "__ref": "Rsvp:2000778496"
-                    }
-                }
-            ]
-        },
-        "maxTickets": 0,
-        "actions": [],
-        "rsvpSettings": {
-            "__typename": "RsvpOpenSettings",
-            "rsvpsClosed": false
-        },
-        "isNetworkEvent": false,
-        "networkEvent": null,
-        "socialLabels": [],
-        "socialProofInsights": null
-    },
-    "Event:hpmfmtyjcpbwb": {
-        "__typename": "Event",
-        "id": "hpmfmtyjcpbwb",
-        "title": "PyRVA Monthly Meeting",
-        "eventUrl": "https://www.meetup.com/pyrvausergroup/events/hpmfmtyjcpbwb/",
-        "description": "This is a placeholder event so you know when to plan to be there.\n\n**Schedule**\n5:45 pm - Doors Open / Social\n6:30 pm - Meeting Start\n7:30 pm - Wrap-up\n8:00 pm - Prologue (Social in Scotts Addition)\n\n**All events are open to all skill levels**. If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n\nJoin our Discord server! **https://pyrva.org/discord**\nWant to sponsor PyRVA? **https://pyrva.org/donate**\nWant to present? **https://forms.gle/q8w3xziArWjud5f67**",
-        "aeoDescription": null,
-        "isSaved": false,
-        "group": {
-            "__ref": "Group:18889633"
-        },
-        "creatorMember": {
-            "__ref": "Member:22372041"
-        },
-        "eventHosts": [
-            {
-                "__typename": "EventHost",
-                "memberId": "22372041"
-            },
-            {
-                "__typename": "EventHost",
-                "memberId": "71861332"
-            }
-        ],
-        "feeSettings": null,
-        "venue": {
-            "__ref": "Venue:26042046"
-        },
-        "dateTime": "2026-11-17T17:45:00-05:00",
-        "createdTime": "2024-06-19T12:31:55-04:00",
-        "endTime": "2026-11-17T19:45:00-05:00",
-        "going": {
-            "__typename": "GoingRsvpConnection",
-            "totalCount": 2
-        },
-        "isAttending": false,
-        "isOnline": false,
-        "eventType": "PHYSICAL",
-        "status": "ACTIVE",
-        "series": {
-            "__typename": "Series",
-            "description": "Every 3rd Tuesday of the month",
-            "weeklyRecurrence": null,
-            "monthlyRecurrence": {
-                "__typename": "MonthlyRecurrenceInfo",
-                "monthlyDayOfWeek": "TUESDAY",
-                "monthlyWeekOfMonth": 3
-            }
-        },
-        "featuredEventPhoto": {
-            "__ref": "PhotoInfo:521349835"
-        },
-        "rsvpState": "JOIN_OPEN",
-        "rsvps({\"first\":5})": {
-            "__typename": "RsvpConnection",
-            "totalCount": 2,
-            "edges": [
-                {
-                    "__typename": "RsvpEdge",
-                    "node": {
-                        "__ref": "Rsvp:2000778495"
+                    "__typename": "Member",
+                    "memberPhoto": {
+                        "__ref": "PhotoInfo:171881452"
                     }
                 },
                 {
-                    "__typename": "RsvpEdge",
-                    "node": {
-                        "__ref": "Rsvp:2000778496"
-                    }
-                }
-            ]
-        },
-        "maxTickets": 0,
-        "actions": [],
-        "rsvpSettings": {
-            "__typename": "RsvpOpenSettings",
-            "rsvpsClosed": false
-        },
-        "isNetworkEvent": false,
-        "networkEvent": null,
-        "socialLabels": [],
-        "socialProofInsights": null
-    },
-    "Event:hpmfmtyjcqbtb": {
-        "__typename": "Event",
-        "id": "hpmfmtyjcqbtb",
-        "title": "PyRVA Monthly Meeting",
-        "eventUrl": "https://www.meetup.com/pyrvausergroup/events/hpmfmtyjcqbtb/",
-        "description": "This is a placeholder event so you know when to plan to be there.\n\n**Schedule**\n5:45 pm - Doors Open / Social\n6:30 pm - Meeting Start\n7:30 pm - Wrap-up\n8:00 pm - Prologue (Social in Scotts Addition)\n\n**All events are open to all skill levels**. If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n\nJoin our Discord server! **https://pyrva.org/discord**\nWant to sponsor PyRVA? **https://pyrva.org/donate**\nWant to present? **https://forms.gle/q8w3xziArWjud5f67**",
-        "aeoDescription": null,
-        "isSaved": false,
-        "group": {
-            "__ref": "Group:18889633"
-        },
-        "creatorMember": {
-            "__ref": "Member:22372041"
-        },
-        "eventHosts": [
-            {
-                "__typename": "EventHost",
-                "memberId": "22372041"
-            },
-            {
-                "__typename": "EventHost",
-                "memberId": "71861332"
-            }
-        ],
-        "feeSettings": null,
-        "venue": {
-            "__ref": "Venue:26042046"
-        },
-        "dateTime": "2026-12-15T17:45:00-05:00",
-        "createdTime": "2024-06-19T12:31:55-04:00",
-        "endTime": "2026-12-15T19:45:00-05:00",
-        "going": {
-            "__typename": "GoingRsvpConnection",
-            "totalCount": 2
-        },
-        "isAttending": false,
-        "isOnline": false,
-        "eventType": "PHYSICAL",
-        "status": "ACTIVE",
-        "series": {
-            "__typename": "Series",
-            "description": "Every 3rd Tuesday of the month",
-            "weeklyRecurrence": null,
-            "monthlyRecurrence": {
-                "__typename": "MonthlyRecurrenceInfo",
-                "monthlyDayOfWeek": "TUESDAY",
-                "monthlyWeekOfMonth": 3
-            }
-        },
-        "featuredEventPhoto": {
-            "__ref": "PhotoInfo:521349835"
-        },
-        "rsvpState": "JOIN_OPEN",
-        "rsvps({\"first\":5})": {
-            "__typename": "RsvpConnection",
-            "totalCount": 2,
-            "edges": [
-                {
-                    "__typename": "RsvpEdge",
-                    "node": {
-                        "__ref": "Rsvp:2000778495"
+                    "__typename": "Member",
+                    "memberPhoto": {
+                        "__ref": "PhotoInfo:171671462"
                     }
                 },
                 {
-                    "__typename": "RsvpEdge",
-                    "node": {
-                        "__ref": "Rsvp:2000778496"
+                    "__typename": "Member",
+                    "memberPhoto": {
+                        "__ref": "PhotoInfo:241504555"
                     }
                 }
             ]
-        },
-        "maxTickets": 0,
-        "actions": [],
-        "rsvpSettings": {
-            "__typename": "RsvpOpenSettings",
-            "rsvpsClosed": false
-        },
-        "isNetworkEvent": false,
-        "networkEvent": null,
-        "socialLabels": [],
-        "socialProofInsights": null
+        }
     }
 }

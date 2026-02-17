@@ -1,106 +1,42 @@
 [
     {
-        "url": "https://www.meetup.com/pyrvausergroup/events/309617696/",
-        "title": "Down the rabbit hole: Using Python for text searches and indexing",
-        "rsvps": 27,
-        "description": "In this hands-on session, Rob Harrison and Monty Shepardson will walk you through a Python program that \"indexes\" a narrative by matching a passage from Alice in Wonderland against a curated keyword list.\n\nWatch how the script scans the text, adapts to changes in length or composition, and tallies keyword occurrences with practical flair.\n\nBring your curiosity! After the demo we'll open the floor for a discussion about alternative approaches and enhancements. What opportunities will the audience bring up to make their script better?\n\nWhether you're a coding novice or a seasoned developer, you'll pick up ideas and inspiration.\n\n**Schedule**\n5:45 pm - Doors Open / Social\n6:30 pm - Meeting Start\n7:30 pm - Wrap-up\n8:00 pm - Prologue (Social in Scotts Addition)\n\n**All events are open to all skill levels**. If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n\nJoin our Discord server! **https://pyrva.org/discord**\nWant to sponsor PyRVA? **https://pyrva.org/donate**\nWant to present? **https://forms.gle/q8w3xziArWjud5f67**",
-        "image": "https://secure.meetupstatic.com/photos/event/2/6/6/b/highres_521349835.jpeg",
-        "datetime": "2025-12-16T17:45:00"
-    },
-    {
-        "url": "https://www.meetup.com/pyrvausergroup/events/311199623/",
-        "title": "Quantum computing with Python",
-        "rsvps": 15,
-        "description": "Quantum computing has become a popular topic recently.\n\nQiskit, a Python library for quantum computing, allows you to both simulate quantum computer operations or send it to be run on a real quantum computer.\n\nQuantum computing is used to solve some calculations that would take a regular computer a very long time to calculate or would otherwise be uncomputable. Applications include scientific computations, simulations, and the most infamous, breaking encryptions.\n\nCome join us as we explore the quantum future!\n\n**Schedule**\n5:45 pm - Doors Open / Social\n6:30 pm - Meeting Start\n7:30 pm - Wrap-up\n8:00 pm - Prologue (Social in Scotts Addition)\n\n**All events are open to all skill levels**. If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n\nJoin our Discord server! **https://pyrva.org/discord**\nWant to sponsor PyRVA? **https://pyrva.org/donate**\nWant to present? **https://forms.gle/q8w3xziArWjud5f67**",
-        "image": "https://secure.meetupstatic.com/photos/event/2/6/6/b/highres_521349835.jpeg",
-        "datetime": "2026-01-20T17:45:00"
-    },
-    {
         "url": "https://www.meetup.com/pyrvausergroup/events/311199624/",
-        "title": "PyRVA Monthly Meeting",
-        "rsvps": 2,
-        "description": "This is a placeholder event so you know when to plan to be there.\n\n**Schedule**\n5:45 pm - Doors Open / Social\n6:30 pm - Meeting Start\n7:30 pm - Wrap-up\n8:00 pm - Prologue (Social in Scotts Addition)\n\n**All events are open to all skill levels**. If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n\nJoin our Discord server! **https://pyrva.org/discord**\nWant to sponsor PyRVA? **https://pyrva.org/donate**\nWant to present? **https://forms.gle/q8w3xziArWjud5f67**",
-        "image": "https://secure.meetupstatic.com/photos/event/2/6/6/b/highres_521349835.jpeg",
+        "title": "Discussion: The AI Effect - Does AI Really Make You Productive?",
+        "rsvps": 27,
+        "description": "There's no doubt that AI has taken off at an incredible rate. Everywhere you go, AI is there to help. It's on our devices, it's answering our calls, it's even searching the web for us. But is it actually making us more productive?\n\nJoin us for an open discussion on the merits of AI. Where it excels and where it might fall short.\n\n**Schedule**\n5:45 pm - Doors Open / Social\n6:30 pm - Meeting Start\n7:30 pm - Wrap-up\n8:00 pm - Prologue (Social in Scotts Addition)\n\n**All events are open to all skill levels**. If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n\n**Free parking** is available in the surface level parking lots on either side of the Ippon building.\n\nJoin our Discord server! **https://pyrva.org/discord**\nWant to sponsor PyRVA? **https://pyrva.org/donate**\nWant to present? **https://forms.gle/q8w3xziArWjud5f67**",
+        "image": "https://secure.meetupstatic.com/photos/event/d/5/1/f/highres_531834559.jpeg",
         "datetime": "2026-02-17T17:45:00"
     },
     {
         "url": "https://www.meetup.com/pyrvausergroup/events/311199626/",
         "title": "PyRVA Monthly Meeting",
-        "rsvps": 2,
-        "description": "This is a placeholder event so you know when to plan to be there.\n\n**Schedule**\n5:45 pm - Doors Open / Social\n6:30 pm - Meeting Start\n7:30 pm - Wrap-up\n8:00 pm - Prologue (Social in Scotts Addition)\n\n**All events are open to all skill levels**. If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n\nJoin our Discord server! **https://pyrva.org/discord**\nWant to sponsor PyRVA? **https://pyrva.org/donate**\nWant to present? **https://forms.gle/q8w3xziArWjud5f67**",
-        "image": "https://secure.meetupstatic.com/photos/event/2/6/6/b/highres_521349835.jpeg",
+        "rsvps": 5,
+        "description": "This is a placeholder event so you know when to plan to be there.\n\n**Schedule**\n5:45 pm - Doors Open / Social\n6:30 pm - Meeting Start\n7:30 pm - Wrap-up\n8:00 pm - Prologue (Social in Scotts Addition)\n\n**All events are open to all skill levels**. If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n\n**Free parking** is available in the surface level parking lots on either side of the Ippon building.\n\nJoin our Discord server! **https://pyrva.org/discord**\nWant to sponsor PyRVA? **https://pyrva.org/donate**\nWant to present? **https://forms.gle/q8w3xziArWjud5f67**",
+        "image": "https://secure.meetupstatic.com/photos/event/d/5/1/f/highres_531834559.jpeg",
         "datetime": "2026-03-17T17:45:00"
     },
     {
-        "url": "https://www.meetup.com/pyrvausergroup/events/hpmfmtyjcgbcc/",
+        "url": "https://www.meetup.com/pyrvausergroup/events/313151264/",
         "title": "PyRVA Monthly Meeting",
         "rsvps": 2,
-        "description": "This is a placeholder event so you know when to plan to be there.\n\n**Schedule**\n5:45 pm - Doors Open / Social\n6:30 pm - Meeting Start\n7:30 pm - Wrap-up\n8:00 pm - Prologue (Social in Scotts Addition)\n\n**All events are open to all skill levels**. If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n\nJoin our Discord server! **https://pyrva.org/discord**\nWant to sponsor PyRVA? **https://pyrva.org/donate**\nWant to present? **https://forms.gle/q8w3xziArWjud5f67**",
-        "image": "https://secure.meetupstatic.com/photos/event/2/6/6/b/highres_521349835.jpeg",
+        "description": "This is a placeholder event so you know when to plan to be there.\n\n**Schedule**\n5:45 pm - Doors Open / Social\n6:30 pm - Meeting Start\n7:30 pm - Wrap-up\n8:00 pm - Prologue (Social in Scotts Addition)\n\n**All events are open to all skill levels**. If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n\n**Free parking** is available in the surface level parking lots on either side of the Ippon building.\n\nJoin our Discord server! **https://pyrva.org/discord**\nWant to sponsor PyRVA? **https://pyrva.org/donate**\nWant to present? **https://forms.gle/q8w3xziArWjud5f67**",
+        "image": "https://secure.meetupstatic.com/photos/event/d/5/1/f/highres_531834559.jpeg",
         "datetime": "2026-04-21T17:45:00"
     },
     {
-        "url": "https://www.meetup.com/pyrvausergroup/events/hpmfmtyjchbzb/",
+        "url": "https://www.meetup.com/pyrvausergroup/events/tvrgvtyjchbzb/",
         "title": "PyRVA Monthly Meeting",
         "rsvps": 2,
-        "description": "This is a placeholder event so you know when to plan to be there.\n\n**Schedule**\n5:45 pm - Doors Open / Social\n6:30 pm - Meeting Start\n7:30 pm - Wrap-up\n8:00 pm - Prologue (Social in Scotts Addition)\n\n**All events are open to all skill levels**. If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n\nJoin our Discord server! **https://pyrva.org/discord**\nWant to sponsor PyRVA? **https://pyrva.org/donate**\nWant to present? **https://forms.gle/q8w3xziArWjud5f67**",
-        "image": "https://secure.meetupstatic.com/photos/event/2/6/6/b/highres_521349835.jpeg",
+        "description": "This is a placeholder event so you know when to plan to be there.\n\n**Schedule**\n5:45 pm - Doors Open / Social\n6:30 pm - Meeting Start\n7:30 pm - Wrap-up\n8:00 pm - Prologue (Social in Scotts Addition)\n\n**All events are open to all skill levels**. If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n\n**Free parking** is available in the surface level parking lots on either side of the Ippon building.\n\nJoin our Discord server! **https://pyrva.org/discord**\nWant to sponsor PyRVA? **https://pyrva.org/donate**\nWant to present? **https://forms.gle/q8w3xziArWjud5f67**",
+        "image": "https://secure.meetupstatic.com/photos/event/d/5/1/f/highres_531834559.jpeg",
         "datetime": "2026-05-19T17:45:00"
     },
     {
-        "url": "https://www.meetup.com/pyrvausergroup/events/hpmfmtyjcjbvb/",
+        "url": "https://www.meetup.com/pyrvausergroup/events/tvrgvtyjcjbvb/",
         "title": "PyRVA Monthly Meeting",
         "rsvps": 2,
-        "description": "This is a placeholder event so you know when to plan to be there.\n\n**Schedule**\n5:45 pm - Doors Open / Social\n6:30 pm - Meeting Start\n7:30 pm - Wrap-up\n8:00 pm - Prologue (Social in Scotts Addition)\n\n**All events are open to all skill levels**. If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n\nJoin our Discord server! **https://pyrva.org/discord**\nWant to sponsor PyRVA? **https://pyrva.org/donate**\nWant to present? **https://forms.gle/q8w3xziArWjud5f67**",
-        "image": "https://secure.meetupstatic.com/photos/event/2/6/6/b/highres_521349835.jpeg",
+        "description": "This is a placeholder event so you know when to plan to be there.\n\n**Schedule**\n5:45 pm - Doors Open / Social\n6:30 pm - Meeting Start\n7:30 pm - Wrap-up\n8:00 pm - Prologue (Social in Scotts Addition)\n\n**All events are open to all skill levels**. If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n\n**Free parking** is available in the surface level parking lots on either side of the Ippon building.\n\nJoin our Discord server! **https://pyrva.org/discord**\nWant to sponsor PyRVA? **https://pyrva.org/donate**\nWant to present? **https://forms.gle/q8w3xziArWjud5f67**",
+        "image": "https://secure.meetupstatic.com/photos/event/d/5/1/f/highres_531834559.jpeg",
         "datetime": "2026-06-16T17:45:00"
-    },
-    {
-        "url": "https://www.meetup.com/pyrvausergroup/events/hpmfmtyjckbcc/",
-        "title": "PyRVA Monthly Meeting",
-        "rsvps": 2,
-        "description": "This is a placeholder event so you know when to plan to be there.\n\n**Schedule**\n5:45 pm - Doors Open / Social\n6:30 pm - Meeting Start\n7:30 pm - Wrap-up\n8:00 pm - Prologue (Social in Scotts Addition)\n\n**All events are open to all skill levels**. If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n\nJoin our Discord server! **https://pyrva.org/discord**\nWant to sponsor PyRVA? **https://pyrva.org/donate**\nWant to present? **https://forms.gle/q8w3xziArWjud5f67**",
-        "image": "https://secure.meetupstatic.com/photos/event/2/6/6/b/highres_521349835.jpeg",
-        "datetime": "2026-07-21T17:45:00"
-    },
-    {
-        "url": "https://www.meetup.com/pyrvausergroup/events/hpmfmtyjclbxb/",
-        "title": "PyRVA Monthly Meeting",
-        "rsvps": 2,
-        "description": "This is a placeholder event so you know when to plan to be there.\n\n**Schedule**\n5:45 pm - Doors Open / Social\n6:30 pm - Meeting Start\n7:30 pm - Wrap-up\n8:00 pm - Prologue (Social in Scotts Addition)\n\n**All events are open to all skill levels**. If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n\nJoin our Discord server! **https://pyrva.org/discord**\nWant to sponsor PyRVA? **https://pyrva.org/donate**\nWant to present? **https://forms.gle/q8w3xziArWjud5f67**",
-        "image": "https://secure.meetupstatic.com/photos/event/2/6/6/b/highres_521349835.jpeg",
-        "datetime": "2026-08-18T17:45:00"
-    },
-    {
-        "url": "https://www.meetup.com/pyrvausergroup/events/hpmfmtyjcmbtb/",
-        "title": "PyRVA Monthly Meeting",
-        "rsvps": 2,
-        "description": "This is a placeholder event so you know when to plan to be there.\n\n**Schedule**\n5:45 pm - Doors Open / Social\n6:30 pm - Meeting Start\n7:30 pm - Wrap-up\n8:00 pm - Prologue (Social in Scotts Addition)\n\n**All events are open to all skill levels**. If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n\nJoin our Discord server! **https://pyrva.org/discord**\nWant to sponsor PyRVA? **https://pyrva.org/donate**\nWant to present? **https://forms.gle/q8w3xziArWjud5f67**",
-        "image": "https://secure.meetupstatic.com/photos/event/2/6/6/b/highres_521349835.jpeg",
-        "datetime": "2026-09-15T17:45:00"
-    },
-    {
-        "url": "https://www.meetup.com/pyrvausergroup/events/hpmfmtyjcnbbc/",
-        "title": "PyRVA Monthly Meeting",
-        "rsvps": 2,
-        "description": "This is a placeholder event so you know when to plan to be there.\n\n**Schedule**\n5:45 pm - Doors Open / Social\n6:30 pm - Meeting Start\n7:30 pm - Wrap-up\n8:00 pm - Prologue (Social in Scotts Addition)\n\n**All events are open to all skill levels**. If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n\nJoin our Discord server! **https://pyrva.org/discord**\nWant to sponsor PyRVA? **https://pyrva.org/donate**\nWant to present? **https://forms.gle/q8w3xziArWjud5f67**",
-        "image": "https://secure.meetupstatic.com/photos/event/2/6/6/b/highres_521349835.jpeg",
-        "datetime": "2026-10-20T17:45:00"
-    },
-    {
-        "url": "https://www.meetup.com/pyrvausergroup/events/hpmfmtyjcpbwb/",
-        "title": "PyRVA Monthly Meeting",
-        "rsvps": 2,
-        "description": "This is a placeholder event so you know when to plan to be there.\n\n**Schedule**\n5:45 pm - Doors Open / Social\n6:30 pm - Meeting Start\n7:30 pm - Wrap-up\n8:00 pm - Prologue (Social in Scotts Addition)\n\n**All events are open to all skill levels**. If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n\nJoin our Discord server! **https://pyrva.org/discord**\nWant to sponsor PyRVA? **https://pyrva.org/donate**\nWant to present? **https://forms.gle/q8w3xziArWjud5f67**",
-        "image": "https://secure.meetupstatic.com/photos/event/2/6/6/b/highres_521349835.jpeg",
-        "datetime": "2026-11-17T17:45:00"
-    },
-    {
-        "url": "https://www.meetup.com/pyrvausergroup/events/hpmfmtyjcqbtb/",
-        "title": "PyRVA Monthly Meeting",
-        "rsvps": 2,
-        "description": "This is a placeholder event so you know when to plan to be there.\n\n**Schedule**\n5:45 pm - Doors Open / Social\n6:30 pm - Meeting Start\n7:30 pm - Wrap-up\n8:00 pm - Prologue (Social in Scotts Addition)\n\n**All events are open to all skill levels**. If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n\nJoin our Discord server! **https://pyrva.org/discord**\nWant to sponsor PyRVA? **https://pyrva.org/donate**\nWant to present? **https://forms.gle/q8w3xziArWjud5f67**",
-        "image": "https://secure.meetupstatic.com/photos/event/2/6/6/b/highres_521349835.jpeg",
-        "datetime": "2026-12-15T17:45:00"
     }
 ]

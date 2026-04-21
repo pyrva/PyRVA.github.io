@@ -23,21 +23,14 @@
         "What is your favorite tool for validating data?",
         "If you could be any animal, what would it be and why?"
     ],
-    "2024-12-17": [],
     "2025-01-21": [
         "What is a programming goal for 2025?",
         "What is a personal goal for 2025?"
     ],
-    "2025-12-16": [
-        "What's something you've done this year that you're proud of?",
-        "How long have you been using Python?"
-    ],
+  "2025-12-16": ["What's something you've done this year that you're proud of?", "How long have you been using Python?"],
     "2025-02-18": [
         "What tools do you use to manage your python projects?",
         "What is a special talent that you have?"
     ],
-    "2026-02-17": [
-        "Which LLMs do you use most frequently?",
-        "Do you trust commercial LLMs with your work or personal data?"
-    ]
+  "2026-04-21": ["What is an example of excellent documentation?", "What have you enjoyed in the weather we've had recently?"]
 }

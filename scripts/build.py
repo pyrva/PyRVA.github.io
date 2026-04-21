@@ -6,6 +6,7 @@ https://frozen-flask.readthedocs.io/en/latest/
 """
 
 from flask_frozen import Freezer
+
 from pyrva.app import app
 
 app.config["FREEZER_DESTINATION"] = "../../docs"

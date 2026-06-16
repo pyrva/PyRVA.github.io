@@ -1,25 +1,9 @@
 [
     {
-        "url": "https://www.meetup.com/pyrvausergroup/events/313151264/",
-        "title": "Python documentation",
-        "rsvps": 13,
-        "description": "One you feel comfortable with a tool\u2019s documentation, it unlocks a new level of capabilities.\n\nPython\u2019s documentation is generally good, but getting comfortable with it takes some effort.\n\nThis month, Chris May will show us around the documentation and show tools that help him find what he needs fast and surface new options to get things done.\n\nYou\u2019ll walk away with some resources that will help you on your programming journey and more ability to find what you need.\n\n**Schedule**\n5:45 pm - Doors Open / Social\n6:30 pm - Meeting Start\n7:30 pm - Wrap-up\n8:00 pm - Prologue (Social in Scotts Addition)\n\n**All events are open to all skill levels**. If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n\n**Free parking** is available in the surface level parking lots on either side of the Ippon building.\n\nJoin our Discord server! **https://pyrva.org/discord**\nWant to sponsor PyRVA? **https://pyrva.org/donate**\nWant to present? **https://forms.gle/q8w3xziArWjud5f67**",
-        "image": "https://secure.meetupstatic.com/photos/event/d/5/1/f/highres_531834559.jpeg",
-        "datetime": "2026-04-21T17:45:00"
-    },
-    {
-        "url": "https://www.meetup.com/pyrvausergroup/events/313703896/",
-        "title": "PyRVA Monthly Meeting",
-        "rsvps": 3,
-        "description": "This is a placeholder event so you know when to plan to be there.\n\n**Schedule**\n5:45 pm - Doors Open / Social\n6:30 pm - Meeting Start\n7:30 pm - Wrap-up\n8:00 pm - Prologue (Social in Scotts Addition)\n\n**All events are open to all skill levels**. If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n\n**Free parking** is available in the surface level parking lots on either side of the Ippon building.\n\nJoin our Discord server! **https://pyrva.org/discord**\nWant to sponsor PyRVA? **https://pyrva.org/donate**\nWant to present? **https://forms.gle/q8w3xziArWjud5f67**",
-        "image": "https://secure.meetupstatic.com/photos/event/d/5/1/f/highres_531834559.jpeg",
-        "datetime": "2026-05-19T17:45:00"
-    },
-    {
         "url": "https://www.meetup.com/pyrvausergroup/events/313703905/",
-        "title": "PyRVA Monthly Meeting",
-        "rsvps": 2,
-        "description": "This is a placeholder event so you know when to plan to be there.\n\n**Schedule**\n5:45 pm - Doors Open / Social\n6:30 pm - Meeting Start\n7:30 pm - Wrap-up\n8:00 pm - Prologue (Social in Scotts Addition)\n\n**All events are open to all skill levels**. If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n\n**Free parking** is available in the surface level parking lots on either side of the Ippon building.\n\nJoin our Discord server! **https://pyrva.org/discord**\nWant to sponsor PyRVA? **https://pyrva.org/donate**\nWant to present? **https://forms.gle/q8w3xziArWjud5f67**",
+        "title": "More than a match The magic that is structural pattern matching in Python",
+        "rsvps": 16,
+        "description": "Structural pattern matching came into Python with version 3.10... four and a half years ago.\n\nMost developers think of it adding a \\`match\\` statement to Python, but it's so much more. Oh, so much more.\n\nYou're bound to learn something from this interactive session, as we dive into code together.\n\nLaptops are optional, but encouraged, as we can explore things in real time.\n\n**Schedule**\n5:45 pm - Doors Open / Social\n6:30 pm - Meeting Start\n7:30 pm - Wrap-up\n8:00 pm - Prologue (Social in Scotts Addition)\n\n**All events are open to all skill levels**. If you're just starting out, come to learn and feel free to ask questions. That's where the real learning happens. If you're a more seasoned developer, we'd love to learn from you. Despite what the Zen of Python says, there are usually more than one way to do something, so share your knowledge!\n\n**Free parking** is available in the surface level parking lots on either side of the Ippon building.\n\nJoin our Discord server! **https://pyrva.org/discord**\nWant to sponsor PyRVA? **https://pyrva.org/donate**\nWant to present? **https://forms.gle/q8w3xziArWjud5f67**",
         "image": "https://secure.meetupstatic.com/photos/event/d/5/1/f/highres_531834559.jpeg",
         "datetime": "2026-06-16T17:45:00"
     }
